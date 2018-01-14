@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "ladrillos",
+  "ingredients": [
+    {
+      "item": "minecraft:brick_block"
+    },
+	
+	{
+	  "item": "minecraft:brick_block"
+	},
+	
+	{
+	  "item": "minecraft:cactus"
+	},
+	
+	{
+	  "item": "minecraft:cactus"
+	}
+	
+  ],
+  "result": {
+    "item": "rc:ladrillo_del_bosque",
+    "count": 4
+  }
+}

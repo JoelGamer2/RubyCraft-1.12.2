@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ccc",
+	"ctc",
+	"ccc"
+  ],
+  "key": {
+    "c": {
+      "item": "minecraft:rotten_flesh"
+    },
+	
+	"t": {
+	  "item": "minecraft:dirt",
+	  "data": 0
+	}
+  },
+  "result": {
+    "item": "rc:bloque_de_caca",
+    "count": 8
+  }
+}

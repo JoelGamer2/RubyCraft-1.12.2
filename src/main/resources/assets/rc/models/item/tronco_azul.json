@@ -1,0 +1,6 @@
+{   
+     "parent": "block/cube",
+	  "textures": {
+	    "up": "rc:blocks/tronco_azul_arriba","down": "rc:blocks/tronco_azul_arriba","east": "rc:blocks/tronco_azul","north": "rc:blocks/tronco_azul","south": "rc:blocks/tronco_azul","west": "rc:blocks/tronco_azul","particle": "rc:blocks/tronco_azul"
+	}
+}

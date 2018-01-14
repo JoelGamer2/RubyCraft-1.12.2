@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "gg",
+	"gg"
+  ],
+  "key": {
+    "g": {
+      "item": "minecraft:stone",
+	  "data": 2
+    }
+  },
+  "result": {
+    "item": "rc:ladrillo_de_granito",
+    "count": 4
+  }
+}

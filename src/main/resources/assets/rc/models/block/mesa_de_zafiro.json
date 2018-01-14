@@ -1,0 +1,6 @@
+{   
+     "parent": "block/cube",
+	  "textures": {
+	    "up": "rc:blocks/mesa_de_zafiro_arriba","down": "rc:blocks/madera_azul","south": "rc:blocks/mesa_de_zafiro_lado","north": "rc:blocks/mesa_de_zafiro_lado","east": "rc:blocks/mesa_de_zafiro_lado","west": "rc:blocks/mesa_de_zafiro_lado","particle": "rc:blocks/mesa_de_zafiro_lado"
+	}
+}

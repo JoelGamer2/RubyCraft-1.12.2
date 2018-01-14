@@ -1,0 +1,6 @@
+{
+    "parent": "item/bow",
+    "textures": {
+        "layer0": "rc:items/arco_de_zafiro_pulling_0"
+    }
+}

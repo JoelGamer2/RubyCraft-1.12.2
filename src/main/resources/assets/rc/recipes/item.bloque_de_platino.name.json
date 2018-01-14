@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ppp",
+	"ppp",
+	"ppp"
+  ],
+  "key": {
+    "p": {
+      "item": "rc:platino"
+    }
+  },
+  "result": {
+    "item": "rc:bloque_de_platino",
+    "count": 1
+  }
+}

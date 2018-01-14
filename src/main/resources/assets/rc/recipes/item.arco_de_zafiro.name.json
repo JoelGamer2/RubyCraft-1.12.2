@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " pz",
+	"p z",
+	" pz"
+  ],
+  "key": {
+    "z": {
+      "item": "rc:zafiro"
+    },
+	
+	"p": {
+	"item": "minecraft:stick"
+	}
+	
+  },
+  "result": {
+    "item": "rc:arco_de_zafiro",
+    "count": 1
+  }
+}

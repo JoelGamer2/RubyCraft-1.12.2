@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "tct"
+  ],
+  "key": {
+    "t": {
+      "item": "minecraft:wheat"
+    },
+	
+	"c": {
+	"item": "minecraft:pumpkin_seeds"
+	}
+	
+  },
+  "result": {
+    "item": "rc:pan_de_calabaza",
+    "count": 1
+  }
+}

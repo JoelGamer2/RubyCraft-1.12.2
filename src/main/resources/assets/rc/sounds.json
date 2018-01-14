@@ -1,0 +1,25 @@
+{
+    "block.mesa_de_conjuraciones_error":{
+	"category": "block",
+	"subtitle": "block.mesa_de_conjuraciones_error",
+	"sounds": [ {"name":"rc:block/mesa_de_conjuraciones/error", "stream": true} ]
+	},
+	
+    "block.mesa_de_conjuraciones_hechizo":{
+	"category": "block",
+	"subtitle": "block.mesa_de_conjuraciones_hechizo",
+	"sounds": [ {"name":"rc:block/mesa_de_conjuraciones/hechizo", "stream": true} ]
+	},
+	
+	"record.cancion_sans":{
+	"category": "records",
+	"subtitle": "record.cancion_sans",
+	"sounds": [ {"name":"rc:record/undertale/sans", "stream": true} ]
+	},
+	
+	"random.actualiza":{
+	"category": "master",
+	"subtitle": "random.actualiza",
+	"sounds": [ {"name":"rc:random/actualiza", "stream": true} ]
+	}
+}

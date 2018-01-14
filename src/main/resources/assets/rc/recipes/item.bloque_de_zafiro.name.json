@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "zzz",
+	"zzz",
+	"zzz"
+  ],
+  "key": {
+    "z": {
+      "item": "rc:zafiro"
+    }
+  },
+  "result": {
+    "item": "rc:bloque_de_zafiro",
+    "count": 1
+  }
+}

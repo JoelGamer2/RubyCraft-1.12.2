@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ppp",
+	"ppp",
+	"ppp"
+  ],
+  "key": {
+    "p": {
+      "item": "minecraft:flint"
+    }
+  },
+  "result": {
+    "item": "rc:bloque_de_pedernal",
+    "count": 1
+  }
+}

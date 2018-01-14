@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "rrr",
+	"rrr",
+	"rrr"
+  ],
+  "key": {
+    "r": {
+      "item": "rc:ruby"
+    }
+  },
+  "result": {
+    "item": "rc:bloque_de_ruby",
+    "count": 1
+  }
+}

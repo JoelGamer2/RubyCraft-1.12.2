@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "edr",
+	"dld",
+	"rde"
+  ],
+  "key": {
+  
+    "e": {
+      "item": "minecraft:ender_pearl"
+    },
+	
+	"d":{
+	"item": "minecraft:diamond"
+	},
+	
+	"r":{
+	"item": "minecraft:redstone"
+	},
+	
+	"l":{
+	"item": "minecraft:lava_bucket"
+	}
+	 
+  },
+  "result": {
+    "item": "rc:bloque_de_diamante_trol",
+    "count": 1
+  }
+}

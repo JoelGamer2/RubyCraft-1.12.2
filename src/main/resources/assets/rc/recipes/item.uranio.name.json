@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "sr",
+	"rh"
+  ],
+  "key": {
+    "r": {
+      "item": "rc:ruby"
+    },
+	
+	"s":{
+	"item": "minecraft:slime_ball"
+	},
+	
+	"h":{
+	"item": "minecraft:iron_ingot"
+	}
+  },
+  "result": {
+    "item": "rc:uranio",
+    "count": 2
+  }
+}

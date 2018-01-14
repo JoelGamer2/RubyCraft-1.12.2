@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "ladrillos",
+  "ingredients": [
+    {
+      "item": "minecraft:brick_block"
+    },
+	
+	{
+	  "item": "minecraft:water_bucket"
+	},
+	
+	{
+	  "item": "minecraft:water_bucket"
+	}
+	
+  ],
+  "result": {
+    "item": "rc:ladrillomarino",
+    "count": 4
+  }
+}

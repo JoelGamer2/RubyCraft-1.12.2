@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " rr",
+	" pr",
+	"p  "
+  ],
+  "key": {
+    "r": {
+      "item": "rc:ruby"
+    },
+	
+	"p":{
+	"item": "minecraft:stick"
+	}
+	
+  },
+  "result": {
+    "item": "rc:varita",
+    "count": 1
+  }
+}

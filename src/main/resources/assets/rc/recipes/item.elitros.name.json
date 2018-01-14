@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ooo",
+	"oeo",
+	"ooo"
+  ],
+  "key": {
+    "o": {
+      "item": "minecraft:gold_ingot"
+    },
+	
+	"e": {
+	  "item": "minecraft:elytra"
+	}
+  },
+  "result": {
+    "item": "rc:elitros",
+    "count": 1
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "type": "zafiro_shaped",
+  "pattern": [
+    "oroo",
+	"dcdo",
+	"oroo"
+  ],
+  "key": {
+    "o": {
+      "item": "minecraft:gold_ingot"
+    },
+	
+	"r": {
+	"item" : "minecraft:redstone"
+	},
+	
+	"d" : {
+    "item": "minecraft:diamond"
+	},
+	
+	"c" : {
+	"item": "minecraft:comparator"
+	}
+  },
+ 
+  "result": {
+    "item": "rc:bloque_de_actualizaciones",
+    "count": 1
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " pr",
+	"p r",
+	" pr"
+  ],
+  "key": {
+    "r": {
+      "item": "rc:ruby"
+    },
+	
+	"p": {
+	"item": "minecraft:stick"
+	}
+	
+  },
+  "result": {
+    "item": "rc:arco_de_ruby",
+    "count": 1
+  }
+}

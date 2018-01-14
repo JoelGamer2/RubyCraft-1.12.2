@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "oo",
+	"oo"
+  ],
+  "key": {
+    "o": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "result": {
+    "item": "rc:ladrillodeobsidiana",
+    "count": 4
+  }
+}

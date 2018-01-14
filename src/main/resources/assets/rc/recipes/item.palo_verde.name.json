@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "p",
+	"p"
+  ],
+  "key": {
+    "p": {
+      "item": "rc:madera_verde"
+    }
+  },
+  "result": {
+    "item": "rc:palo_verde",
+    "count": 4
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " a ",
+	"rdi",
+	" u "
+  ],
+  "key": {
+  
+    "d": {
+      "item": "minecraft:dye",
+	  "data": 0
+    },
+	
+	"r":{
+	"item": "minecraft:redstone"
+	},
+
+    "i":{
+    "item": "minecraft:iron_ingot"
+	
+    },
+
+    "u":{
+    "item": "rc:uranio"
+    },
+
+
+    "a":{
+    "item": "minecraft:water_bucket"
+    }	
+	 
+  },
+  "result": {
+    "item": "rc:colores",
+    "count": 1
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "rubys",
+  "pattern": [
+    "ppp",
+	"ppp",
+	"ppp"
+  ],
+  "key": {
+    "p": {
+      "item": "rc:pepita_de_ruby"
+    }
+  },
+  "result": {
+    "item": "rc:ruby",
+    "count": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ppp",
+	"ppp",
+	"ppp"
+  ],
+  "key": {
+    "p": {
+      "item": "rc:pepita_de_zafiro"
+    }
+  },
+  "result": {
+    "item": "rc:zafiro",
+    "count": 1
+  }
+}

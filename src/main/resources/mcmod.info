@@ -1,0 +1,16 @@
+[
+{
+  "modid": "rc",
+  "name": "RubyCraft",
+  "description": "Este mod añade nuevos objetos y crafteos que no existen en minecraft.",
+  "version": "Version",
+  "mcversion": "1.11.2",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Joel,Alejandro"],
+  "credits": "Miguel,Jesus,Jose",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

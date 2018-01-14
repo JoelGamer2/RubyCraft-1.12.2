@@ -1,0 +1,6 @@
+{   
+     "parent": "block/cube",
+	  "textures": {
+	    "up": "rc:blocks/calabaza_espectral_arriba","down": "rc:blocks/calabaza_espectral_arriba","south": "rc:blocks/calabaza_espectral_lados","north": "rc:blocks/calabaza_espectral_cara","east": "rc:blocks/calabaza_espectral_lados","west": "rc:blocks/calabaza_espectral_lados","particle": "rc:blocks/calabaza_espectral_lados"
+	}
+}

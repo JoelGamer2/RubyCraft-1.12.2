@@ -1,0 +1,6 @@
+{   
+     "parent": "block/cube",
+	  "textures": {
+	    "up": "rc:blocks/bloque_de_comandos","down": "rc:blocks/bloque_de_comandos","south": "rc:blocks/bloque_de_comandos","north": "rc:blocks/bloque_de_comandos","east": "rc:blocks/bloque_de_comandos","west": "rc:blocks/bloque_de_comandos","particle": "rc:blocks/bloque_de_comandos"
+	}
+}

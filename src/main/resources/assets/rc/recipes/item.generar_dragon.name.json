@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "mrp",
+	"rzr",
+	"prm"
+  ],
+  "key": {
+    "m": {
+      "item": "rc:manzana_de_diamante"
+    },
+	
+	"r": {
+	  "item": "rc:pepita_de_ruby"
+	},
+	
+	"p": {
+	"item": "rc:pepita_de_zafiro"
+	},
+	
+	"z": {
+	"item": "rc:zafiro"
+	}
+  },
+  "result": {
+    "item": "rc:generar_dragon",
+    "count": 1
+  }
+}

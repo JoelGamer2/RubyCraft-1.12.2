@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "pbz",
+	"bab",
+	"rbp"
+  ],
+  "key": {
+  
+    "p": {
+      "item": "rc:bloque_de_platino"
+    },
+	
+	"b":{
+	"item": "minecraft:iron_bars"
+	},
+
+    "z":{
+    "item": "rc:zafiro"
+	
+    },
+
+    "a":{
+    "item": "rc:barra_de_aluminio"
+    },
+
+    "r":{
+    "item": "rc:ruby"
+}	
+	 
+  },
+  "result": {
+    "item": "rc:bloque_reforzado_tier_1",
+    "count": 2
+  }
+}

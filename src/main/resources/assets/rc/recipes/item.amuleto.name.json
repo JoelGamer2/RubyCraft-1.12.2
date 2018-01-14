@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " m ",
+	"mcm",
+	" m "
+  ],
+   "key": {
+   
+    "m": {
+      "item": "rc:marcodelamuleto"
+    },
+  
+   "c": {
+      "item": "rc:colores"
+    }
+	
+},
+	
+  
+  "result": {
+    "item": "rc:amuleto",
+    "count": 1
+  }
+}

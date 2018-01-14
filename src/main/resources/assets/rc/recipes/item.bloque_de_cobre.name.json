@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ccc",
+	"ccc",
+	"ccc"
+  ],
+  "key": {
+    "c": {
+      "item": "rc:cobre"
+    }
+  },
+  "result": {
+    "item": "rc:bloque_de_cobre",
+    "count": 1
+  }
+}

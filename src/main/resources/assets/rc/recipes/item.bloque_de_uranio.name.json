@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "uuu",
+	"uuu",
+	"uuu"
+  ],
+  "key": {
+    "u": {
+      "item": "rc:uranio"
+    }
+  },
+  "result": {
+    "item": "rc:bloque_de_uranio",
+    "count": 1
+  }
+}

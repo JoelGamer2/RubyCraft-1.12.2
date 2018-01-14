@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "tct",
+	"ctc",
+	"tct"
+  ],
+  "key": {
+    "t": {
+      "item": "minecraft:dye",
+	  "data": 10
+    },
+	
+	"c": {
+	"item": "minecraft:glass"
+	}
+	
+  },
+  "result": {
+    "item": "rc:cristal_verde_lima",
+    "count": 4
+  }
+}

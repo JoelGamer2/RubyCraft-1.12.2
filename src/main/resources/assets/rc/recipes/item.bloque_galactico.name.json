@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ggg",
+	"ggg",
+	"ggg"
+  ],
+  "key": {
+    "g": {
+      "item": "rc:lingote_galactico"
+    }
+  },
+  "result": {
+    "item": "rc:bloque_galactico",
+    "count": 1
+  }
+}

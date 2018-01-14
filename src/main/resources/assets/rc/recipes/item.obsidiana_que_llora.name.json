@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " l ",
+	"lol",
+	" l "
+  ],
+  "key": {
+    "l": {
+      "item": "minecraft:dye",
+	  "data": 4
+    },
+	
+	"o": {
+	"item": "minecraft:obsidian"
+	}
+	
+  },
+  "result": {
+    "item": "rc:obsidiana_que_llora",
+    "count": 1
+  }
+}

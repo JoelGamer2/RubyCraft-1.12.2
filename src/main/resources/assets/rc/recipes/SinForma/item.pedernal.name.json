@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "rc:bloque_de_pedernal"
+    }
+  ],
+  "result": {
+    "item": "minecraft:flint",
+    "count": 9
+  }
+}

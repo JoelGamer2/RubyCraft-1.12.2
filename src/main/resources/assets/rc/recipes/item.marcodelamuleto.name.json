@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " b ",
+	"blb",
+	" b "
+  ],
+  "key": {
+    "b": {
+      "item": "minecraft:gold_block"
+    },
+	
+	"l":{
+	"item": "minecraft:gold_ingot"
+	
+	}
+	
+  },
+  "result": {
+    "item": "rc:marcodelamuleto",
+    "count": 1
+  }
+}
