@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "rc:bloque_de_cobre"
+    }
+  ],
+  "result": {
+    "item": "rc:cobre",
+    "count": 9
+  }
+}

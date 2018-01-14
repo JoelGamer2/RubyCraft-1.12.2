@@ -77,6 +77,8 @@ public class Crafteos {
 	    RegistrarCrafteoSinFormaItem(RItems.Pepita_de_Ruby);
 	    RegistrarCrafteoSinFormaBloque(Bloques.Ladrillo_Marino);
 	    RegistrarCrafteoSinFormaBloque(Bloques.Ladrillo_del_Bosque);
+	    RegistrarCrafteoSinFormaItem(RItems.zafiro);
+	    RegistrarCrafteoSinFormaItem(RItems.cobre);
 	    
 		//Horno
 		GameRegistry.addSmelting(RItems.BoladeResina, new ItemStack(RItems.Plastico, 1), 10.0F);
@@ -95,9 +97,6 @@ public class Crafteos {
     	
 		//Sin Forma
     	
-        GameRegistry.addShapelessRecipe(new ItemStack(RItems.ruby, 9), new Object[]{Bloques.bloque_de_ruby});
-        GameRegistry.addShapelessRecipe(new ItemStack(RItems.zafiro, 9), new Object[]{Bloques.Bloque_de_Zafiro});
-        GameRegistry.addShapelessRecipe(new ItemStack(RItems.cobre, 9), new Object[]{Bloques.bloque_de_cobre});
         GameRegistry.addShapelessRecipe(new ItemStack(Bloques.Tronco_Azul, 1), new Object[]{Blocks.LOG,Items.WATER_BUCKET});
 	    GameRegistry.addShapelessRecipe(new ItemStack(Bloques.Madera_Azul, 4), new Object[]{Bloques.Tronco_Azul});
 	    GameRegistry.addShapelessRecipe(new ItemStack(Bloques.Madera_Verde, 4), new Object[] {Bloques.Tronco_de_Madera_verde});

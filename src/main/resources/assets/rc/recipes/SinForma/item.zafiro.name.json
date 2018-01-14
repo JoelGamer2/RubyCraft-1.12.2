@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "rc:bloque_de_zafiro"
+    }
+  ],
+  "result": {
+    "item": "rc:zafiro",
+    "count": 9
+  }
+}
