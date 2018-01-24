@@ -79,6 +79,7 @@ public class Crafteos {
 	    RegistrarCrafteoSinFormaBloque(Bloques.Ladrillo_del_Bosque);
 	    RegistrarCrafteoSinFormaItem(RItems.zafiro);
 	    RegistrarCrafteoSinFormaItem(RItems.cobre);
+	    RegistrarCrafteoSinFormaBloque(Bloques.Madera_Azul);
 	    
 		//Horno
 		GameRegistry.addSmelting(RItems.BoladeResina, new ItemStack(RItems.Plastico, 1), 10.0F);
@@ -97,8 +98,6 @@ public class Crafteos {
     	
 		//Sin Forma
     	
-        GameRegistry.addShapelessRecipe(new ItemStack(Bloques.Tronco_Azul, 1), new Object[]{Blocks.LOG,Items.WATER_BUCKET});
-	    GameRegistry.addShapelessRecipe(new ItemStack(Bloques.Madera_Azul, 4), new Object[]{Bloques.Tronco_Azul});
 	    GameRegistry.addShapelessRecipe(new ItemStack(Bloques.Madera_Verde, 4), new Object[] {Bloques.Tronco_de_Madera_verde});
     	GameRegistry.addShapelessRecipe(new ItemStack(Bloques.Tronco_de_Madera_verde, 1), new Object[] {Blocks.LOG,Blocks.CACTUS});
     	GameRegistry.addShapelessRecipe(new ItemStack(Bloques.Bloque_de_Regeneracion, 4), new Object[]{Blocks.MAGMA,Items.GOLDEN_APPLE,Blocks.CACTUS,Blocks.CACTUS,Blocks.CACTUS});
