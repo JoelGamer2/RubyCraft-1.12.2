@@ -1,13 +1,12 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "group": "zafiro",
   "ingredients": [
     {
-      "item": "rc:bloque_de_zafiro"
+      "item": "rc:bloquedeenderpearld"
     }
   ],
   "result": {
-    "item": "rc:zafiro",
+    "item": "minecraft:ender_pearl",
     "count": 9
   }
 }

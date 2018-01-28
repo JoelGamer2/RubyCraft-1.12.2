@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "rc:bloque_de_regeneracion"
+    },
+	{
+      "item": "rc:bloque_de_regeneracion"
+    },
+	{
+      "item": "rc:bloque_de_regeneracion"
+    },
+	{
+      "item": "rc:bloque_de_regeneracion"
+    },
+	{
+      "item": "minecraft:poisonous_potato"
+    }
+
+  ],
+  "result": {
+    "item": "rc:bloque_de_veneno",
+    "count": 4
+  }
+}

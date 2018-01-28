@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "colorescuarzorubycraft",
+  "ingredients": [
+    {
+      "item": "minecraft:quartz_block",
+	  "data":1
+    },
+	 {
+      "item": "minecraft:quartz_block",
+	  "data":1
+    },
+	 {
+      "item": "minecraft:quartz_block",
+	  "data":1
+    },
+	 {
+      "item": "minecraft:quartz_block",
+	  "data":1
+    },
+	 {
+      "item": "minecraft:redstone"
+    }
+  ],
+  "result": {
+    "item": "rc:cuarzo_rojo",
+    "count": 4
+  }
+}

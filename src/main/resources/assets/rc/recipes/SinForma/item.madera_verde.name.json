@@ -1,13 +1,12 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "group": "zafiro",
   "ingredients": [
     {
-      "item": "rc:bloque_de_zafiro"
+      "item": "rc:tronco_de_madera_verde"
     }
   ],
   "result": {
-    "item": "rc:zafiro",
-    "count": 9
+    "item": "rc:madera_verde",
+    "count": 4
   }
 }

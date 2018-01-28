@@ -63,7 +63,7 @@ public class varita extends Item {
             {
                 if (block == Bloques.mesa_de_zafiro_basica)
                 {
-                    this.setBlock(itemstack, player, worldIn, pos, Bloques.bloque_de_actualizaciones.getDefaultState());
+                    this.setBlock(itemstack, player, worldIn, pos, Bloques.mesa_de_zafiro.getDefaultState());
                     return EnumActionResult.SUCCESS;
                 
             }

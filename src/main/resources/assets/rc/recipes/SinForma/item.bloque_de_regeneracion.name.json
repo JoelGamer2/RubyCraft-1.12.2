@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:golden_apple",
+	  "data": 0
+    },
+	
+	{
+	  "item": "minecraft:cactus"
+	},
+	
+	{
+	  "item": "minecraft:cactus"
+	},
+	
+	{
+	  "item": "minecraft:cactus"
+	},
+	
+	{
+	  "item": "minecraft:magma"
+	}
+  ],
+  "result": {
+    "item": "rc:bloque_de_regeneracion",
+    "count": 4
+  }
+}

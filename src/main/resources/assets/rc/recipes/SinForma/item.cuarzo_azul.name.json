@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "colorescuarzorubycraft",
+  "ingredients": [
+    {
+      "item": "minecraft:quartz_block",
+	  "data":1
+    },
+	 {
+      "item": "minecraft:quartz_block",
+	  "data":1
+    },
+	 {
+      "item": "minecraft:quartz_block",
+	  "data":1
+    },
+	 {
+      "item": "minecraft:quartz_block",
+	  "data":1
+    },
+	 {
+      "item": "minecraft:water_bucket"
+    }
+  ],
+  "result": {
+    "item": "rc:cuarzo_azul",
+    "count": 4
+  }
+}

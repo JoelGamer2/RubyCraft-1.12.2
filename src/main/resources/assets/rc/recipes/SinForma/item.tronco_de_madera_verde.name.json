@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:log",
+	  "data": 0
+    },
+	
+	{
+	
+	"item": "minecraft:cactus"
+	
+	}
+  ],
+  "result": {
+    "item": "rc:tronco_de_madera_verde",
+    "count": 1
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:sugar"
+    },
+	
+	 {
+      "item": "minecraft:sugar"
+     },
+	
+	 {
+      "item": "minecraft:sugar"
+     },
+	
+	 {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "result": {
+    "item": "rc:bloque_de_azucar",
+    "count": 1
+  }
+}

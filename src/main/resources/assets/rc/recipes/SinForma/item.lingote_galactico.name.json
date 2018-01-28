@@ -1,13 +1,12 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "group": "zafiro",
   "ingredients": [
     {
-      "item": "rc:bloque_de_zafiro"
+      "item": "rc:bloque_galactico"
     }
   ],
   "result": {
-    "item": "rc:zafiro",
+    "item": "rc:lingote_galactico",
     "count": 9
   }
 }

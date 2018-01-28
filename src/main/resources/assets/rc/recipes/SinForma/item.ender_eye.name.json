@@ -1,13 +1,12 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "group": "zafiro",
   "ingredients": [
     {
-      "item": "rc:bloque_de_zafiro"
+      "item": "rc:bloque_de_ojo_de_enderman"
     }
   ],
   "result": {
-    "item": "rc:zafiro",
+    "item": "minecraft:ender_eye",
     "count": 9
   }
 }

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "colorescuarzorubycraft",
+  "ingredients": [
+    {
+      "item": "minecraft:quartz_block",
+	  "data":1
+    },
+	 {
+      "item": "minecraft:quartz_block",
+	  "data":1
+    },
+	 {
+      "item": "minecraft:quartz_block",
+	  "data":1
+    },
+	 {
+      "item": "minecraft:quartz_block",
+	  "data":1
+    },
+	 {
+      "item": "minecraft:cactus"
+    }
+  ],
+  "result": {
+    "item": "rc:cuarzo_verde",
+    "count": 4
+  }
+}

@@ -8,6 +8,7 @@ import RubyCraft.Iniciar.Bloques;
 import RubyCraft.Iniciar.Herramientas;
 import RubyCraft.Iniciar.RItems;
 import net.minecraft.block.Block;
+import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -80,6 +81,22 @@ public class Crafteos {
 	    RegistrarCrafteoSinFormaItem(RItems.zafiro);
 	    RegistrarCrafteoSinFormaItem(RItems.cobre);
 	    RegistrarCrafteoSinFormaBloque(Bloques.Madera_Azul);
+	    RegistrarCrafteoSinFormaBloque(Bloques.Tronco_de_Madera_verde);
+	    RegistrarCrafteoSinFormaBloque(Bloques.Madera_Verde); 
+	    RegistrarCrafteoBloque(Bloques.Bloque_de_Regeneracion);
+	    RegistrarCrafteo(RItems.BoladeResina);
+	    RegistrarCrafteoBloque(Bloques.Bloque_de_azucar);
+	    RegistrarCrafteo(RItems.Pepita_de_Zafiro);    
+	    RegistrarCrafteo(Items.ENDER_PEARL);
+	    RegistrarCrafteo(Items.ENDER_EYE);
+	    RegistrarCrafteoBloque(Bloques.Bloque_de_veneno);
+	    RegistrarCrafteoBloque(Bloques.Cuarzo_azul);
+	    RegistrarCrafteoBloque(Bloques.Cuarzo_rojo);
+	    RegistrarCrafteoBloque(Bloques.Cuarzo_verde);
+	    RegistrarCrafteo(RItems.lingote_galactico);
+	    RegistrarCrafteoBloque(Bloques.calabaza_espectral);
+	    RegistrarCrafteoBloque(Blocks.PUMPKIN);
+	    RegistrarCrafteo(RItems.platino);
 	    
 		//Horno
 		GameRegistry.addSmelting(RItems.BoladeResina, new ItemStack(RItems.Plastico, 1), 10.0F);
@@ -90,34 +107,7 @@ public class Crafteos {
     	GameRegistry.addSmelting(Bloques.mena_de_zafiro_end, new ItemStack(RItems.zafiro, 1), 20.0F);
     	GameRegistry.addSmelting(Bloques.mena_de_platino, new ItemStack(RItems.platino, 1), 50.0F);
 		
-		/**
-		//Crafteos que no tiene que ver con el Mod
-		GameRegistry.addRecipe(new ItemStack(Items.GOLDEN_APPLE, 1, 1), new Object[]{"bbb","bmb","bbb",'b',Blocks.GOLD_BLOCK,'m',Items.APPLE});
-		GameRegistry.addRecipe(new ItemStack(Items.NETHER_STAR), new Object[]{"ccc","aaa","eaf",'c',new ItemStack(Items.SKULL,1,1),'a',Blocks.SOUL_SAND,'e',Items.DIAMOND_SWORD,'f',Items.BOW});
-       
-    	
-		//Sin Forma
-    	
-	    GameRegistry.addShapelessRecipe(new ItemStack(Bloques.Madera_Verde, 4), new Object[] {Bloques.Tronco_de_Madera_verde});
-    	GameRegistry.addShapelessRecipe(new ItemStack(Bloques.Tronco_de_Madera_verde, 1), new Object[] {Blocks.LOG,Blocks.CACTUS});
-    	GameRegistry.addShapelessRecipe(new ItemStack(Bloques.Bloque_de_Regeneracion, 4), new Object[]{Blocks.MAGMA,Items.GOLDEN_APPLE,Blocks.CACTUS,Blocks.CACTUS,Blocks.CACTUS});
-	    GameRegistry.addShapelessRecipe(new ItemStack(RItems.BoladeResina, 9), new Object[]{Blocks.COAL_BLOCK,Items.GOLD_NUGGET});
-    	GameRegistry.addShapelessRecipe(new ItemStack(Bloques.Bloque_de_azucar, 1), new Object[]{Items.SUGAR,Items.SUGAR,Items.SUGAR,Items.SUGAR});
-    	GameRegistry.addShapelessRecipe(new ItemStack(RItems.Pepita_de_Zafiro, 9), new Object[]{RItems.zafiro});
-    	GameRegistry.addShapelessRecipe(new ItemStack(Items.ENDER_PEARL, 9), new Object[]{Bloques.BloquedeEnderPearld});
-    	GameRegistry.addShapelessRecipe(new ItemStack(Items.ENDER_EYE, 9), new Object[]{Bloques.bloque_de_ojo_de_enderman});
-    	GameRegistry.addShapelessRecipe(new ItemStack(Bloques.Bloque_de_veneno, 4), new Object[]{Bloques.Bloque_de_Regeneracion,Bloques.Bloque_de_Regeneracion, Bloques.Bloque_de_Regeneracion, Bloques.Bloque_de_Regeneracion, Items.POISONOUS_POTATO});
-    	GameRegistry.addShapelessRecipe(new ItemStack(Bloques.Cuarzo_azul, 4), new Object[]{Blocks.QUARTZ_BLOCK,Blocks.QUARTZ_BLOCK,Blocks.QUARTZ_BLOCK,Blocks.QUARTZ_BLOCK,Items.WATER_BUCKET});
-    	GameRegistry.addShapelessRecipe(new ItemStack(Bloques.Cuarzo_verde, 4), new Object[]{Blocks.QUARTZ_BLOCK,Blocks.QUARTZ_BLOCK,Blocks.QUARTZ_BLOCK,Blocks.QUARTZ_BLOCK,Blocks.CACTUS});
-    	GameRegistry.addShapelessRecipe(new ItemStack(Bloques.Cuarzo_rojo, 4), new Object[]{Blocks.QUARTZ_BLOCK,Blocks.QUARTZ_BLOCK,Blocks.QUARTZ_BLOCK,Blocks.QUARTZ_BLOCK,Items.REDSTONE});
-    	GameRegistry.addShapelessRecipe(new ItemStack(RItems.lingote_galactico, 9), new Object[]{Bloques.bloque_galactico});
-        GameRegistry.addShapelessRecipe(new ItemStack(Bloques.calabaza_espectral, 2), new Object[]{Blocks.PUMPKIN, Blocks.PUMPKIN});
-    	GameRegistry.addShapelessRecipe(new ItemStack(Blocks.PUMPKIN, 2), new Object[]{Bloques.calabaza_espectral ,Bloques.calabaza_espectral});
-		GameRegistry.addShapelessRecipe(new ItemStack(RItems.platino,  9), new Object[]{Bloques.bloque_de_platino});
-    	//Horno
-	    
-    	
-    	
+		/**       
     	//Herramientas o Armaduras
     	
     	

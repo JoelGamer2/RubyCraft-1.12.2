@@ -1,13 +1,12 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "group": "zafiro",
   "ingredients": [
     {
-      "item": "rc:bloque_de_zafiro"
+      "item": "rc:zafiro"
     }
   ],
   "result": {
-    "item": "rc:zafiro",
+    "item": "rc:pepita_de_zafiro",
     "count": 9
   }
 }

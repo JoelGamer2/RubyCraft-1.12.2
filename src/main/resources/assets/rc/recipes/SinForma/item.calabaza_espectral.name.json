@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:pumpkin"
+    },
+	
+	{
+	  "item": "minecraft:pumpkin"
+	}
+  ],
+  "result": {
+    "item": "rc:calabaza_espectral",
+    "count": 2
+  }
+}

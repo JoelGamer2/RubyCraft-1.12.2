@@ -4,6 +4,7 @@ import org.apache.logging.log4j.LogManager;
 
 import RubyCraft.Actualizaciones.Buscar_Actualizaciones;
 import RubyCraft.Eventos.Evento;
+import RubyCraft.Generacion.OreGen;
 import RubyCraft.Generacion.Registrar_generaciones;
 import RubyCraft.Handles.RubyCraftSoundhandler;
 import RubyCraft.Iniciar.Armaduras;
@@ -18,6 +19,7 @@ import RubyCraft.VersionTrol.BuscarVersionTrol;
 import RubyCraft.proxy.CommonProxy;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.common.crafting.CraftingHelper;
+import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -25,6 +27,7 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 
 @Mod(modid = Referencia.MOD_ID, name = Referencia.NAME, version = Referencia.VERSION, acceptedMinecraftVersions = Referencia.ACCEPTED_VERSIONS)
@@ -85,6 +88,7 @@ public class RubyCraft {
 		
 		
 		ModificarCosasMineCraftVanilla.preinit();
+		GameRegistry.registerWorldGenerator(new OreGen(), 100);
 		
 		
 	}
