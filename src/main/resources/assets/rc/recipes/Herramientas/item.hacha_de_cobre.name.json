@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "oo ",
+	"op ",
+	" p "
+  ],
+  "key": {
+    "o": {
+      "item": "rc:cobre"
+    },
+	
+	"p": {
+	"item": "minecraft:stick"
+	}
+  },
+  "result": {
+    "item": "rc:hacha_de_cobre",
+    "count": 1
+  }
+}

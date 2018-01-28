@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " o ",
+	" p ",
+	" p "
+  ],
+  "key": {
+    "o": {
+      "item": "rc:ruby"
+    },
+	
+	"p": {
+	"item": "minecraft:stick"
+	}
+	
+  },
+  "result": {
+    "item": "rc:pala_de_ruby",
+    "count": 1
+  }
+}

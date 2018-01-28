@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ooo",
+	" p ",
+	" p "
+  ],
+  "key": {
+    "o": {
+      "item": "rc:cobre"
+    },
+	
+	"p": {
+	"item": "minecraft:stick"
+	}
+	
+  },
+  "result": {
+    "item": "rc:pico_de_cobre",
+    "count": 1
+  }
+}

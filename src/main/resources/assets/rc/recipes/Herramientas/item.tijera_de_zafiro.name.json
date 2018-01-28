@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  o",
+	" o "
+  ],
+  "key": {
+    "o": {
+      "item": "rc:zafiro"
+    }
+	
+  },
+  "result": {
+    "item": "rc:tijera_de_zafiro",
+    "count": 1
+  }
+}

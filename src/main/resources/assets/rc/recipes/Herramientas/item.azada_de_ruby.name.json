@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "oo ",
+	" p ",
+	" p "
+  ],
+  "key": {
+    "o": {
+      "item": "rc:ruby"
+    },
+	
+	"p": {
+	"item": "minecraft:stick"
+	}
+	
+  },
+  "result": {
+    "item": "rc:azada_de_ruby",
+    "count": 1
+  }
+}

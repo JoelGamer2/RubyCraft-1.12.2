@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  o",
+	" o "
+  ],
+  "key": {
+    "o": {
+      "item": "rc:cobre"
+    }
+	
+  },
+  "result": {
+    "item": "rc:tijera_de_cobre",
+    "count": 1
+  }
+}

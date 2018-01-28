@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "oo ",
+	"op ",
+	" p "
+  ],
+  "key": {
+    "o": {
+      "item": "rc:ruby"
+    },
+	
+	"p": {
+	"item": "minecraft:stick"
+	}
+  },
+  "result": {
+    "item": "rc:hacha_de_ruby",
+    "count": 1
+  }
+}

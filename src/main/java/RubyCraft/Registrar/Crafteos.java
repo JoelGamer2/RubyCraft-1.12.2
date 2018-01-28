@@ -54,8 +54,6 @@ public class Crafteos {
 		RegistrarCrafteo(RItems.palo_verde);
 		RegistrarCrafteoBloque(Bloques.obsidiana_que_llora);
 		RegistrarCrafteo(RItems.pan_de_calabaza);
-		RegistrarCrafteo(Herramientas.arco_de_ruby);
-	    RegistrarCrafteo(Herramientas.arco_de_zafiro);	
 		RegistrarCrafteoBloque(Bloques.cristal_verde_lima);
 		RegistrarCrafteoBloque(Bloques.cristal_azul_claro);
 		RegistrarCrafteoBloque(Bloques.bloque_de_caca);
@@ -98,6 +96,31 @@ public class Crafteos {
 	    RegistrarCrafteoBloque(Blocks.PUMPKIN);
 	    RegistrarCrafteo(RItems.platino);
 	    
+	    
+	    //Herramientas
+	    
+	    RegistrarCrafteo(Herramientas.Pico_de_ruby);
+	    RegistrarCrafteo(Herramientas.hacha_de_ruby);
+	    RegistrarCrafteo(Herramientas.pala_de_ruby);
+	    RegistrarCrafteo(Herramientas.azada_de_ruby);
+	    RegistrarCrafteo(Herramientas.espada_de_ruby);
+	    RegistrarCrafteo(Herramientas.tijera_de_ruby);
+	    RegistrarCrafteo(Herramientas.arco_de_ruby);
+	    
+	    RegistrarCrafteo(Herramientas.pico_de_zafiro);
+	    RegistrarCrafteo(Herramientas.hacha_de_zafiro);
+	    RegistrarCrafteo(Herramientas.pala_de_zafiro);
+	    RegistrarCrafteo(Herramientas.azada_de_zafiro);
+	    RegistrarCrafteo(Herramientas.espada_de_zafiro);
+	    RegistrarCrafteo(Herramientas.tijera_de_zafiro);
+	    RegistrarCrafteo(Herramientas.arco_de_zafiro);	
+	    
+	    RegistrarCrafteo(Herramientas.pico_de_cobre);
+	    RegistrarCrafteo(Herramientas.hacha_de_cobre);
+	    RegistrarCrafteo(Herramientas.pala_de_cobre);
+	    RegistrarCrafteo(Herramientas.azada_de_cobre);
+	    RegistrarCrafteo(Herramientas.espada_de_cobre);
+	    RegistrarCrafteo(Herramientas.tijera_de_cobre);
 		//Horno
 		GameRegistry.addSmelting(RItems.BoladeResina, new ItemStack(RItems.Plastico, 1), 10.0F);
     	GameRegistry.addSmelting(Bloques.mena_de_ruby, new ItemStack(RItems.ruby, 1), 10.0F);
@@ -109,11 +132,7 @@ public class Crafteos {
 		
 		/**       
     	//Herramientas o Armaduras
-    	
-    	
-    	Crafteos_Bases.Herramientas(RItems.cobre, Items.STICK, Herramientas.pico_de_cobre, Herramientas.espada_de_cobre, Herramientas.hacha_de_cobre, Herramientas.pala_de_cobre, Herramientas.azada_de_cobre, Herramientas.tijera_de_cobre);
-    	
-    	
+    	    	
     	Crafteos_Bases.Armaduras(RItems.uranio, Armaduras.casco_de_uranio, Armaduras.pechera_de_uranio, Armaduras.pantacas_de_uranio, Armaduras.botas_de_uranio);
     	
     	

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " o ",
+	" o ",
+	" p "
+  ],
+  "key": {
+    "o": {
+      "item": "rc:cobre"
+    },
+	
+	"p": {
+	"item": "minecraft:stick"
+	}
+	
+  },
+  "result": {
+    "item": "rc:espada_de_cobre",
+    "count": 1
+  }
+}

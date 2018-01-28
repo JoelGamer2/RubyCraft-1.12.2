@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ooo",
+	" p ",
+	" p "
+  ],
+  "key": {
+    "o": {
+      "item": "rc:zafiro"
+    },
+	
+	"p": {
+	"item": "minecraft:stick"
+	}
+	
+  },
+  "result": {
+    "item": "rc:pico_de_zafiro",
+    "count": 1
+  }
+}
