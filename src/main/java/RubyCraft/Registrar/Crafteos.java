@@ -144,16 +144,6 @@ public class Crafteos {
 		 Registros.addRecipeRuby(new ItemStack(Bloques.bloque_de_blaze, 1), new Object[]{"bbbbb","bbbbb","bbbbb","bbbbb","bbbbb",'b',Items.BLAZE_ROD});
          Registros.addRecipeRuby(new ItemStack(Bloques.cristal_verde_lima, 21), new Object[]{"vvvvv","vvtvv","vtvtv","vvtvv","vvvvv",'v',new ItemStack(Blocks.STAINED_GLASS,1,5),'t',new ItemStack(Items.DYE,1,2)});
          Registros.addRecipeRuby(new ItemStack(Bloques.cristal_azul_claro, 21), new Object[]{"aaaaa","aataa","atata","aataa","aaaaa",'a',new ItemStack(Blocks.STAINED_GLASS,1,3),'t',new ItemStack(Items.DYE,1,12)});
-         Registros.addRecipeRuby(new ItemStack(Herramientas.Pico_de_ruby, 1), new Object[]{"rrrrr","  p  ","  p  ","  p  ","  p  ",'r',RItems.ruby,'p',Items.STICK});
-         Registros.addRecipeRuby(new ItemStack(Herramientas.hacha_de_ruby, 1), new Object[]{" rr  "," rp  ","  p  ","  p  ","  p  ",'r',RItems.ruby,'p',Items.STICK});
-         Registros.addRecipeRuby(new ItemStack(Herramientas.azada_de_ruby, 1), new Object[]{" rr  ","  p  ","  p  ","  p  ","  p  ",'r',RItems.ruby,'p',Items.STICK});
-         Registros.addRecipeRuby(new ItemStack(Herramientas.pala_de_ruby, 1), new Object[]{"  r  ","  p  ","  p  ","  p  ","  p  ",'r',RItems.ruby,'p',Items.STICK});
-         Registros.addRecipeRuby(new ItemStack(Herramientas.espada_de_ruby, 1), new Object[]{"  r  ","  r  ","  r  ","  p  ","  p  ",'r',RItems.ruby,'p',Items.STICK});
-         Registros.addRecipeRuby(new ItemStack(Herramientas.pico_de_zafiro , 1), new Object[]{"zzzzz","  p  ","  p  ","  p  ","  p  ",'z',RItems.zafiro,'p',RItems.palo_verde});
-         Registros.addRecipeRuby(new ItemStack(Herramientas.hacha_de_zafiro, 1), new Object[]{" zz  "," zp  ","  p  ","  p  ","  p  ",'z',RItems.zafiro,'p',RItems.palo_verde});
-         Registros.addRecipeRuby(new ItemStack(Herramientas.azada_de_zafiro, 1), new Object[]{" zz  ","  p  ","  p  ","  p  ","  p  ",'z',RItems.zafiro,'p',RItems.palo_verde});
-         Registros.addRecipeRuby(new ItemStack(Herramientas.pala_de_zafiro, 1), new Object[]{"  z  ","  p  ","  p  ","  p  ","  p  ",'z',RItems.zafiro,'p',RItems.palo_verde});
-         Registros.addRecipeRuby(new ItemStack(Herramientas.espada_de_zafiro, 1), new Object[]{"  z  ","  z  ","  z  ","  p  ","  p  ",'z',RItems.zafiro,'p',RItems.palo_verde});
          Registros.addRecipeRuby(new ItemStack(Armaduras.casco_de_ruby, 1), new Object[]{"rrrrr","r   r","r   r",'r',RItems.ruby});
          Registros.addRecipeRuby(new ItemStack(Armaduras.pechera_de_ruby, 1), new Object[]{"r   r","rrrrr","rrrrr","rrrrr","rrrrr",'r',RItems.ruby});
          Registros.addRecipeRuby(new ItemStack(Armaduras.grebas_de_ruby, 1), new Object[]{"rrrrr","r   r","r   r","r   r","r   r",'r',RItems.ruby});
