@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "o o",
+	"ooo",
+	"ooo"
+  ],
+  "key": {
+    "o": {
+      "item": "rc:bloque_de_ruby"
+    }
+  },
+  "result": {
+    "item": "rc:pechera_de_ruby",
+    "count": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "o o",
+	"ooo",
+	"ooo"
+  ],
+  "key": {
+    "o": {
+      "item": "rc:uranio"
+    }
+  },
+  "result": {
+    "item": "rc:pechera_de_uranio",
+    "count": 1
+  }
+}

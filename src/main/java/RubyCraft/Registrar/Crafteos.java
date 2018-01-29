@@ -3,6 +3,7 @@ package RubyCraft.Registrar;
 import com.google.gson.JsonObject;
 
 import RubyCraft.Referencia;
+import RubyCraft.RubyCraft;
 import RubyCraft.Iniciar.Armaduras;
 import RubyCraft.Iniciar.Bloques;
 import RubyCraft.Iniciar.Herramientas;
@@ -24,16 +25,12 @@ public class Crafteos {
 	public static void IniciarTodo(){
 		
 		Crafteos_Normal();
-		//Iniciar_Crafteos_Mesa_de_Ruby();
-		//Iniciar_Crafteos_Mesa_Zafiro();
 		
 	}
 	
 	public static void Crafteos_Normal(){
 		
 		//ConForma
-		
-		RegistrarDescrafteoItem(RItems.ruby);
 		RegistrarCrafteoBloque(Bloques.bloque_de_ruby);	
 		RegistrarCrafteoBloque(Bloques.Ladrillo_de_obsidiana);
 		RegistrarCrafteo(RItems.amuleto);
@@ -71,6 +68,7 @@ public class Crafteos {
 		
 	    
 	    //SinForma
+		RegistrarCrafteoSinFormaItem(RItems.ruby);
 	    RegistrarCrafteoSinFormaItem(Items.FLINT);
 	    RegistrarCrafteoSinFormaItem(Items.BLAZE_ROD);
 	    RegistrarCrafteoSinFormaItem(RItems.Pepita_de_Ruby);
@@ -121,7 +119,25 @@ public class Crafteos {
 	    RegistrarCrafteo(Herramientas.azada_de_cobre);
 	    RegistrarCrafteo(Herramientas.espada_de_cobre);
 	    RegistrarCrafteo(Herramientas.tijera_de_cobre);
-		//Horno
+	    
+	    //Armaduras
+	    
+	    RegistrarCrafteo(Armaduras.casco_de_ruby);
+	    RegistrarCrafteo(Armaduras.pechera_de_ruby);
+	    RegistrarCrafteo(Armaduras.grebas_de_ruby);
+	    RegistrarCrafteo(Armaduras.botas_de_ruby);
+	    
+	    RegistrarCrafteo(Armaduras.casco_de_zafiro);
+	    RegistrarCrafteo(Armaduras.pechera_de_zafiro);
+	    RegistrarCrafteo(Armaduras.grebas_de_zafiro);
+	    RegistrarCrafteo(Armaduras.botas_de_zafiro);
+	    
+	    RegistrarCrafteo(Armaduras.casco_de_uranio);
+	    RegistrarCrafteo(Armaduras.pechera_de_uranio);
+	    RegistrarCrafteo(Armaduras.pantacas_de_uranio);
+	    RegistrarCrafteo(Armaduras.botas_de_uranio);
+	    
+	    //Horno
 		GameRegistry.addSmelting(RItems.BoladeResina, new ItemStack(RItems.Plastico, 1), 10.0F);
     	GameRegistry.addSmelting(Bloques.mena_de_ruby, new ItemStack(RItems.ruby, 1), 10.0F);
     	GameRegistry.addSmelting(Bloques.mena_de_zafiro, new ItemStack(RItems.zafiro, 1), 15.0F);
@@ -130,55 +146,29 @@ public class Crafteos {
     	GameRegistry.addSmelting(Bloques.mena_de_zafiro_end, new ItemStack(RItems.zafiro, 1), 20.0F);
     	GameRegistry.addSmelting(Bloques.mena_de_platino, new ItemStack(RItems.platino, 1), 50.0F);
 		
-		/**       
-    	//Herramientas o Armaduras
-    	    	
-    	Crafteos_Bases.Armaduras(RItems.uranio, Armaduras.casco_de_uranio, Armaduras.pechera_de_uranio, Armaduras.pantacas_de_uranio, Armaduras.botas_de_uranio);
-    	
-    	
-	}
-	
-	public static void Iniciar_Crafteos_Mesa_de_Ruby(){
+/**     
+  
+    
+ Estos Objetos no tienen Crafteo Aun porque o no funcionan Bien o directamente no tiene utilidad en esta Version  
+ Los Crafteos de la Version trol estan totalmente eliminados debido a que el equipo de desarrolo no saben ponerlos todavia
+ al igual que la mesa de ruby y mesa de zafiro que estan inutilizables debido a cambios de codigo en version de Forge
+ 	
+	     Crafteos_Mesa_de_Ruby
 		
          Registros.addRecipeRuby(new ItemStack(Bloques.mesa_de_zafiro_basica, 1), new Object[]{"zbbbz","bmmmb","bmdmb","bmmmb","zbbbz", 'z', RItems.zafiro, 'm', Blocks.CRAFTING_TABLE, 'd', Items.DIAMOND, 'b', Bloques.bloque_de_ruby});
 		 Registros.addRecipeRuby(new ItemStack(Bloques.bloque_de_blaze, 1), new Object[]{"bbbbb","bbbbb","bbbbb","bbbbb","bbbbb",'b',Items.BLAZE_ROD});
          Registros.addRecipeRuby(new ItemStack(Bloques.cristal_verde_lima, 21), new Object[]{"vvvvv","vvtvv","vtvtv","vvtvv","vvvvv",'v',new ItemStack(Blocks.STAINED_GLASS,1,5),'t',new ItemStack(Items.DYE,1,2)});
          Registros.addRecipeRuby(new ItemStack(Bloques.cristal_azul_claro, 21), new Object[]{"aaaaa","aataa","atata","aataa","aaaaa",'a',new ItemStack(Blocks.STAINED_GLASS,1,3),'t',new ItemStack(Items.DYE,1,12)});
-         Registros.addRecipeRuby(new ItemStack(Armaduras.casco_de_ruby, 1), new Object[]{"rrrrr","r   r","r   r",'r',RItems.ruby});
-         Registros.addRecipeRuby(new ItemStack(Armaduras.pechera_de_ruby, 1), new Object[]{"r   r","rrrrr","rrrrr","rrrrr","rrrrr",'r',RItems.ruby});
-         Registros.addRecipeRuby(new ItemStack(Armaduras.grebas_de_ruby, 1), new Object[]{"rrrrr","r   r","r   r","r   r","r   r",'r',RItems.ruby});
-         Registros.addRecipeRuby(new ItemStack(Armaduras.botas_de_ruby, 1), new Object[]{"r   r","r   r","rr rr",'r',RItems.ruby});
+       
          
-	}
+	
   
-	public static void Iniciar_Crafteos_Mesa_Zafiro(){
+	     Crafteos_Mesa_Zafiro
 		
-         Registros.addRecipeZafiro(new ItemStack(RItems.manzana_de_diamante, 1), new Object[]{"zodz","dmmo","ommd","zdoz",'z',RItems.zafiro,'o',Items.GOLDEN_APPLE,'d',Items.DIAMOND,'m',Items.APPLE});
-         Registros.addRecipeZafiro(new ItemStack(Armaduras.casco_de_zafiro ,1), new Object[]{"zzz","z z",'z',RItems.zafiro});
-         Registros.addRecipeZafiro(new ItemStack(Armaduras.pechera_de_zafiro ,1), new Object[]{"z z","zzz","zzz",'z',RItems.zafiro});
-         Registros.addRecipeZafiro(new ItemStack(Armaduras.grebas_de_zafiro ,1), new Object[]{"zzz","z z","z z",'z',RItems.zafiro});
-         Registros.addRecipeZafiro(new ItemStack(Armaduras.botas_de_zafiro ,1), new Object[]{"z z","z z",'z',RItems.zafiro});
          Registros.addRecipeZafiro(new ItemStack(Bloques.mesa_de_conjuraciones, 1), new Object[]{"cppu","varv","vzav","uppc",'c',Bloques.bloque_de_caca,'p',RItems.Plastico,'v',RItems.varita,'a',RItems.anillo,'u',RItems.uranio,'z',RItems.zafiro,'r',RItems.ruby});
          Registros.addRecipeZafiro(new ItemStack(RItems.molde_para_cofres, 2), new Object[]{"hpph","phcp","pchp","hpph",'h',Items.IRON_INGOT,'p',RItems.Pepita_de_Ruby,'c',Blocks.CHEST});
-	}
-	
-	public static void Crafteos_Version_Trol(){
 		
-		GameRegistry.addRecipe(new ItemStack(Blocks.PLANKS, 4), new Object[]{"mm","mm",'m',Blocks.PLANKS});
-		
-	}
-	
-	public static void IniciarCrafteosDiadelosInocentes() {
-		
-	}
-	
-	public static void IniciarCrafteosHallowen() {
-		
-	}
-	
-	public static void IniciarCrafteosNavidad() {
-		
-	}**/
+	**/
 	
 		   
     }
@@ -210,30 +200,6 @@ public class Crafteos {
 			
 		}
 
-public static void RegistrarDescrafteoBloque(Block name) {
-		
-		CraftingHelper.register(new ResourceLocation(Referencia.MOD_ID + ":" + name.getUnlocalizedName() + ".bdescrafteo.json"), new IRecipeFactory() {
-			
-			@Override
-			public IRecipe parse(JsonContext context, JsonObject json) {
-				
-				return CraftingHelper.getRecipe(json, context);
-			}
-		});
-}
-		public static void RegistrarDescrafteoItem(Item name) {
-			
-			CraftingHelper.register(new ResourceLocation(Referencia.MOD_ID + ":" + name.getUnlocalizedName() + ".idescrafteo.json"), new IRecipeFactory() {
-				
-				@Override
-				public IRecipe parse(JsonContext context, JsonObject json) {
-					
-					return CraftingHelper.getRecipe(json, context);
-				}
-			});
-		
-		}
-
 
 		public static void RegistrarCrafteoSinFormaItem(Item name) {
 			
@@ -260,8 +226,6 @@ public static void RegistrarDescrafteoBloque(Block name) {
 			});
 		
 		}
-		
-		
 		
 	}
 	

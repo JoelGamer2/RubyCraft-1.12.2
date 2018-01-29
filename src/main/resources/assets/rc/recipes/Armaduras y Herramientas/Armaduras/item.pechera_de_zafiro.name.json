@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "n n",
+	"ooo",
+	"ooo"
+  ],
+  "key": {
+  
+    "o": {
+      "item": "rc:bloque_de_zafiro"
+    },
+	
+	"n":{
+	   "item": "rc:bloque_de_ruby"
+	}
+  },
+  "result": {
+    "item": "rc:pechera_de_zafiro",
+    "count": 1
+  }
+}

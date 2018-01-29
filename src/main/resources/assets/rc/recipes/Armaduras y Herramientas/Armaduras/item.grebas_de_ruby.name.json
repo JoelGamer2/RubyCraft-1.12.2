@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ooo",
+	"o o",
+	"o o"
+  ],
+  "key": {
+    "o": {
+      "item": "rc:bloque_de_ruby"
+    }
+	
+  },
+  "result": {
+    "item": "rc:grebas_de_ruby",
+    "count": 1
+  }
+}

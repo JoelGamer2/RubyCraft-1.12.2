@@ -1,9 +1,9 @@
 package RubyCraft.Items;
 
 import RubyCraft.Referencia;
-import net.minecraft.item.Item;
+import RubyCraft.Bases.ItemSinUsoNingunoEnEstaVersion;
 
-public class molde_para_cofres extends Item {
+public class molde_para_cofres extends ItemSinUsoNingunoEnEstaVersion {
 
 	public molde_para_cofres(){
 		

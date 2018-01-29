@@ -1,11 +1,11 @@
 package RubyCraft.Bloques;
 
 import RubyCraft.Referencia;
-import net.minecraft.block.Block;
+import RubyCraft.Bases.BloqueSinUsoEnEstaVersion;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 
-public class mesa_de_zafiro_basica extends Block {
+public class mesa_de_zafiro_basica extends BloqueSinUsoEnEstaVersion {
 
 	public mesa_de_zafiro_basica() {
 		super(Material.WOOD);

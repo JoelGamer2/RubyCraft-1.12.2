@@ -2,8 +2,8 @@ package RubyCraft.Maquinas;
 
 import RubyCraft.Referencia;
 import RubyCraft.RubyCraft;
+import RubyCraft.Bases.BloqueSinUsoEnEstaVersion;
 import RubyCraft.Iniciar.Bloques;
-import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -13,7 +13,7 @@ import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class mesa_de_zafiro extends Block {
+public class mesa_de_zafiro extends BloqueSinUsoEnEstaVersion {
 
 	public mesa_de_zafiro() {
 		super(Material.WOOD);

@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ddd",
+	"zmz",
+	"zrz"
+  ],
+   "key": {
+   
+    "m": {
+      "item": "minecraft:apple"
+    },
+  
+   "z": {
+      "item": "rc:bloque_de_zafiro"
+    },
+	
+	"d":{
+	  "item": "minecraft:diamond_block"
+	},
+	
+	"r":{
+	  "item": "rc:bloque_de_ruby"
+	}
+	
+},
+	
+  
+  "result": {
+    "item": "rc:manzana_de_diamante",
+    "count": 1
+  }
+}

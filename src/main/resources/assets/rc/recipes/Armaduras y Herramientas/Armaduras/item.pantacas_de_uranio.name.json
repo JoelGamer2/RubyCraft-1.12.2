@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ooo",
+	"o o",
+	"o o"
+  ],
+  "key": {
+    "o": {
+      "item": "rc:uranio"
+    }
+	
+  },
+  "result": {
+    "item": "rc:pantacas_de_uranio",
+    "count": 1
+  }
+}

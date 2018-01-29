@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ooo",
+	"o o"
+  ],
+  "key": {
+    "o": {
+      "item": "rc:uranio"
+    }
+	
+  },
+  "result": {
+    "item": "rc:casco_de_uranio",
+    "count": 1
+  }
+}

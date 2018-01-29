@@ -3,7 +3,7 @@ package RubyCraft.Bloques;
 import java.util.Random;
 
 import RubyCraft.Referencia;
-import net.minecraft.block.Block;
+import RubyCraft.Bases.BloqueSinUsoEnEstaVersion;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -11,7 +11,7 @@ import net.minecraft.util.BlockRenderLayer;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class cristal_azul_claro extends Block {
+public class cristal_azul_claro extends BloqueSinUsoEnEstaVersion {
 
 	public cristal_azul_claro() {
 		super(Material.GLASS);

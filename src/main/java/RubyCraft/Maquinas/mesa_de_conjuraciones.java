@@ -1,6 +1,7 @@
 package RubyCraft.Maquinas;
 
 import RubyCraft.Referencia;
+import RubyCraft.Bases.BloqueSinUsoEnEstaVersion;
 import RubyCraft.Handles.RubyCraftSoundhandler;
 import RubyCraft.Iniciar.RItems;
 import net.minecraft.block.Block;
@@ -14,7 +15,7 @@ import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class mesa_de_conjuraciones extends Block {
+public class mesa_de_conjuraciones extends BloqueSinUsoEnEstaVersion {
 
 	public ItemStack stack;
 	

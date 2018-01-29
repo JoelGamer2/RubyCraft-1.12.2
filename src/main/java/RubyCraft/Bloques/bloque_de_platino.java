@@ -1,11 +1,11 @@
 package RubyCraft.Bloques;
 
 import RubyCraft.Referencia;
-import net.minecraft.block.Block;
+import RubyCraft.Bases.BloqueSinUsoEnEstaVersion;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 
-public class bloque_de_platino extends Block {
+public class bloque_de_platino extends BloqueSinUsoEnEstaVersion {
 
 	public bloque_de_platino() {
 		super(Material.IRON);
