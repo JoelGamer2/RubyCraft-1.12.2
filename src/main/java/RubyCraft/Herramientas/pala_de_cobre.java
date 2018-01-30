@@ -1,9 +1,7 @@
 package RubyCraft.Herramientas;
 
 import RubyCraft.Referencia;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemSpade;
-import net.minecraft.item.Item.ToolMaterial;
 
 public class pala_de_cobre extends ItemSpade {
 

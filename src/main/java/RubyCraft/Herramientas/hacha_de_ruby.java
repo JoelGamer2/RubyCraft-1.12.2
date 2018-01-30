@@ -1,22 +1,16 @@
 package RubyCraft.Herramientas;
 
-import com.google.common.collect.Multimap;
+import java.util.Set;
+
 import com.google.common.collect.Sets;
 
 import RubyCraft.Referencia;
-
-import java.util.Set;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.SharedMonsterAttributes;
-import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.init.Blocks;
-import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemAxe;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemSword;
 import net.minecraft.item.ItemTool;
 
 public class hacha_de_ruby extends ItemTool{

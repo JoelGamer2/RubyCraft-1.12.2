@@ -1,7 +1,6 @@
 package RubyCraft.Items;
 
 import RubyCraft.Referencia;
-import RubyCraft.RubyCraft;
 import RubyCraft.Handles.RubyCraftSoundhandler;
 import RubyCraft.Iniciar.RItems;
 import net.minecraft.entity.player.EntityPlayer;
@@ -11,7 +10,6 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.EnumParticleTypes;
-import net.minecraft.util.SoundCategory;
 import net.minecraft.world.World;
 
 public class Plastico extends Item {

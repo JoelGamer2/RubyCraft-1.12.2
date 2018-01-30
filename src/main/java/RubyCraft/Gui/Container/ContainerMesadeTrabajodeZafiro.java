@@ -1,9 +1,7 @@
 package RubyCraft.Gui.Container;
 
-import RubyCraft.Iniciar.Bloques;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
-import net.minecraft.init.Blocks;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.InventoryCraftResult;

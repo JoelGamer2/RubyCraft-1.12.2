@@ -1,11 +1,5 @@
 package RubyCraft.Generacion;
 
-import RubyCraft.Iniciar.Bloques;
-import net.minecraftforge.fml.common.FMLCommonHandler;
-import net.minecraftforge.fml.common.asm.transformers.deobf.FMLRemappingAdapter;
-import net.minecraftforge.fml.common.registry.ForgeRegistries;
-import net.minecraftforge.fml.common.registry.GameRegistry;
-
 public class Registrar_generaciones {
 
 	public static void Iniciar(){

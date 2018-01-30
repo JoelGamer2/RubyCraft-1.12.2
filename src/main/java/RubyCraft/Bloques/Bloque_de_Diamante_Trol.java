@@ -2,19 +2,12 @@ package RubyCraft.Bloques;
 
 import java.util.Random;
 
-import com.mojang.realmsclient.gui.ChatFormatting;
-
 import RubyCraft.Control_de_Version;
 import RubyCraft.Referencia;
 import RubyCraft.RubyCraft;
-import RubyCraft.Iniciar.Bloques;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockCactus;
 import net.minecraft.block.BlockCompressedPowered;
-import net.minecraft.block.BlockMagma;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
-import net.minecraft.block.properties.PropertyInteger;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
@@ -24,14 +17,10 @@ import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
-import scala.xml.Text;
 
 public class Bloque_de_Diamante_Trol extends BlockCompressedPowered{
 
@@ -60,9 +49,10 @@ public class Bloque_de_Diamante_Trol extends BlockCompressedPowered{
 		
        setUnlocalizedName(Referencia.RubyCraftBloques.BLOQUE_DE_DIAMANTE_TROL.getUnlocalizedName());
        setRegistryName(Referencia.RubyCraftBloques.BLOQUE_DE_DIAMANTE_TROL.getRegistryName());
+    	   
+    	   this.setHardness(1000.0F);
+           this.setHarvestLevel("pickaxe", 5);
        
-       this.setHardness(1000.0F);
-       this.setHarvestLevel("pickaxe", 5);
       
 	}	
 	
@@ -101,6 +91,7 @@ public class Bloque_de_Diamante_Trol extends BlockCompressedPowered{
 	
 	 public void updateTick(World worldIn, BlockPos pos, IBlockState state, Random rand){
 	        
+		 
 	    }
 	
 	 public AxisAlignedBB getCollisionBoundingBox(IBlockState blockState, IBlockAccess worldIn, BlockPos pos)
@@ -145,6 +136,9 @@ public class Bloque_de_Diamante_Trol extends BlockCompressedPowered{
 		    
 		 return true;
 		 
-	    }
+	 }
+	 
 	
+		
+	 
 }

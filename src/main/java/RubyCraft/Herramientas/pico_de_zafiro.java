@@ -1,7 +1,6 @@
 package RubyCraft.Herramientas;
 
 import RubyCraft.Referencia;
-import RubyCraft.RubyCraft;
 import net.minecraft.item.ItemPickaxe;
 
 public class pico_de_zafiro extends ItemPickaxe {

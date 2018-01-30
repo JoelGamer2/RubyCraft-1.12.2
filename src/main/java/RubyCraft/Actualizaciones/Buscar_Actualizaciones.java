@@ -39,6 +39,7 @@ public class Buscar_Actualizaciones {
 					String Mensaje3 = scanner.nextLine();
 					scanner.close();
 					if(!Referencia.VERSION.equals(UltimaVersion)){
+						RubyCraft.logger.info("============================================================");
 						RubyCraft.logger.info(UltimaVersion + " Esta es la Ultima Version de RubyCraft Disponible");
 						bloque_de_actualizaciones.UltimaVersion = UltimaVersion;
 						if(!Mensaje1.equals("")){
@@ -56,6 +57,7 @@ public class Buscar_Actualizaciones {
 							RubyCraft.logger.info(Mensaje3);
 							bloque_de_actualizaciones.Mensaje3 = Mensaje3;
 							TestearActualizaciones.Mensaje3 = Mensaje3;
+							RubyCraft.logger.info("============================================================");
 						}else{
 							TestearActualizaciones.Mensaje3a = false;
 						}
@@ -63,6 +65,7 @@ public class Buscar_Actualizaciones {
 							RubyCraft.logger.info("No hay cambios en actualizacion");
 							bloque_de_actualizaciones.Mensaje1 = "No Hay Cambios en actualizacion";
 							TestearActualizaciones.Mensaje1 = "No hay Cambios en actualizacion";
+							RubyCraft.logger.info("============================================================");
 						}
 						
 						TestearActualizaciones.UltimaVersion = UltimaVersion;

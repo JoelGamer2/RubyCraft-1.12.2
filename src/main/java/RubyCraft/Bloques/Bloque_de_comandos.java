@@ -1,9 +1,7 @@
 package RubyCraft.Bloques;
 
 import RubyCraft.Referencia;
-import RubyCraft.RubyCraft;
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockCommandBlock;
 import net.minecraft.block.material.Material;
 
 public class Bloque_de_comandos extends Block {

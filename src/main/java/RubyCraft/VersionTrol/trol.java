@@ -1,7 +1,5 @@
 package RubyCraft.VersionTrol;
 
-import com.mojang.realmsclient.gui.ChatFormatting;
-
 import RubyCraft.RubyCraft;
 import net.minecraft.client.Minecraft;
 import net.minecraft.util.text.TextComponentTranslation;

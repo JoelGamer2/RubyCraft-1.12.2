@@ -1,8 +1,6 @@
 package RubyCraft.Items;
 
 import RubyCraft.Referencia;
-import RubyCraft.RubyCraft;
-import RubyCraft.Iniciar.RItems;
 import net.minecraft.item.Item;
 
 public class anillo extends Item {

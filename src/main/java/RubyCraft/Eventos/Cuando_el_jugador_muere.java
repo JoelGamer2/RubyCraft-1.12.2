@@ -1,13 +1,10 @@
 package RubyCraft.Eventos;
 
-import net.minecraft.block.BlockBed;
-import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.text.TextComponentTranslation;
+import net.minecraft.util.text.TextFormatting;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
-import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.common.gameevent.TickEvent.ClientTickEvent;
 
 public class Cuando_el_jugador_muere {
 
@@ -17,7 +14,7 @@ public class Cuando_el_jugador_muere {
 		
 		if(event.getEntity() instanceof EntityPlayer){
 			
-			event.getEntity().sendMessage(new TextComponentTranslation(event.getEntity().getName() + " Has Muerto en:" + " X:" + (int)event.getEntity().posX + " ,Y:" + (int)event.getEntity().posY + " ,Z:" + (int)event.getEntity().posZ));
+			event.getEntity().sendMessage(new TextComponentTranslation(TextFormatting.BLUE + event.getEntity().getName() + TextFormatting.GOLD + " Has Muerto en:" + TextFormatting.GREEN + " X:" + TextFormatting.RED + (int)event.getEntity().posX + TextFormatting.GREEN + " ,Y:" + TextFormatting.RED + (int)event.getEntity().posY + TextFormatting.GREEN + " ,Z:" + TextFormatting.RED + (int)event.getEntity().posZ));
 			
 		}
 		

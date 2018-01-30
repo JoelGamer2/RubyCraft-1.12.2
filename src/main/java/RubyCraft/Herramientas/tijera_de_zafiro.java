@@ -1,7 +1,6 @@
 package RubyCraft.Herramientas;
 
 import RubyCraft.Referencia;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemShears;
 
 public class tijera_de_zafiro extends ItemShears {

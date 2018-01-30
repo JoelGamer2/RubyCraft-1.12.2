@@ -2,7 +2,6 @@ package RubyCraft;
 
 import RubyCraft.Iniciar.Bloques;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
 public class RubyTab extends CreativeTabs {

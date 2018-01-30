@@ -1,40 +1,12 @@
 package RubyCraft.Iniciar;
 
 import RubyCraft.RubyCraft;
-import RubyCraft.Bloques.Bloque_de_Diamante_Trol;
-import RubyCraft.Bloques.Bloque_de_Regeneracion;
-import RubyCraft.Bloques.Bloque_de_Zafiro;
-import RubyCraft.Bloques.Bloque_de_azucar;
-import RubyCraft.Bloques.Bloque_de_comandos;
-import RubyCraft.Bloques.Bloque_de_uranio;
-import RubyCraft.Bloques.Bloque_de_veneno;
-import RubyCraft.Bloques.BloquedeEnderPearld;
-import RubyCraft.Bloques.Bloqueluminiscente;
-import RubyCraft.Bloques.Ladrillo_Marino;
-import RubyCraft.Bloques.Ladrillo_de_obsidiana;
-import RubyCraft.Bloques.Ladrillo_del_Bosque;
-import RubyCraft.Bloques.Madera_Azul;
-import RubyCraft.Bloques.Madera_Verde;
-import RubyCraft.Bloques.Tronco_Azul;
-import RubyCraft.Bloques.Tronco_de_Madera_verde;
-import RubyCraft.Bloques.bloque_de_blaze;
-import RubyCraft.Bloques.ladrillo_de_andesita;
-import RubyCraft.Bloques.ladrillo_de_diorita;
-import RubyCraft.Bloques.ladrillo_de_granito;
-import RubyCraft.Bloques.ladrillo_de_infiedra;
-import RubyCraft.Bloques.bloque_de_ruby;
 import RubyCraft.Escaleras.escalera_de_andesita;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.inventory.GuiShulkerBox;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
-import net.minecraft.init.Blocks;
-import net.minecraft.inventory.ContainerShulkerBox;
-import net.minecraft.inventory.SlotShulkerBox;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
-import net.minecraft.item.ItemStack;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class Escaleras {
 	

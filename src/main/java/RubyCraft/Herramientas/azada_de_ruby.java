@@ -1,7 +1,6 @@
 package RubyCraft.Herramientas;
 
 import RubyCraft.Referencia;
-import RubyCraft.RubyCraft;
 import net.minecraft.item.ItemHoe;
 
 public class azada_de_ruby extends ItemHoe {

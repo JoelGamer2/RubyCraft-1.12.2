@@ -1,9 +1,7 @@
 package RubyCraft.Bloques;
 
 import RubyCraft.Referencia;
-import RubyCraft.Bases.BloqueSinUsoEnEstaVersion;
 import RubyCraft.Bases.Bloque_con_Faro;
-import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 

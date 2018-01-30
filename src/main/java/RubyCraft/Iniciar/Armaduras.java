@@ -1,21 +1,16 @@
 package RubyCraft.Iniciar;
 
+import RubyCraft.Referencia;
+import RubyCraft.RubyCraft;
+import RubyCraft.Bases.ArmadurasBases;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
-import net.minecraft.item.ItemArmor.ArmorMaterial;
-import net.minecraft.util.SoundEvent;
-import net.minecraftforge.client.event.sound.SoundSetupEvent;
 import net.minecraftforge.common.util.EnumHelper;
-import net.minecraftforge.fml.client.FMLClientHandler;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
-import net.minecraftforge.fml.common.registry.GameRegistry;
-import RubyCraft.Referencia;
-import RubyCraft.RubyCraft;
-import RubyCraft.Bases.ArmadurasBases;
 
 public class Armaduras {
 	

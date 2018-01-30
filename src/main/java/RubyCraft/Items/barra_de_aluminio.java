@@ -1,9 +1,9 @@
 package RubyCraft.Items;
 
 import RubyCraft.Referencia;
-import net.minecraft.item.Item;
+import RubyCraft.Bases.ItemSinUsoNingunoEnEstaVersion;
 
-public class barra_de_aluminio extends Item {
+public class barra_de_aluminio extends ItemSinUsoNingunoEnEstaVersion {
 
 	
 public barra_de_aluminio(){

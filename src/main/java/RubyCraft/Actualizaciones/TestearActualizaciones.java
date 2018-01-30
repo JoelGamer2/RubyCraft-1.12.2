@@ -4,7 +4,6 @@ import RubyCraft.Control_de_Version;
 import RubyCraft.Referencia;
 import RubyCraft.Handles.RubyCraftSoundhandler;
 import net.minecraft.client.Minecraft;
-import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;

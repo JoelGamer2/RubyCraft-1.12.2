@@ -3,7 +3,6 @@ package RubyCraft.Registrar;
 import com.google.gson.JsonObject;
 
 import RubyCraft.Referencia;
-import RubyCraft.RubyCraft;
 import RubyCraft.Iniciar.Armaduras;
 import RubyCraft.Iniciar.Bloques;
 import RubyCraft.Iniciar.Herramientas;

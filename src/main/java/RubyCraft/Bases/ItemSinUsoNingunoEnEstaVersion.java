@@ -18,7 +18,7 @@ public class ItemSinUsoNingunoEnEstaVersion extends Item {
 	@Override
 	public void addInformation(ItemStack stack, World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
 		tooltip.add(TextFormatting.RED + "Este item no tiene utilidad ninguna solo es de creativo por el momento                        ");
-		tooltip.add(TextFormatting.RED + "This Item doesnt Have any utility is only creative mode for the moment");
+		tooltip.add(TextFormatting.RED + "This Item doesn't Have any utility is only creative mode for the moment");
 	}
 	
 }

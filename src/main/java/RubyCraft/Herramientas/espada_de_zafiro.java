@@ -1,8 +1,6 @@
 package RubyCraft.Herramientas;
 
 import RubyCraft.Referencia;
-import RubyCraft.RubyCraft;
-import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.ItemSword;
 
 public class espada_de_zafiro extends ItemSword {

@@ -1,7 +1,6 @@
 package RubyCraft.Items;
 
 import RubyCraft.Referencia;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemFood;
 
 public class pan_de_calabaza extends ItemFood {

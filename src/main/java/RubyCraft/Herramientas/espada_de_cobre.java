@@ -1,9 +1,7 @@
 package RubyCraft.Herramientas;
 
 import RubyCraft.Referencia;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemSword;
-import net.minecraft.item.Item.ToolMaterial;
 
 public class espada_de_cobre extends ItemSword {
 
