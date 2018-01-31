@@ -1,11 +1,11 @@
 package RubyCraft.Bloques;
 
 import RubyCraft.Referencia;
-import net.minecraft.block.Block;
+import RubyCraft.Bases.BloqueSinUsoEnEstaVersion;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 
-public class calabaza_espectral extends Block {
+public class calabaza_espectral extends BloqueSinUsoEnEstaVersion {
 
 	public calabaza_espectral() {
 		super(Material.PLANTS);
