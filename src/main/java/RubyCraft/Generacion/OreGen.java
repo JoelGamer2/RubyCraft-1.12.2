@@ -21,11 +21,11 @@ public class OreGen implements IWorldGenerator
 	
 	public OreGen() 
 	{
-		MenaRuby = new WorldGenMinable(Bloques.mena_de_ruby.getDefaultState(), 10);
-		MenaRubyEnd = new WorldGenMinable(Bloques.mena_de_ruby_end.getDefaultState(), 10);
+		MenaRuby = new WorldGenMinable(Bloques.mena_de_ruby.getDefaultState(), 6);
+		MenaRubyEnd = new WorldGenMinable(Bloques.mena_de_ruby_end.getDefaultState(), 6);
 		
-		MenaZafiro = new WorldGenMinable(Bloques.mena_de_zafiro.getDefaultState(), 10);
-		MenaZafiroEnd = new WorldGenMinable(Bloques.mena_de_zafiro_end.getDefaultState(), 10);
+		MenaZafiro = new WorldGenMinable(Bloques.mena_de_zafiro.getDefaultState(), 4);
+		MenaZafiroEnd = new WorldGenMinable(Bloques.mena_de_zafiro_end.getDefaultState(), 4);
 	}
 
 	public void generate(Random rand, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) 

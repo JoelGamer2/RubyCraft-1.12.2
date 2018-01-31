@@ -3,7 +3,6 @@ package RubyCraft.Bloques;
 import java.util.Random;
 
 import RubyCraft.Referencia;
-import RubyCraft.Bases.BloqueSinUsoEnEstaVersion;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
