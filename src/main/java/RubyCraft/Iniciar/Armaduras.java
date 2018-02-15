@@ -2,6 +2,7 @@ package RubyCraft.Iniciar;
 
 import RubyCraft.Referencia;
 import RubyCraft.RubyCraft;
+import RubyCraft.ArmadurasConEventosRaros.casco_de_tortuga;
 import RubyCraft.Bases.ArmadurasBases;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -31,6 +32,9 @@ public class Armaduras {
 	public static Item pantacas_de_uranio;
 	public static Item botas_de_uranio;
 	
+	
+	public static Item casco_de_tortuga;
+	
 	public static Item elitros;
 	
 	//Material
@@ -38,6 +42,7 @@ public class Armaduras {
 	public static final ItemArmor.ArmorMaterial ZafiroArmorMaterial = EnumHelper.addArmorMaterial("ZafiroArmorMaterial", Referencia.MOD_ID + ":zafiro", 2000, new int[]{5,6,7,2}, 45, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F);	
 	public static final ItemArmor.ArmorMaterial UranioArmorMaterial = EnumHelper.addArmorMaterial("UranioArmorMaterial", Referencia.MOD_ID + ":uranio", 1000, new int[]{3,5,3,1}, 45, SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 2.0F);
 	public static final ItemArmor.ArmorMaterial elitromaterial  = EnumHelper.addArmorMaterial("elitromaterial", Referencia.MOD_ID + ":elitro", 256, new int[] {1,1,1,1}, 45, SoundEvents.ITEM_ARMOR_EQIIP_ELYTRA, 0.0F);
+	public static final ItemArmor.ArmorMaterial tortuga = EnumHelper.addArmorMaterial("tortuga", Referencia.MOD_ID + ":tortuga",  275, new int[] {2,2,2,2}, 45, SoundEvents.ITEM_ARMOR_EQIIP_ELYTRA, 0.0F);
 	
 	public static void Iniciar(){
 		
@@ -57,7 +62,9 @@ public class Armaduras {
      botas_de_uranio = new ArmadurasBases(UranioArmorMaterial, 1, EntityEquipmentSlot.FEET, "botas_de_uranio");
      
      elitros = new ArmadurasBases(elitromaterial, 1, EntityEquipmentSlot.CHEST, "elitros");
-		
+	 
+     casco_de_tortuga = new casco_de_tortuga(tortuga, 1 ,EntityEquipmentSlot.HEAD, "casco_de_tortuga");
+     
 	}
 	
 	public static void registrar(){
@@ -78,6 +85,7 @@ public class Armaduras {
 	RegistrarItem(botas_de_uranio);
 	
 	RegistrarItem(elitros);
+	RegistrarItem(casco_de_tortuga);
 	
 	}
 	
@@ -99,6 +107,8 @@ public class Armaduras {
    RegistrarRender(botas_de_uranio);
    
    RegistrarRender(elitros);
+   
+   RegistrarRender(casco_de_tortuga);
 		
 	}
 	
