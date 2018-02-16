@@ -12,6 +12,6 @@ public class Evento {
 		
 		FMLCommonHandler.instance().bus().register(new trol());
 		FMLCommonHandler.instance().bus().register(new TestearActualizaciones());
-		FMLCommonHandler.instance().bus().register(new Cuando_el_jugador_muere());		
+		FMLCommonHandler.instance().bus().register(new Todos_los_eventos());		
 	}
 }

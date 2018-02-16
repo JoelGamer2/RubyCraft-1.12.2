@@ -7,6 +7,7 @@ block.mesa_de_conjuraciones_error=Mesa de Conjuraciones Error
 block.mesa_de_conjuraciones_hechizo=Mesa de Conjuraciones Hechizo
 record.cancion_sans=Cancion Sans
 random.actualiza=Actualizacion Nueva
+master.casco_de_tortuga=Casco de Tortuga Equipado
 
 gui.Mesa_de_Ruby.name=Mesa de Ruby
 gui.Inventario.name=Inventario

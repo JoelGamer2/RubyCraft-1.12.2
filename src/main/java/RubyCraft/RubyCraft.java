@@ -3,6 +3,7 @@ package RubyCraft;
 import org.apache.logging.log4j.LogManager;
 
 import RubyCraft.Actualizaciones.Buscar_Actualizaciones;
+import RubyCraft.Config.RubyCraftConfig;
 import RubyCraft.Eventos.Evento;
 import RubyCraft.Generacion.OreGen;
 import RubyCraft.Generacion.Registrar_generaciones;
@@ -45,9 +46,13 @@ public class RubyCraft {
 	@SidedProxy(clientSide = Referencia.CLIENT_PROXY_CLASS, serverSide = Referencia.SERVER_PROXY_CLASS)
 	public static CommonProxy proxy;
 	
+	
 	@EventHandler
 	public void preinit(FMLPreInitializationEvent event){
 
+		RubyCraftConfig.preInit();
+		RubyCraftConfig.clientPreInit();
+		
 		if(VersionTrol == true){
 			
 			

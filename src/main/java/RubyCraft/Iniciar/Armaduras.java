@@ -4,6 +4,7 @@ import RubyCraft.Referencia;
 import RubyCraft.RubyCraft;
 import RubyCraft.ArmadurasConEventosRaros.casco_de_tortuga;
 import RubyCraft.Bases.ArmadurasBases;
+import RubyCraft.Handles.RubyCraftSoundhandler;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.init.SoundEvents;
@@ -42,7 +43,7 @@ public class Armaduras {
 	public static final ItemArmor.ArmorMaterial ZafiroArmorMaterial = EnumHelper.addArmorMaterial("ZafiroArmorMaterial", Referencia.MOD_ID + ":zafiro", 2000, new int[]{5,6,7,2}, 45, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F);	
 	public static final ItemArmor.ArmorMaterial UranioArmorMaterial = EnumHelper.addArmorMaterial("UranioArmorMaterial", Referencia.MOD_ID + ":uranio", 1000, new int[]{3,5,3,1}, 45, SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 2.0F);
 	public static final ItemArmor.ArmorMaterial elitromaterial  = EnumHelper.addArmorMaterial("elitromaterial", Referencia.MOD_ID + ":elitro", 256, new int[] {1,1,1,1}, 45, SoundEvents.ITEM_ARMOR_EQIIP_ELYTRA, 0.0F);
-	public static final ItemArmor.ArmorMaterial tortuga = EnumHelper.addArmorMaterial("tortuga", Referencia.MOD_ID + ":tortuga",  275, new int[] {2,2,2,2}, 45, SoundEvents.ITEM_ARMOR_EQIIP_ELYTRA, 0.0F);
+	public static final ItemArmor.ArmorMaterial tortuga = EnumHelper.addArmorMaterial("tortuga", Referencia.MOD_ID + ":tortuga",  275, new int[] {2,2,2,2}, 45, RubyCraftSoundhandler.casco_de_tortuga, 0.0F);
 	
 	public static void Iniciar(){
 		

@@ -5,6 +5,12 @@
 	"sounds": [ {"name":"rc:block/mesa_de_conjuraciones/error", "stream": true} ]
 	},
 	
+	 "master.casco_de_tortuga":{
+	"category": "master",
+	"subtitle": "master.casco_de_tortuga",
+	"sounds": [ {"name":"rc:armor/casco_de_tortuga", "stream": true} ]
+	},
+	
     "block.mesa_de_conjuraciones_hechizo":{
 	"category": "block",
 	"subtitle": "block.mesa_de_conjuraciones_hechizo",
