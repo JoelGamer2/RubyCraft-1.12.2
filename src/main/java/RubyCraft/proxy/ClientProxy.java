@@ -21,7 +21,6 @@ public class ClientProxy implements CommonProxy {
 		Armaduras.RegistrarRenders();
 		
 		NetworkRegistry.INSTANCE.registerGuiHandler(RubyCraft.instance, new GuiHandler());
-
 		
 	}
 

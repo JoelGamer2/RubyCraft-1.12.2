@@ -7,6 +7,7 @@ import java.util.List;
 
 import net.minecraftforge.common.config.Property;
 import RubyCraft.Referencia;
+import RubyCraft.comunicacionconserver;
 import RubyCraft.Eventos.Todos_los_eventos;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.config.Configuration;
@@ -21,12 +22,13 @@ public class RubyCraftConfig {
 	
 	
 	public static final String CATEGORY_NAME_EVENTOS = "Eventos_de_RubyCraft";
+	public static final String CATEGORY_NAME_EXTRAS = "Cosas_Extras";
 	
 	public static boolean ValorEventodeMuerte;
 	public static boolean MensajeActualizacion;
 	
 	public static void preInit() {
-		File configFile = new File(Loader.instance().getConfigDir(), "RubyCraft.cfg");
+		File configFile = new File(Loader.instance().getConfigDir(), "RubyCraft/RubyCraft.cfg");
 		config = new Configuration(configFile);
 		syncFromFiles();
 		
@@ -58,6 +60,7 @@ public class RubyCraftConfig {
 	private static void syncConfig(boolean loadFromConfigFile, boolean readFieldsFromConfig) {
 		if(loadFromConfigFile)
 			config.load();
+		
 		//Aqui va las Propertys
 		Property EventoMueteMensaje  = config.get(CATEGORY_NAME_EVENTOS, "Coordenas_al_morir", true);
 		EventoMueteMensaje.setComment("Esto si esta en false desactiva la vista de coordenadas de donde muriste. true por default significa que esta activado");
@@ -65,8 +68,12 @@ public class RubyCraftConfig {
 		Property Actualizacion  = config.get(CATEGORY_NAME_EVENTOS, "Mostrar_Notificaciones_de_Actualizaciones", true);
 		Actualizacion.setComment("Te notifica si esta en true de actualizaciones si lo pones en false en consola seguira apareciendo igualmente. Por defecto true");
 	    
+		Property Servercomunicacion = config.get(CATEGORY_NAME_EXTRAS, "comunicacion_con_el_server_time_of_timeout", 200);
+		Servercomunicacion.setComment("Si lo pones en 0 se desactivara la comunicacion con el servidor de rubycraft si lo pones mas alto de 0 estara activado y sera el timepo de espera por si el servidor a lento es recomendable o desactivarlo o dejarlo como esta porque el sever no esta 24h a si que. DEFAULT:200");
+		
 		//Ordena
 		List<String> propertyOrderBlocks = new ArrayList<String>();
+		List<String> propertyOrderExtras = new ArrayList<String>();
 		
 		//Registra al archivo la config
 		propertyOrderBlocks.add(EventoMueteMensaje.getName());
@@ -74,11 +81,14 @@ public class RubyCraftConfig {
 		
 		//Las categorias
 		config.setCategoryPropertyOrder(CATEGORY_NAME_EVENTOS, propertyOrderBlocks);
+		config.setCategoryPropertyOrder(CATEGORY_NAME_EXTRAS, propertyOrderExtras);
  		
 		if(readFieldsFromConfig) {
 			//Para que lea valores
 			ValorEventodeMuerte = EventoMueteMensaje.getBoolean(); 
 			MensajeActualizacion = Actualizacion.getBoolean();
+			comunicacionconserver.ValorTimeOut = Servercomunicacion.getInt();
+			
 		}
 		
 		EventoMueteMensaje.set(ValorEventodeMuerte);

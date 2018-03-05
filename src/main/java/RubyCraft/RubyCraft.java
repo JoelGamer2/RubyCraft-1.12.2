@@ -1,5 +1,8 @@
 package RubyCraft;
 
+import java.io.IOException;
+import java.net.MalformedURLException;
+
 import org.apache.logging.log4j.LogManager;
 
 import RubyCraft.Actualizaciones.Buscar_Actualizaciones;
@@ -17,6 +20,7 @@ import RubyCraft.Registrar.Crafteos;
 import RubyCraft.Registrar.ModificarCosasMineCraftVanilla;
 import RubyCraft.VersionTrol.BuscarVersionTrol;
 import RubyCraft.proxy.CommonProxy;
+import io.netty.handler.timeout.TimeoutException;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -26,6 +30,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.relauncher.Side;
 
 
 @Mod(modid = Referencia.MOD_ID, name = Referencia.NAME, version = Referencia.VERSION, acceptedMinecraftVersions = Referencia.ACCEPTED_VERSIONS)
@@ -35,6 +40,7 @@ public class RubyCraft {
 	public static boolean Navidad = false;
 	public static boolean Hallowen = false;
 	public static boolean Dia_de_Los_Inocentes = false;
+	public static boolean es_un_cliente_y_no_un_server = false;
 	
 	public static final org.apache.logging.log4j.Logger logger = LogManager.getFormatterLogger("RubyCraft");
 	
@@ -114,10 +120,16 @@ public class RubyCraft {
 	}
 	
 	@EventHandler
-	public void postinit(FMLPostInitializationEvent event){
-	
-
-		
+	public void postinit(FMLPostInitializationEvent event) throws Exception{
+       if(event.getSide()==Side.CLIENT) {
+    	 comunicacionconserver.IntentarContactarconelServer();
+    	 RubyCraft.logger.info("DETECTADO:CLIENTE");
+    	 es_un_cliente_y_no_un_server = true;
+		}else if(event.getSide()==Side.SERVER) {
+			RubyCraft.logger.info("DETECTADO:SERVER Desactivando algunas cosas que pueden llevar crash en el server");
+			es_un_cliente_y_no_un_server = false;
+		}
+	   
 		if(VersionTrol == true){
 			
 		}else{
