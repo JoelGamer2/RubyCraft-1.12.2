@@ -19,6 +19,7 @@ public class OreGen implements IWorldGenerator
 	private WorldGenerator MenaZafiro;
 	private WorldGenerator MenaZafiroEnd;
 	
+	
 	public OreGen() 
 	{
 		MenaRuby = new WorldGenMinable(Bloques.mena_de_ruby.getDefaultState(), 6);
@@ -26,6 +27,7 @@ public class OreGen implements IWorldGenerator
 		
 		MenaZafiro = new WorldGenMinable(Bloques.mena_de_zafiro.getDefaultState(), 4);
 		MenaZafiroEnd = new WorldGenMinable(Bloques.mena_de_zafiro_end.getDefaultState(), 4);
+		
 	}
 
 	public void generate(Random rand, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) 

@@ -32,6 +32,8 @@ import RubyCraft.Bloques.bloque_de_ruby;
 import RubyCraft.Bloques.bloque_galactico;
 import RubyCraft.Bloques.bloque_reforzado_tier_1;
 import RubyCraft.Bloques.calabaza_espectral;
+import RubyCraft.Bloques.coral_azul;
+import RubyCraft.Bloques.coral_azul_muerto;
 import RubyCraft.Bloques.cristal_azul_claro;
 import RubyCraft.Bloques.cristal_verde_lima;
 import RubyCraft.Bloques.generar_dragon;
@@ -105,7 +107,9 @@ public class Bloques {
     public static Block bloque_de_platino;
     public static Block mena_de_platino;
     public static Block bloque_de_actualizaciones;
-
+    public static Block coral_azul;
+    public static Block coral_azul_muerto;
+    
     //Interfaces
     
     public static final int guiIDMesadeTrabajodeRuby = 0;
@@ -160,6 +164,8 @@ public class Bloques {
         mena_de_platino = new mena_de_platino();
         bloque_de_actualizaciones = new bloque_de_actualizaciones();
         mesa_de_zafiro = new mesa_de_zafiro();
+        coral_azul = new coral_azul();
+        coral_azul_muerto = new coral_azul_muerto();
        
 	}
 	public static void Registrar(){
@@ -211,6 +217,8 @@ public class Bloques {
 		RegistrarBloque(mena_de_platino);
 		RegistrarBloque(bloque_de_actualizaciones);
 		RegistrarBloque(mesa_de_zafiro);
+		RegistrarBloque(coral_azul);
+		RegistrarBloque(coral_azul_muerto);
 
 	}
 	
@@ -263,6 +271,8 @@ public class Bloques {
 	    RegistrarRenderizado(mena_de_platino);
 	    RegistrarRenderizado(bloque_de_actualizaciones);
 	    RegistrarRenderizado(mesa_de_zafiro);
+	    RegistrarRenderizado(coral_azul);
+	    RegistrarRenderizado(coral_azul_muerto);
 	}
 	
       private static void RegistrarBloque(Block block){

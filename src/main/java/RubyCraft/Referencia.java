@@ -103,6 +103,11 @@ public class Referencia {
         BLOQUE_DE_PLATINO("bloque_de_platino","bloque_de_platino"),
         MENA_DE_PLATINO("mena_de_platino","mena_de_platino"),
         BLOQUE_DE_ACTUALIZACIONES("bloque_de_actualizaciones","bloque_de_actualizaciones"),
+        
+        
+        //Corales
+        CORAL_AZUL("coral_azul","coral_azul"),
+        CORAL_AZUL_MUERTO("coral_azul_muerto","coral_azul_muerto"),
 		
 		;
 		private String UnlocalizedName;
