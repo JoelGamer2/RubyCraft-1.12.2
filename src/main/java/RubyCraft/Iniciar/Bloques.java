@@ -32,8 +32,16 @@ import RubyCraft.Bloques.bloque_de_ruby;
 import RubyCraft.Bloques.bloque_galactico;
 import RubyCraft.Bloques.bloque_reforzado_tier_1;
 import RubyCraft.Bloques.calabaza_espectral;
+import RubyCraft.Bloques.coral_amarillo;
+import RubyCraft.Bloques.coral_amarillo_muerto;
 import RubyCraft.Bloques.coral_azul;
 import RubyCraft.Bloques.coral_azul_muerto;
+import RubyCraft.Bloques.coral_morado;
+import RubyCraft.Bloques.coral_morado_muerto;
+import RubyCraft.Bloques.coral_rojo;
+import RubyCraft.Bloques.coral_rojo_muerto;
+import RubyCraft.Bloques.coral_rosa;
+import RubyCraft.Bloques.coral_rosa_muerto;
 import RubyCraft.Bloques.cristal_azul_claro;
 import RubyCraft.Bloques.cristal_verde_lima;
 import RubyCraft.Bloques.generar_dragon;
@@ -107,8 +115,18 @@ public class Bloques {
     public static Block bloque_de_platino;
     public static Block mena_de_platino;
     public static Block bloque_de_actualizaciones;
+    
+    //corales
     public static Block coral_azul;
     public static Block coral_azul_muerto;
+    public static Block coral_amarillo;
+    public static Block coral_amarillo_muerto;
+    public static Block coral_morado;
+    public static Block coral_morado_muerto;
+    public static Block coral_rojo;
+    public static Block coral_rojo_muerto;
+    public static Block coral_rosa;
+    public static Block coral_rosa_muerto;
     
     //Interfaces
     
@@ -164,9 +182,18 @@ public class Bloques {
         mena_de_platino = new mena_de_platino();
         bloque_de_actualizaciones = new bloque_de_actualizaciones();
         mesa_de_zafiro = new mesa_de_zafiro();
+        
+        //corales
         coral_azul = new coral_azul();
         coral_azul_muerto = new coral_azul_muerto();
-       
+        coral_amarillo = new coral_amarillo();
+        coral_amarillo_muerto  = new coral_amarillo_muerto();
+        coral_morado  = new coral_morado();
+        coral_morado_muerto  = new coral_morado_muerto();
+        coral_rojo  = new coral_rojo();
+        coral_rojo_muerto  = new coral_rojo_muerto();
+        coral_rosa  = new coral_rosa();
+        coral_rosa_muerto  = new coral_rosa_muerto();
 	}
 	public static void Registrar(){
 		
@@ -217,8 +244,18 @@ public class Bloques {
 		RegistrarBloque(mena_de_platino);
 		RegistrarBloque(bloque_de_actualizaciones);
 		RegistrarBloque(mesa_de_zafiro);
+		
+		//corales
 		RegistrarBloque(coral_azul);
 		RegistrarBloque(coral_azul_muerto);
+		RegistrarBloque(coral_amarillo);
+	    RegistrarBloque( coral_amarillo_muerto);
+	    RegistrarBloque( coral_morado);
+	    RegistrarBloque(coral_morado_muerto);
+	    RegistrarBloque( coral_rojo);
+	    RegistrarBloque( coral_rojo_muerto);
+	    RegistrarBloque( coral_rosa);
+	    RegistrarBloque( coral_rosa_muerto);
 
 	}
 	
@@ -271,8 +308,18 @@ public class Bloques {
 	    RegistrarRenderizado(mena_de_platino);
 	    RegistrarRenderizado(bloque_de_actualizaciones);
 	    RegistrarRenderizado(mesa_de_zafiro);
+	    
+	    //corales
 	    RegistrarRenderizado(coral_azul);
 	    RegistrarRenderizado(coral_azul_muerto);
+	    RegistrarRenderizado(coral_amarillo);
+	    RegistrarRenderizado( coral_amarillo_muerto);
+	    RegistrarRenderizado( coral_morado);
+	    RegistrarRenderizado(coral_morado_muerto);
+	    RegistrarRenderizado( coral_rojo);
+	    RegistrarRenderizado( coral_rojo_muerto);
+	    RegistrarRenderizado( coral_rosa);
+	    RegistrarRenderizado( coral_rosa_muerto);
 	}
 	
       private static void RegistrarBloque(Block block){

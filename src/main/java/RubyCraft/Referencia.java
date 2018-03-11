@@ -108,6 +108,14 @@ public class Referencia {
         //Corales
         CORAL_AZUL("coral_azul","coral_azul"),
         CORAL_AZUL_MUERTO("coral_azul_muerto","coral_azul_muerto"),
+    	CORAL_AMARILLO("coral_amarillo","coral_amarillo"),
+        CORAL_AMARILLO_MUERTO("coral_amarillo_muerto","coral_amarillo_muerto"),
+        CORAL_MORADO("coral_morado","coral_morado"),
+        CORAL_MORADO_MUERTO("coral_morado_muerto","coral_morado_muerto"),
+        CORAL_ROJO("coral_rojo","coral_rojo"),
+        CORAL_ROJO_MUERTO("coral_rojo_muerto","coral_rojo_muerto"),
+        CORAL_ROSA("coral_rosa","coral_rosa"),
+        CORAL_ROSA_MUERTO("coral_rosa_muerto","coral_rosa_muerto"),
 		
 		;
 		private String UnlocalizedName;

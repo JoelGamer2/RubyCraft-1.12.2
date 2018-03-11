@@ -9,15 +9,15 @@ import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class coral_azul extends Block {
+public class coral_morado extends Block {
 	
 	
-	public coral_azul() {
+	public coral_morado() {
 		super(Material.ROCK);
 		
 		
-		setUnlocalizedName(Referencia.RubyCraftBloques.CORAL_AZUL.getUnlocalizedName());
-		setRegistryName(Referencia.RubyCraftBloques.CORAL_AZUL.getRegistryName());
+		setUnlocalizedName(Referencia.RubyCraftBloques.CORAL_MORADO.getUnlocalizedName());
+		setRegistryName(Referencia.RubyCraftBloques.CORAL_MORADO.getRegistryName());
 		
 		setHardness(1.5F);
 		setResistance(2.0F);
@@ -45,7 +45,7 @@ public class coral_azul extends Block {
 												if(!(world.getBlockState(pos.up()).getBlock() == Blocks.FLOWING_WATER)) {
 													if(!(world.getBlockState(pos.down()).getBlock() == Blocks.FLOWING_WATER)) {
 								
-					                                     world.setBlockState(pos, Bloques.coral_azul_muerto.getDefaultState(), 2);
+					                                     world.setBlockState(pos, Bloques.coral_morado_muerto.getDefaultState(), 2);
 						    	   }
 					        	}
 				    	      }
@@ -80,7 +80,7 @@ public class coral_azul extends Block {
 												if(!(world.getBlockState(pos.up()).getBlock() == Blocks.FLOWING_WATER)) {
 													if(!(world.getBlockState(pos.down()).getBlock() == Blocks.FLOWING_WATER)) {
 								
-					    world.setBlockState(pos, Bloques.coral_azul_muerto.getDefaultState(), 2);
+					    world.setBlockState(pos, Bloques.coral_morado_muerto.getDefaultState(), 2);
 						    	   }
 					        	}
 				    	      }
