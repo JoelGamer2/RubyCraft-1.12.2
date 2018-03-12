@@ -33,12 +33,12 @@ public class TestearActualizaciones {
 			Minecraft.getMinecraft().player.sendMessage(new TextComponentTranslation(TextFormatting.GRAY + "[" + TextFormatting.GREEN + "RubyCraft" + TextFormatting.GRAY + "] " + TextFormatting.GOLD + Mensaje3));
 			}
 			Iniciadosesion = true;
-		}else if(Control_de_Version.Version_de_desarrollador == true && !Iniciadosesion && Minecraft.getMinecraft().currentScreen == null && RubyCraftConfig.MensajeActualizacion == true && !Buscar_Actualizaciones.URLNOVALIDAERROR) {
+		}else if(Control_de_Version.Version_de_desarrollador == true && !Iniciadosesion && Minecraft.getMinecraft().currentScreen == null && RubyCraftConfig.MensajeActualizacion == true) {
 			
 			Minecraft.getMinecraft().player.sendMessage(new TextComponentTranslation(TextFormatting.GRAY + "[" + TextFormatting.GREEN + "RubyCraft" + TextFormatting.GRAY + "] " + TextFormatting.GOLD + Minecraft.getMinecraft().player.getName() + " Cuidado esta es la DeveloperBuild " + TextFormatting.GOLD + "puede ocurrir muchos bugs Version: " + TextFormatting.RED + Referencia.VERSION + TextFormatting.RED + " INDEV"));
             Minecraft.getMinecraft().player.playSound(RubyCraftSoundhandler.actualiza, 1.0F, 1.0F);
 			Iniciadosesion = true;
-		}else if(!Iniciadosesion && Minecraft.getMinecraft().currentScreen == null && Buscar_Actualizaciones.URLNOVALIDAERROR) {
+		}if(!Iniciadosesion && Minecraft.getMinecraft().currentScreen == null && Buscar_Actualizaciones.URLNOVALIDAERROR && !Control_de_Version.Version_de_desarrollador) {
 			Minecraft.getMinecraft().player.sendMessage(new TextComponentTranslation(TextFormatting.GRAY + "[" + TextFormatting.GREEN + "RubyCraft" + TextFormatting.GRAY + "] " + TextFormatting.GOLD + Minecraft.getMinecraft().player.getName() + " No se pudo encontrar actualizaciones " + TextFormatting.GOLD + "error de conexion" + TextFormatting.RED));
 			Iniciadosesion = true;
 
