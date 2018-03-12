@@ -13,6 +13,7 @@ public class Buscar_Actualizaciones {
 
 	private static final String Actualizacion_Url = "https://www.dropbox.com/s/fan0ya9zg5m10y9/RubyCraft-Updates.txt?raw=1";
 	private static boolean NuevaVersion = false;
+	public static boolean URLNOVALIDAERROR = false;
 	
 	public static void MirarActualizaciones(){
 		new Thread("Actualizaciones"){
@@ -38,7 +39,7 @@ public class Buscar_Actualizaciones {
 					String Mensaje2 = scanner.nextLine();
 					String Mensaje3 = scanner.nextLine();
 					scanner.close();
-					if(!Referencia.VERSION.equals(UltimaVersion)){
+					if(!Referencia.VERSION.equals(UltimaVersion) && !URLNOVALIDAERROR){
 						RubyCraft.logger.info("============================================================");
 						RubyCraft.logger.info(UltimaVersion + " Esta es la Ultima Version de RubyCraft Disponible");
 						bloque_de_actualizaciones.UltimaVersion = UltimaVersion;
@@ -72,9 +73,11 @@ public class Buscar_Actualizaciones {
 						FijarNuevaVersion();
 					}
 				} catch (MalformedURLException e) {
-					System.err.println("La Url No Sirve");
+					URLNOVALIDAERROR = true;
+					
 				} catch (IOException e) {
-				   System.out.println("Error 9090");
+					RubyCraft.logger.info("Error al buscar actualizaciones: " + e);
+					URLNOVALIDAERROR = true;
 				}
 			}
 			

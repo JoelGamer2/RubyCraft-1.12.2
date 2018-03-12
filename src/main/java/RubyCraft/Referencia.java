@@ -117,6 +117,11 @@ public class Referencia {
         CORAL_ROSA("coral_rosa","coral_rosa"),
         CORAL_ROSA_MUERTO("coral_rosa_muerto","coral_rosa_muerto"),
 		
+        
+        //PRUEBA
+        PRUEBA("prueba","prueba"),
+        
+        
 		;
 		private String UnlocalizedName;
 		private String registryName;

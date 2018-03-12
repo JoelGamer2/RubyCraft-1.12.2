@@ -1,5 +1,6 @@
 package RubyCraft.Iniciar;
 
+import RubyCraft.Control_de_Version;
 import RubyCraft.Referencia;
 import RubyCraft.RubyCraft;
 import RubyCraft.Bloques.Bloque_de_Diamante_Trol;
@@ -57,9 +58,11 @@ import RubyCraft.Bloques.mena_de_zafiro_end;
 import RubyCraft.Bloques.mesa_de_zafiro_basica;
 import RubyCraft.Bloques.obsidiana_que_llora;
 import RubyCraft.Bloques.polvo_de_cemento_azul;
+import RubyCraft.Bloques.prueba;
 import RubyCraft.Maquinas.mesa_de_conjuraciones;
 import RubyCraft.Maquinas.mesa_de_zafiro;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockDaylightDetector;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -115,6 +118,7 @@ public class Bloques {
     public static Block bloque_de_platino;
     public static Block mena_de_platino;
     public static Block bloque_de_actualizaciones;
+    public static Block prueba;
     
     //corales
     public static Block coral_azul;
@@ -183,6 +187,7 @@ public class Bloques {
         bloque_de_actualizaciones = new bloque_de_actualizaciones();
         mesa_de_zafiro = new mesa_de_zafiro();
         
+        
         //corales
         coral_azul = new coral_azul();
         coral_azul_muerto = new coral_azul_muerto();
@@ -194,9 +199,15 @@ public class Bloques {
         coral_rojo_muerto  = new coral_rojo_muerto();
         coral_rosa  = new coral_rosa();
         coral_rosa_muerto  = new coral_rosa_muerto();
+        
+        
+        //Bloques de pruebas solo en version de desaroolador
+        
+        if(Control_de_Version.Version_de_desarrollador) {
+        	prueba = new prueba();
+        }
 	}
 	public static void Registrar(){
-		
 		RegistrarBloque(Ladrillo_Marino);
 		RegistrarBloque(bloque_de_ruby);
 		RegistrarBloque(Ladrillo_de_obsidiana);
@@ -257,6 +268,12 @@ public class Bloques {
 	    RegistrarBloque( coral_rosa);
 	    RegistrarBloque( coral_rosa_muerto);
 
+	    
+	     //bloque de pruebas
+        if(Control_de_Version.Version_de_desarrollador) {
+        	RegistrarBloque(prueba);
+        }
+	    
 	}
 	
 	public static void RegistarRenders(){ 
@@ -320,6 +337,13 @@ public class Bloques {
 	    RegistrarRenderizado( coral_rojo_muerto);
 	    RegistrarRenderizado( coral_rosa);
 	    RegistrarRenderizado( coral_rosa_muerto);
+	    
+	    
+	     //bloque de pruebas
+        if(Control_de_Version.Version_de_desarrollador) {
+        	RegistrarRenderizado(prueba);
+        }
+        
 	}
 	
       private static void RegistrarBloque(Block block){

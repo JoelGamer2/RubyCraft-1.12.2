@@ -29,7 +29,7 @@ public class BuscarVersionTrol {
 				} catch (MalformedURLException e) {
 					System.err.println("La Url No Sirve");
 				} catch (IOException e) {
-				   System.out.println("Error 9090");
+					RubyCraft.logger.info("Error al intentar buscar si hay version trol " + e);
 				}
 			}
 			
