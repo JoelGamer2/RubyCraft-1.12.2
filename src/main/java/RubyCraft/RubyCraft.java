@@ -55,7 +55,8 @@ public class RubyCraft {
 	
 	@EventHandler
 	public void preinit(FMLPreInitializationEvent event){
-
+       
+		Control_de_Version.Iniciar();
 		RubyCraftConfig.preInit();
 		RubyCraftConfig.clientPreInit();
 		
@@ -122,7 +123,9 @@ public class RubyCraft {
 	@EventHandler
 	public void postinit(FMLPostInitializationEvent event) throws Exception{
        if(event.getSide()==Side.CLIENT) {
+    	   if(!Control_de_Version.Desactivar_comunicacion_con_server) {
     	 comunicacionconserver.IntentarContactarconelServer();
+    	   }
     	 RubyCraft.logger.info("DETECTADO:CLIENTE");
     	 es_un_cliente_y_no_un_server = true;
 		}else if(event.getSide()==Side.SERVER) {

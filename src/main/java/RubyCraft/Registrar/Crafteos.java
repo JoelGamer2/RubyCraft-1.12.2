@@ -144,6 +144,7 @@ public class Crafteos {
     	GameRegistry.addSmelting(Bloques.mena_de_ruby_end, new ItemStack(RItems.ruby, 1), 20.0F);
     	GameRegistry.addSmelting(Bloques.mena_de_zafiro_end, new ItemStack(RItems.zafiro, 1), 20.0F);
     	GameRegistry.addSmelting(Bloques.mena_de_platino, new ItemStack(RItems.platino, 1), 50.0F);
+    	GameRegistry.addSmelting(RItems.alga, new ItemStack(RItems.alga_seca, 1), 20.0F);
 		
 /**     
   

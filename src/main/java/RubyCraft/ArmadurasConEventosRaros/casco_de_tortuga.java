@@ -43,6 +43,4 @@ public class casco_de_tortuga extends ItemArmor {
 		 onArmorTick(player, world);
 	}
 	
-	 
-	
 }

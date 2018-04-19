@@ -6,6 +6,8 @@ import RubyCraft.Items.Marcodelamuleto;
 import RubyCraft.Items.Pepita_de_Ruby;
 import RubyCraft.Items.Pepita_de_Zafiro;
 import RubyCraft.Items.Plastico;
+import RubyCraft.Items.alga;
+import RubyCraft.Items.alga_seca;
 import RubyCraft.Items.aluminio;
 import RubyCraft.Items.amuleto;
 import RubyCraft.Items.anillo;
@@ -50,11 +52,13 @@ public class RItems {
 	public static Item varita;
 	public static Item lingote_galactico;
 	public static Item platino;
+	public static Item alga;
 	
 	//Comida
 	public static Item pan_de_calabaza;
 	public static Item huevo_frito;
 	public static Item manzana_de_diamante;
+	public static Item alga_seca;
 	
 	public static void Iniciar(){
 		ruby = new ruby();
@@ -76,11 +80,13 @@ public class RItems {
 		varita = new varita();
 		lingote_galactico = new lingote_galactico();
 		platino = new platino();
+		alga = new alga();
 		
 		//Comida
 		pan_de_calabaza = new pan_de_calabaza(10, 1.0F, false);
 		huevo_frito = new huevo_frito(5, 0.6F, true);
 		manzana_de_diamante = new manzana_de_diamante(6, 1.0F, false);
+		alga_seca = new alga_seca(1,0.3F, false);
 	}
 	public static void Registrar(){
 		RegistrarItem(ruby);
@@ -102,6 +108,8 @@ public class RItems {
 		RegistrarItem(varita);
 		RegistrarItem(lingote_galactico);
 		RegistrarItem(platino);
+		RegistrarItem(alga);
+		RegistrarItem(alga_seca);
 		
 		//Comidas
 		RegistrarItem(pan_de_calabaza);
@@ -129,6 +137,8 @@ public class RItems {
 		RegistrarRender(varita);
 		RegistrarRender(lingote_galactico);
 		RegistrarRender(platino);
+		RegistrarRender(alga);
+		RegistrarRender(alga_seca);
 		
 		//Comidad
 		RegistrarRender(pan_de_calabaza);

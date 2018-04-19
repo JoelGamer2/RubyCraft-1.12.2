@@ -1,6 +1,7 @@
 package RubyCraft.Bloques;
 
 import RubyCraft.Referencia;
+import RubyCraft.Bases.Coral_vivo_toque_de_seda;
 import RubyCraft.Iniciar.Bloques;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -9,7 +10,7 @@ import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class coral_azul extends Block {
+public class coral_azul extends Coral_vivo_toque_de_seda {
 	
 	
 	public coral_azul() {
@@ -106,5 +107,7 @@ public class coral_azul extends Block {
     {
         return 2;
     }
+    
+    
     
 }

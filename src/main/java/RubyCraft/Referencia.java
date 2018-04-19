@@ -31,11 +31,13 @@ public class Referencia {
 		VARITA("varita","varita"),
 		LINGOTE_GALACTICO("lingote_galactico","lingote_galactico"),
 		PLATINO("platino","platino"),
+		ALGA("alga","alga"),
 	
 		//Comida
 		PAN_DE_CALABAZA("pan_de_calabaza","pan_de_calabaza"),
 		HUEVO_FRITO("huevo_frito","huevo_frito"),
 		MANZANA_DE_DIAMANTE("manzana_de_diamante","manzana_de_diamante"),
+		ALGA_SECA("alga_seca","alga_seca"),
 		
 	;
 		private String UnlocalizedName;

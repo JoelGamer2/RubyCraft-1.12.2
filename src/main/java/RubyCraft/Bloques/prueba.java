@@ -4,6 +4,7 @@ import RubyCraft.Referencia;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
@@ -43,6 +44,12 @@ public class prueba extends Block{
 		
 		return true;
 		
+	}
+	
+	@Override
+	public void onEntityWalk(World worldIn, BlockPos pos, Entity entityIn) {
+		worldIn.setRainStrength(10.0F);
+		super.onEntityWalk(worldIn, pos, entityIn);
 	}
 	
 }
