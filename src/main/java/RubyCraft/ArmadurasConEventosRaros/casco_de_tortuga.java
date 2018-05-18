@@ -1,8 +1,11 @@
 package RubyCraft.ArmadurasConEventosRaros;
 
+import java.util.List;
+
 import RubyCraft.Referencia;
 import RubyCraft.Handles.RubyCraftSoundhandler;
 import RubyCraft.Iniciar.Armaduras;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemArmor;
@@ -11,6 +14,7 @@ import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.datafix.fixes.PotionWater;
+import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 
 public class casco_de_tortuga extends ItemArmor {
@@ -29,13 +33,21 @@ public class casco_de_tortuga extends ItemArmor {
 	 public static void onArmorTick(EntityPlayer player, World world) {
 	        ItemStack head = player.getItemStackFromSlot(EntityEquipmentSlot.HEAD);  
 	            if (head.getItem() == Armaduras.casco_de_tortuga) {	                 	            		
-	            		            	
+	            		           
 	            	 player.addPotionEffect(new PotionEffect(Potion.getPotionById(13),200, 255));
+	            	 
+	            	 if(world.isRaining() && !world.isThundering()) {
+		            	 player.addPotionEffect(new PotionEffect(Potion.getPotionById(5),50, 1));
+
+	            	 } if(world.isThundering()) {
+	            		 
+	            		player.addPotionEffect(new PotionEffect(Potion.getPotionById(1), 50, 2));
+	            		 
+	            	 }
 	            	 
 	              }
 	        }
-	  
-	 
+	   
 	 
 	 @Override
 	public void onArmorTick(World world, EntityPlayer player, ItemStack itemStack) {
@@ -43,4 +55,9 @@ public class casco_de_tortuga extends ItemArmor {
 		 onArmorTick(player, world);
 	}
 	
+	 @Override
+		public void addInformation(ItemStack stack, World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
+			 tooltip.add(TextFormatting.GREEN + "Descubre los efectos especiales");
+		}
+	 
 }

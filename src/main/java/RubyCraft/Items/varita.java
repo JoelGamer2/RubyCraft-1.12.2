@@ -93,7 +93,7 @@ public class varita extends Item {
     }
     
     
-    @SideOnly(Side.CLIENT)
+      @Override
     public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
     	
     tooltip.add(TextFormatting.GREEN + "Este Item Sirve para convertir la Mesa de Zafiro Basica en la " + TextFormatting.RED + "Mesa de Zafiro Real");

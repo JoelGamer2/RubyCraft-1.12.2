@@ -62,7 +62,6 @@ import RubyCraft.Bloques.prueba;
 import RubyCraft.Maquinas.mesa_de_conjuraciones;
 import RubyCraft.Maquinas.mesa_de_zafiro;
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockDaylightDetector;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
