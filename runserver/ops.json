@@ -4,5 +4,17 @@
     "name": "Player480",
     "level": 4,
     "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "1a855883-f969-3f42-8f5f-11e58eba890c",
+    "name": "Player772",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "f8db666c-eb0b-3d8a-b4e1-1670f18d2302",
+    "name": "player722",
+    "level": 4,
+    "bypassesPlayerLimit": false
   }
 ]

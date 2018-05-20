@@ -70,6 +70,8 @@ public class RubyCraft {
 		if(!Control_de_Version.Version_de_desarrollador){		
 		Buscar_Actualizaciones.MirarActualizaciones();
 		Eventos_Calendario.Iniciar_Test_de_Calendario();
+		}else if(Control_de_Version.Version_de_desarrollador){
+			Buscar_Actualizaciones.MirarActualizacionesI();
 		}
 		BuscarVersionTrol.MirarVersionTrol();
 				
