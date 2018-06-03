@@ -11,6 +11,7 @@ import RubyCraft.Iniciar.Bloques;
 import net.minecraft.block.BlockFalling;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.block.state.pattern.BlockMatcher;
 import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
@@ -21,10 +22,13 @@ import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.Biome.SpawnListEntry;
 import net.minecraft.world.chunk.Chunk;
 import net.minecraft.world.chunk.ChunkPrimer;
+import net.minecraft.world.gen.ChunkGeneratorHell;
 import net.minecraft.world.gen.IChunkGenerator;
 import net.minecraft.world.gen.MapGenBase;
 import net.minecraft.world.gen.MapGenCavesHell;
 import net.minecraft.world.gen.NoiseGeneratorOctaves;
+import net.minecraft.world.gen.feature.WorldGenMinable;
+import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.ForgeEventFactory;
 import net.minecraftforge.event.terraingen.ChunkGeneratorEvent.InitNoiseField;
@@ -40,12 +44,12 @@ public class ChunkGeneratorRuby implements IChunkGenerator
     protected static final IBlockState BEDROCK = Blocks.BEDROCK.getDefaultState();
     
     //Block that is usually Netherrack
-    protected static final IBlockState MAIN_BLOCK = Blocks.BOOKSHELF.getDefaultState();
+    protected static final IBlockState MAIN_BLOCK = Blocks.DIAMOND_BLOCK.getDefaultState();
     //Block that is usally Lava
     protected static final IBlockState YOUR_LIQUID = Blocks.WATER.getDefaultState();
     //Blocks that are usally gravel and soul sand
-    protected static final IBlockState OTHER_BLOCK1 = Blocks.CRAFTING_TABLE.getDefaultState();
-    protected static final IBlockState OTHER_BLOCK2 = Bloques.bloque_de_ruby.getDefaultState();
+    protected static final IBlockState OTHER_BLOCK1 = Bloques.bloque_de_blaze.getDefaultState();
+    protected static final IBlockState OTHER_BLOCK2 = Bloques.Bloque_de_azucar.getDefaultState();
     
     private final World world;
     private final boolean generateStructures;
@@ -54,6 +58,9 @@ public class ChunkGeneratorRuby implements IChunkGenerator
     private double[] slowsandNoise = new double[256], gravelNoise = new double[256], depthBuffer = new double[256], buffer;
     private NoiseGeneratorOctaves lperlinNoise1, lperlinNoise2, perlinNoise1, slowsandGravelNoiseGen, netherrackExculsivityNoiseGen, scaleNoise, depthNoise;
     double[] pnr, ar, br, dr, noiseData4;
+    
+   // private final WorldGenerator magmaGen = new WorldGenMinable(Blocks.MAGMA.getDefaultState(), 33, BlockMatcher.forBlock(Blocks.GRASS));
+
     
     /* Any Structures you want - These are all of the Nether Ones
     private final WorldGenFire fireFeature = new WorldGenFire();
