@@ -58,6 +58,12 @@ public class RubyCraft {
 	@EventHandler
 	public void preinit(FMLPreInitializationEvent event){
        
+		if(event.getSide()==Side.CLIENT) {
+			es_un_cliente_y_no_un_server = true;
+		}else if(event.getSide()==Side.SERVER) {
+			es_un_cliente_y_no_un_server = false;
+		}
+		
 		Control_de_Version.Iniciar();
 		RubyCraftConfig.preInit();
 		RubyCraftConfig.clientPreInit();
@@ -111,7 +117,7 @@ public class RubyCraft {
 	
 	@EventHandler
 	public void init(FMLInitializationEvent event){
-
+    
 		if(VersionTrol == true){
 			
 		}

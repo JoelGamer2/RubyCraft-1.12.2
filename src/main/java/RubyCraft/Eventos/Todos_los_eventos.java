@@ -1,5 +1,6 @@
 package RubyCraft.Eventos;
 
+import RubyCraft.RubyCraft;
 import RubyCraft.comunicacionconserver;
 import RubyCraft.Actualizaciones.Buscar_Actualizaciones;
 import RubyCraft.Config.RubyCraftConfig;
@@ -35,17 +36,17 @@ public class Todos_los_eventos {
 	public void OnPlayerTickEvent(PlayerTickEvent player) {
 		
 		//player.player.playSound(RubyCraftSoundhandler.casco_de_tortuga, 1.0F, 1.0F);
-		
-		if(player.player.dimension == 2 && Minecraft.getMinecraft().currentScreen == null && Iniciadosesion) {
-			
+		if(RubyCraft.es_un_cliente_y_no_un_server == true) {
+		if(player.player.dimension == 2 && Minecraft.getMinecraft().currentScreen == null) {
+			if(Iniciadosesion) {
 			player.player.playSound(RubyCraftSoundhandler.ruby, Float.MAX_VALUE, 1.0F);
 			Iniciadosesion = false;
-		 
+			}
 		}
 		if(!(player.player.dimension == 2)) {
 			Iniciadosesion = true;
 		}
-		
+	 }
 	}
 	
 	@SubscribeEvent
