@@ -24,12 +24,12 @@ public class Plastico extends Item {
 	    
 	        if(player.inventory.hasItemStack(new ItemStack(RItems.palo_verde, 1))){
 	        	
-                player.playSound(RubyCraftSoundhandler.cancion_sans, 10.0F, 1.0F);
+                player.playSound(RubyCraftSoundhandler.ruby, 10.0F, 1.0F);
 	        	Particulas(world, player);
 	        	
 	        }else if(player.inventory.hasItemStack(new ItemStack(RItems.BoladeResina, 1))){
 	        	
-                player.playSound(RubyCraftSoundhandler.cancion_sans, 10.0F, 2.0F);
+                player.playSound(RubyCraftSoundhandler.ruby, 10.0F, 2.0F);
 	        	Particulas(world, player);
 	        	
 	        }

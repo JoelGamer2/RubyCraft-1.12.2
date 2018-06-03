@@ -6,6 +6,7 @@ import RubyCraft.Config.RubyCraftConfig;
 import RubyCraft.Handles.RubyCraftSoundhandler;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.util.SoundCategory;
 import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
@@ -15,7 +16,7 @@ import net.minecraftforge.fml.common.gameevent.TickEvent.WorldTickEvent;
 
 public class Todos_los_eventos {
 
-	public static boolean Iniciadosesion;
+	public static boolean Iniciadosesion = true;
 	
 	//Mensaje de donde has muerto
 	@SubscribeEvent
@@ -35,6 +36,16 @@ public class Todos_los_eventos {
 		
 		//player.player.playSound(RubyCraftSoundhandler.casco_de_tortuga, 1.0F, 1.0F);
 		
+		if(player.player.dimension == 2 && Minecraft.getMinecraft().currentScreen == null && Iniciadosesion) {
+			
+			player.player.playSound(RubyCraftSoundhandler.ruby, Float.MAX_VALUE, 1.0F);
+			Iniciadosesion = false;
+		 
+		}
+		if(!(player.player.dimension == 2)) {
+			Iniciadosesion = true;
+		}
+		
 	}
 	
 	@SubscribeEvent
@@ -43,5 +54,6 @@ public class Todos_los_eventos {
 		
 		
 	}
+	
 
 }

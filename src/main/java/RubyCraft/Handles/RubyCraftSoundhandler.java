@@ -10,7 +10,7 @@ public class RubyCraftSoundhandler {
 	
 	public static SoundEvent mesa_de_conjuraciones_error;
 	public static SoundEvent mesa_de_conjuraciones_hechizo;
-	public static SoundEvent cancion_sans;
+	public static SoundEvent ruby;
 	public static SoundEvent actualiza;
 	public static SoundEvent casco_de_tortuga;
 	
@@ -18,7 +18,7 @@ public class RubyCraftSoundhandler {
 		
 		mesa_de_conjuraciones_error = registrar("block.mesa_de_conjuraciones_error");
 		mesa_de_conjuraciones_hechizo = registrar("block.mesa_de_conjuraciones_hechizo");
-		cancion_sans = registrar("record.cancion_sans");
+		ruby = registrar("record.ruby");
 		actualiza = registrar("random.actualiza");
 		casco_de_tortuga = registrar("master.casco_de_tortuga");
 	}

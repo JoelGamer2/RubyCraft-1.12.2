@@ -8,6 +8,7 @@ block.mesa_de_conjuraciones_hechizo=Conjuration Table enchant
 record.cancion_sans=Sans Record
 random.actualiza=New Update
 master.casco_de_tortuga=Turtle Helmet Equipped
+record.ruby=Ruby Dimension Music
 
 gui.Mesa_de_Ruby.name=Ruby Table
 gui.Inventario.name=Inventory

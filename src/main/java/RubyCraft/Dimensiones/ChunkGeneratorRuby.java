@@ -44,7 +44,7 @@ public class ChunkGeneratorRuby implements IChunkGenerator
     protected static final IBlockState BEDROCK = Blocks.BEDROCK.getDefaultState();
     
     //Block that is usually Netherrack
-    protected static final IBlockState MAIN_BLOCK = Blocks.DIAMOND_BLOCK.getDefaultState();
+    protected static final IBlockState MAIN_BLOCK = Bloques.Ladrillo_Marino.getDefaultState();
     //Block that is usally Lava
     protected static final IBlockState YOUR_LIQUID = Blocks.WATER.getDefaultState();
     //Blocks that are usally gravel and soul sand
@@ -59,7 +59,7 @@ public class ChunkGeneratorRuby implements IChunkGenerator
     private NoiseGeneratorOctaves lperlinNoise1, lperlinNoise2, perlinNoise1, slowsandGravelNoiseGen, netherrackExculsivityNoiseGen, scaleNoise, depthNoise;
     double[] pnr, ar, br, dr, noiseData4;
     
-   // private final WorldGenerator magmaGen = new WorldGenMinable(Blocks.MAGMA.getDefaultState(), 33, BlockMatcher.forBlock(Blocks.GRASS));
+  // private final WorldGenerator magmaGen = new WorldGenMinable(Bloques.bloque_de_ruby.getDefaultState(), 33, BlockMatcher.forBlock(Bloques.Ladrillo_Marino));
 
     
     /* Any Structures you want - These are all of the Nether Ones

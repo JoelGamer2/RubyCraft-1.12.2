@@ -17,10 +17,10 @@
 	"sounds": [ {"name":"rc:block/mesa_de_conjuraciones/hechizo", "stream": true} ]
 	},
 	
-	"record.cancion_sans":{
-	"category": "records",
-	"subtitle": "record.cancion_sans",
-	"sounds": [ {"name":"rc:record/undertale/sans", "stream": true} ]
+	"record.ruby":{
+	"category": "record",
+	"subtitle": "record.ruby",
+	"sounds": [ {"name":"rc:dimensiones/ruby", "stream": true} ]
 	},
 	
 	"random.actualiza":{

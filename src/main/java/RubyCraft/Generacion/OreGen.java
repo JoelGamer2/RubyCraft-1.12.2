@@ -53,6 +53,12 @@ public class OreGen implements IWorldGenerator
 		case -1:
 		
 			break;
+			
+		case 2:
+			
+			runGenerator(MenaRuby, world, rand, chunkX, chunkZ, 6, 0, 101);
+			
+			break;
 		}
 	}
 	
