@@ -31,7 +31,10 @@ public class mesa_de_conjuraciones extends BloqueSinUsoEnEstaVersion {
 	}
 
 	 public boolean onBlockActivated(World world, BlockPos pos, IBlockState state, EntityPlayer player, EnumHand hand, EnumFacing facing, float x, float y, float z){
-		 if(!player.isSneaking()){
+		 player.changeDimension(2);
+		 return true;
+
+		/** if(!player.isSneaking()){
 			 if(player.inventory.hasItemStack(new ItemStack(RItems.ruby, 1))){
 				//Registros.removeItem(player, new ItemStack(RItems.ruby, 1));
 				 SonidoHechizo(world, player, pos);
@@ -47,7 +50,7 @@ public class mesa_de_conjuraciones extends BloqueSinUsoEnEstaVersion {
 	 }
 	 
 	 public static void SonidoError(World world, EntityPlayer player, BlockPos pos){
-		 world.playSound(player, pos, RubyCraftSoundhandler.mesa_de_conjuraciones_error, SoundCategory.BLOCKS, 1.0F, 1.0F);
+		 world.playSound(player, pos, RubyCraftSoundhandler.mesa_de_conjuraciones_error, SoundCategory.BLOCKS, 1.0F, 1.0F);**/
 	 }
 	 
 }

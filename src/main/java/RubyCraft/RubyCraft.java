@@ -6,6 +6,7 @@ import java.net.MalformedURLException;
 import org.apache.logging.log4j.LogManager;
 
 import RubyCraft.Actualizaciones.Buscar_Actualizaciones;
+import RubyCraft.Biomas.IniciarBiomas;
 import RubyCraft.Config.RubyCraftConfig;
 import RubyCraft.Eventos.Evento;
 import RubyCraft.Generacion.OreGen;
@@ -13,6 +14,7 @@ import RubyCraft.Generacion.Registrar_generaciones;
 import RubyCraft.Handles.RubyCraftSoundhandler;
 import RubyCraft.Iniciar.Armaduras;
 import RubyCraft.Iniciar.Bloques;
+import RubyCraft.Iniciar.Dimensiones;
 import RubyCraft.Iniciar.Herramientas;
 import RubyCraft.Iniciar.Iniciar_Eventos;
 import RubyCraft.Iniciar.RItems;
@@ -59,6 +61,7 @@ public class RubyCraft {
 		Control_de_Version.Iniciar();
 		RubyCraftConfig.preInit();
 		RubyCraftConfig.clientPreInit();
+		Dimensiones.registrarDimensiones();
 		
 		if(VersionTrol == true){
 			
@@ -100,6 +103,8 @@ public class RubyCraft {
 		
 		ModificarCosasMineCraftVanilla.preinit();
 		GameRegistry.registerWorldGenerator(new OreGen(), 100);
+		
+		IniciarBiomas.registarBiomas();
 		
 		
 	}
