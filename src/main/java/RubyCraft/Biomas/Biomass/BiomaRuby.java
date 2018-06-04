@@ -14,7 +14,7 @@ public class BiomaRuby extends Biome {
 	
 	public BiomaRuby() {
 		//para lo del agua https://www.mathsisfun.com/hexadecimal-decimal-colors.html
-		super(new BiomeProperties("BiomaRuby").setBaseHeight(1.5F).setHeightVariation(1.2F).setTemperature(0.6F).setWaterColor(color));
+		super(new BiomeProperties("BiomaRuby").setBaseHeight(1.5F).setHeightVariation(1.2F).setTemperature(0.6F).setWaterColor(color).setRainDisabled());
 		
 	
 		this.spawnableMonsterList.add(new SpawnListEntry(EntityZombie.class, 69, 1, 5));
