@@ -5,6 +5,7 @@ import RubyCraft.comunicacionconserver;
 import RubyCraft.Actualizaciones.Buscar_Actualizaciones;
 import RubyCraft.Config.RubyCraftConfig;
 import RubyCraft.Handles.RubyCraftSoundhandler;
+import RubyCraft.Iniciar.Dimensiones;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.SoundCategory;
@@ -37,13 +38,13 @@ public class Todos_los_eventos {
 		
 		//player.player.playSound(RubyCraftSoundhandler.casco_de_tortuga, 1.0F, 1.0F);
 		if(RubyCraft.es_un_cliente_y_no_un_server == true) {
-		if(player.player.dimension == 2 && Minecraft.getMinecraft().currentScreen == null) {
+		if(player.player.dimension == Dimensiones.iddimensionruby && Minecraft.getMinecraft().currentScreen == null) {
 			if(Iniciadosesion) {
 			player.player.playSound(RubyCraftSoundhandler.ruby, Float.MAX_VALUE, 1.0F);
 			Iniciadosesion = false;
 			}
 		}
-		if(!(player.player.dimension == 2)) {
+		if(!(player.player.dimension == Dimensiones.iddimensionruby)) {
 			Iniciadosesion = true;
 		}
 	 }
