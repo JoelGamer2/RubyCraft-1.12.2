@@ -9,6 +9,7 @@ import net.minecraftforge.common.config.Property;
 import RubyCraft.Referencia;
 import RubyCraft.comunicacionconserver;
 import RubyCraft.Eventos.Todos_los_eventos;
+import RubyCraft.Iniciar.Dimensiones;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.client.event.ConfigChangedEvent;
@@ -71,6 +72,9 @@ public class RubyCraftConfig {
 		Property Servercomunicacion = config.get(CATEGORY_NAME_EXTRAS, "comunicacion_con_el_server_time_of_timeout", 10);
 		Servercomunicacion.setComment("Si lo pones en 0 se desactivara la comunicacion con el servidor de rubycraft si lo pones mas alto de 0 estara activado y sera el timepo de espera por si el servidor a lento es recomendable o desactivarlo o dejarlo como esta porque el sever no esta 24h a si que. DEFAULT:10");
 		
+		Property iddimension = config.get(CATEGORY_NAME_EXTRAS, "DimensionRuby_ID", 2);
+		iddimension.setComment("Esto es la id de la dimension de ruby:");
+		
 		//Ordena
 		List<String> propertyOrderBlocks = new ArrayList<String>();
 		List<String> propertyOrderExtras = new ArrayList<String>();
@@ -88,6 +92,7 @@ public class RubyCraftConfig {
 			ValorEventodeMuerte = EventoMueteMensaje.getBoolean(); 
 			MensajeActualizacion = Actualizacion.getBoolean();
 			comunicacionconserver.ValorTimeOut = Servercomunicacion.getInt();
+			Dimensiones.iddimensionruby = iddimension.getInt();
 			
 		}
 		

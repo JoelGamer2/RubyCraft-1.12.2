@@ -67,7 +67,6 @@ public class RubyCraft {
 		Control_de_Version.Iniciar();
 		RubyCraftConfig.preInit();
 		RubyCraftConfig.clientPreInit();
-		Dimensiones.registrarDimensiones();
 		
 		if(VersionTrol == true){
 			
@@ -110,6 +109,7 @@ public class RubyCraft {
 		ModificarCosasMineCraftVanilla.preinit();
 		GameRegistry.registerWorldGenerator(new OreGen(), 100);
 		
+		Dimensiones.registrarDimensiones();
 		IniciarBiomas.registarBiomas();
 		
 		
