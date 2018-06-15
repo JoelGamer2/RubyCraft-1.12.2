@@ -20,6 +20,7 @@ import RubyCraft.Iniciar.Iniciar_Eventos;
 import RubyCraft.Iniciar.RItems;
 import RubyCraft.Registrar.Crafteos;
 import RubyCraft.Registrar.ModificarCosasMineCraftVanilla;
+import RubyCraft.Server.Cambiar_cosas_para_server;
 import RubyCraft.VersionTrol.BuscarVersionTrol;
 import RubyCraft.proxy.CommonProxy;
 import io.netty.handler.timeout.TimeoutException;
@@ -56,11 +57,13 @@ public class RubyCraft {
 	
 	
 	@EventHandler
-	public void preinit(FMLPreInitializationEvent event){
+	public void preinit(FMLPreInitializationEvent event) throws Exception{
        
 		if(event.getSide()==Side.CLIENT) {
 			es_un_cliente_y_no_un_server = true;
+			Cambiar_comportamiento_para_los_eventos.Iniciar();
 		}else if(event.getSide()==Side.SERVER) {
+			Cambiar_cosas_para_server.pre_init();
 			es_un_cliente_y_no_un_server = false;
 		}
 		
@@ -117,7 +120,7 @@ public class RubyCraft {
 	
 	@EventHandler
 	public void init(FMLInitializationEvent event){
-    
+
 		if(VersionTrol == true){
 			
 		}
@@ -130,6 +133,9 @@ public class RubyCraft {
 		}
 		ModificarCosasMineCraftVanilla.init();
 	
+		if(es_un_cliente_y_no_un_server == false) {
+			Cambiar_cosas_para_server.init();
+		}
 		
 	}
 	
@@ -144,6 +150,7 @@ public class RubyCraft {
 		}else if(event.getSide()==Side.SERVER) {
 			RubyCraft.logger.info("DETECTADO:SERVER Desactivando algunas cosas que pueden llevar crash en el server");
 			es_un_cliente_y_no_un_server = false;
+			Cambiar_cosas_para_server.posinit();
 		}
 	   
 		if(VersionTrol == true){

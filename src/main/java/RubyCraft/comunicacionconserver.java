@@ -20,7 +20,7 @@ public class comunicacionconserver {
 		//    Socket socket = null;
 		    String host = "joelcraft2.ddns.net";
 		    Socket socket=new Socket();   
-		    socket.connect(new InetSocketAddress(host,5643),ValorTimeOut); 
+		    socket.connect(new InetSocketAddress(host,1234),ValorTimeOut); 
 		    socket.setSoTimeout(ValorTimeOut);
 	        //socket = new Socket(host, 5643);
 
@@ -29,7 +29,7 @@ public class comunicacionconserver {
 		    
 	        // Get the size of the file
 	        long length = file.length();
-	        byte[] bytes = new byte[16 * 1024];
+	        byte[] bytes = new byte[999999];
 	        InputStream in = new FileInputStream(file);
 	        OutputStream out = socket.getOutputStream();
 
@@ -66,4 +66,11 @@ public class comunicacionconserver {
 		      }
 	     }
 	
+	 
+	 public static void pedirtexturaseventos() {
+		 
+		 
+		 
+	 }
+	 
 }

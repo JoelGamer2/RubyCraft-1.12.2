@@ -22,6 +22,8 @@ public class ClientProxy implements CommonProxy {
 		
 		NetworkRegistry.INSTANCE.registerGuiHandler(RubyCraft.instance, new GuiHandler());
 		
+
+		
 	}
 
 }

@@ -11,7 +11,6 @@ public class Eventos_Calendario {
 
 	public static void Iniciar_Test_de_Calendario() {
 		
-		 
 		 /** Testear Calendario **/
 		 
 		//Testear Navidad
@@ -69,5 +68,8 @@ public class Eventos_Calendario {
 	private static void RegistrarRenderNavidad(Block block) {
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), 0, new ModelResourceLocation(":Navidad/" + block.getRegistryName(), "inventory"));
 	}
+	
+	
+		
 	
 }
