@@ -355,6 +355,8 @@ public class Bloques {
 		
 	}
 	
+      
+      
 	private static void RegistrarRenderizado(Block block){
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), 0, new ModelResourceLocation(Referencia.MOD_ID + ":" + block.getUnlocalizedName().substring(5)));	
 		}

@@ -1,4 +1,4 @@
-package RubyCraft.ArmadurasConEventosRaros;
+package RubyCraft.ArmadurasConEventos;
 
 import java.util.List;
 

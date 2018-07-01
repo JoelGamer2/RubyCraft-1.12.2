@@ -2,7 +2,7 @@ package RubyCraft.Iniciar;
 
 import RubyCraft.Referencia;
 import RubyCraft.RubyCraft;
-import RubyCraft.ArmadurasConEventosRaros.casco_de_tortuga;
+import RubyCraft.ArmadurasConEventos.casco_de_tortuga;
 import RubyCraft.Bases.ArmadurasBases;
 import RubyCraft.Handles.RubyCraftSoundhandler;
 import net.minecraft.client.Minecraft;

@@ -59,6 +59,8 @@ public class RubyCraft {
 	@EventHandler
 	public void preinit(FMLPreInitializationEvent event) throws Exception{
        
+		Eventos_Calendario.Iniciar_Test_de_Calendario();
+		
 		if(event.getSide()==Side.CLIENT) {
 			es_un_cliente_y_no_un_server = true;
 			Cambiar_comportamiento_para_los_eventos.Iniciar();
@@ -80,7 +82,6 @@ public class RubyCraft {
 		}
 		if(!Control_de_Version.Version_de_desarrollador){		
 		Buscar_Actualizaciones.MirarActualizaciones();
-		Eventos_Calendario.Iniciar_Test_de_Calendario();
 		}else if(Control_de_Version.Version_de_desarrollador){
 			Buscar_Actualizaciones.MirarActualizacionesI();
 		}

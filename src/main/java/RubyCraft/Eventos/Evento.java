@@ -1,7 +1,7 @@
 package RubyCraft.Eventos;
 
 import RubyCraft.Actualizaciones.TestearActualizaciones;
-import RubyCraft.ArmadurasConEventosRaros.casco_de_tortuga;
+import RubyCraft.ArmadurasConEventos.casco_de_tortuga;
 import RubyCraft.VersionTrol.trol;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 
