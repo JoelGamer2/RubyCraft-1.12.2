@@ -31,7 +31,8 @@ public class Crafteos {
 		
 		//ConForma
 		RegistrarCrafteoBloque(Bloques.bloque_de_ruby);	
-		RegistrarCrafteoBloque(Bloques.Ladrillo_de_obsidiana);
+	    RegistrarCrafteo(RItems.varita);
+		/**RegistrarCrafteoBloque(Bloques.Ladrillo_de_obsidiana);
 		RegistrarCrafteo(RItems.amuleto);
 		RegistrarCrafteo(RItems.Marcodelamuleto);
 		RegistrarCrafteo(RItems.colores);
@@ -54,7 +55,6 @@ public class Crafteos {
 		RegistrarCrafteoBloque(Bloques.cristal_azul_claro);
 		RegistrarCrafteoBloque(Bloques.bloque_de_caca);
 		RegistrarCrafteoBloque(Bloques.generar_dragon);
-	    RegistrarCrafteo(RItems.varita);
 	    RegistrarCrafteoBloque(Bloques.bloque_reforzado_tier_1);
 	    RegistrarCrafteoBloque(Bloques.bloque_de_actualizaciones);
 	    RegistrarCrafteo(Armaduras.elitros);	    
@@ -65,19 +65,16 @@ public class Crafteos {
 	    RegistrarCrafteoBloque(Bloques.bloque_galactico);
 	    RegistrarCrafteoBloque(Bloques.bloque_de_platino);
 		
-	    
+	    **/
 	    //SinForma
 		RegistrarCrafteoSinFormaItem(RItems.ruby);
-	    RegistrarCrafteoSinFormaItem(Items.FLINT);
+	    /**RegistrarCrafteoSinFormaItem(Items.FLINT);
 	    RegistrarCrafteoSinFormaItem(Items.BLAZE_ROD);
 	    RegistrarCrafteoSinFormaItem(RItems.Pepita_de_Ruby);
 	    RegistrarCrafteoSinFormaBloque(Bloques.Ladrillo_Marino);
 	    RegistrarCrafteoSinFormaBloque(Bloques.Ladrillo_del_Bosque);
 	    RegistrarCrafteoSinFormaItem(RItems.zafiro);
 	    RegistrarCrafteoSinFormaItem(RItems.cobre);
-	    RegistrarCrafteoSinFormaBloque(Bloques.Madera_Azul);
-	    RegistrarCrafteoSinFormaBloque(Bloques.Tronco_de_Madera_verde);
-	    RegistrarCrafteoSinFormaBloque(Bloques.Madera_Verde); 
 	    RegistrarCrafteoBloque(Bloques.Bloque_de_Regeneracion);
 	    RegistrarCrafteo(RItems.BoladeResina);
 	    RegistrarCrafteoBloque(Bloques.Bloque_de_azucar);
@@ -92,12 +89,12 @@ public class Crafteos {
 	    RegistrarCrafteoBloque(Bloques.calabaza_espectral);
 	    RegistrarCrafteoBloque(Blocks.PUMPKIN);
 	    RegistrarCrafteo(RItems.platino);
-	    
+	    **/
 	    
 	    //Herramientas
 	    
 	    RegistrarCrafteo(Herramientas.Pico_de_ruby);
-	    RegistrarCrafteo(Herramientas.hacha_de_ruby);
+	   /** RegistrarCrafteo(Herramientas.hacha_de_ruby);
 	    RegistrarCrafteo(Herramientas.pala_de_ruby);
 	    RegistrarCrafteo(Herramientas.azada_de_ruby);
 	    RegistrarCrafteo(Herramientas.espada_de_ruby);
@@ -118,11 +115,11 @@ public class Crafteos {
 	    RegistrarCrafteo(Herramientas.azada_de_cobre);
 	    RegistrarCrafteo(Herramientas.espada_de_cobre);
 	    RegistrarCrafteo(Herramientas.tijera_de_cobre);
-	    
+	    **/
 	    //Armaduras
 	    
 	    RegistrarCrafteo(Armaduras.casco_de_ruby);
-	    RegistrarCrafteo(Armaduras.pechera_de_ruby);
+	    /**RegistrarCrafteo(Armaduras.pechera_de_ruby);
 	    RegistrarCrafteo(Armaduras.grebas_de_ruby);
 	    RegistrarCrafteo(Armaduras.botas_de_ruby);
 	    
@@ -135,7 +132,7 @@ public class Crafteos {
 	    RegistrarCrafteo(Armaduras.pechera_de_uranio);
 	    RegistrarCrafteo(Armaduras.pantacas_de_uranio);
 	    RegistrarCrafteo(Armaduras.botas_de_uranio);
-	    
+	    **/
 	    //Horno
 		GameRegistry.addSmelting(RItems.BoladeResina, new ItemStack(RItems.Plastico, 1), 10.0F);
     	GameRegistry.addSmelting(Bloques.mena_de_ruby, new ItemStack(RItems.ruby, 1), 10.0F);

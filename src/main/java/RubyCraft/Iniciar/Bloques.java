@@ -18,10 +18,6 @@ import RubyCraft.Bloques.Cuarzo_verde;
 import RubyCraft.Bloques.Ladrillo_Marino;
 import RubyCraft.Bloques.Ladrillo_de_obsidiana;
 import RubyCraft.Bloques.Ladrillo_del_Bosque;
-import RubyCraft.Bloques.Madera_Azul;
-import RubyCraft.Bloques.Madera_Verde;
-import RubyCraft.Bloques.Tronco_Azul;
-import RubyCraft.Bloques.Tronco_de_Madera_verde;
 import RubyCraft.Bloques.bloque_de_actualizaciones;
 import RubyCraft.Bloques.bloque_de_blaze;
 import RubyCraft.Bloques.bloque_de_caca;
@@ -75,10 +71,6 @@ public class Bloques {
 	public static Block Ladrillo_de_obsidiana;
 	public static Block Bloqueluminiscente;
 	public static Block Bloque_de_Zafiro;
-    public static Block Tronco_de_Madera_verde; 
-    public static Block Tronco_Azul;
-    public static Block Madera_Azul;
-    public static Block Madera_Verde;
     public static Block Bloque_de_azucar;
     public static Block bloque_de_blaze;
     public static Block Bloque_de_Diamante_Trol;
@@ -143,10 +135,6 @@ public class Bloques {
 		Ladrillo_de_obsidiana = new Ladrillo_de_obsidiana();
 		Bloqueluminiscente = new Bloqueluminiscente();
 		Bloque_de_Zafiro = new Bloque_de_Zafiro();
-		Tronco_de_Madera_verde = new Tronco_de_Madera_verde();
-		Tronco_Azul = new Tronco_Azul(); 
-		Madera_Azul = new Madera_Azul();
-		Madera_Verde = new Madera_Verde();
 		Bloque_de_azucar = new Bloque_de_azucar();
 		bloque_de_blaze = new bloque_de_blaze();
 		Bloque_de_Diamante_Trol = new Bloque_de_Diamante_Trol();
@@ -212,10 +200,6 @@ public class Bloques {
 		RegistrarBloque(Ladrillo_de_obsidiana);
 		RegistrarBloque(Bloqueluminiscente);
 		RegistrarBloque(Bloque_de_Zafiro);
-		RegistrarBloque(Tronco_de_Madera_verde);
-		RegistrarBloque(Tronco_Azul);
-		RegistrarBloque(Madera_Azul);
-		RegistrarBloque(Madera_Verde);
 		RegistrarBloque(Bloque_de_azucar);
 		RegistrarBloque(bloque_de_blaze);
 		RegistrarBloque(Bloque_de_Diamante_Trol);
@@ -267,6 +251,8 @@ public class Bloques {
 	    RegistrarBloque( coral_rosa);
 	    RegistrarBloque( coral_rosa_muerto);
 
+	    //Bloques con subid
+	    
 	    
 	     //bloque de pruebas
         if(Control_de_Version.Version_de_desarrollador) {
@@ -282,10 +268,6 @@ public class Bloques {
 	    RegistrarRenderizado(Ladrillo_de_obsidiana);
 	    RegistrarRenderizado(Bloqueluminiscente);
 	    RegistrarRenderizado(Bloque_de_Zafiro);
-	    RegistrarRenderizado(Tronco_de_Madera_verde);
-	    RegistrarRenderizado(Tronco_Azul);
-	    RegistrarRenderizado(Madera_Azul);
-	    RegistrarRenderizado(Madera_Verde);
 	    RegistrarRenderizado(Bloque_de_azucar);
 	    RegistrarRenderizado(bloque_de_blaze);
 	    RegistrarRenderizado(Bloque_de_Diamante_Trol);
@@ -355,6 +337,14 @@ public class Bloques {
 		
 	}
 	
+      
+      private static void RegistrarBloquesConVariants(Block block, ItemBlock itemblock) {
+    	  
+    	  ForgeRegistries.BLOCKS.register(block);
+    	  block.setCreativeTab(RubyCraft.Rubycrafttab);
+    	  itemblock.setRegistryName(block.getRegistryName());
+    	  ForgeRegistries.ITEMS.register(itemblock);
+      }
       
       
 	private static void RegistrarRenderizado(Block block){
