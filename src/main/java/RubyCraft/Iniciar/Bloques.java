@@ -59,7 +59,6 @@ import RubyCraft.Bloques.polvo_de_cemento_azul;
 import RubyCraft.Bloques.prueba;
 import RubyCraft.Bloques.tronco_azul;
 import RubyCraft.Bloques.tronco_verde;
-import RubyCraft.Bloques.item.ItemBlockVariants;
 import RubyCraft.Maquinas.mesa_de_conjuraciones;
 import RubyCraft.Maquinas.mesa_de_zafiro;
 import net.minecraft.block.Block;
@@ -67,8 +66,6 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
 public class Bloques {
