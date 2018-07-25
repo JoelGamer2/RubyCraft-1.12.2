@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "maderas",
+  "ingredients": [
+    {
+      "item": "rc:tronco_azul"
+    }
+  ],
+  "result": {
+    "item": "rc:madera_azul",
+    "count": 4
+  }
+}

@@ -1,15 +1,25 @@
 package RubyCraft;
 
-import java.io.*;
-import java.net.*;
+import java.io.BufferedReader;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.net.InetSocketAddress;
+import java.net.Socket;
+import java.net.UnknownHostException;
 
-import net.minecraft.crash.CrashReport;
-import net.minecraft.crash.CrashReportCategory;
+import net.minecraft.client.Minecraft;
 
 public class comunicacionconserver {
 	
 	 public static String nombre_usuario = " ";
 	 public static int ValorTimeOut;
+	 public static String Mensaje = "";
 	//		 FileInputStream fr=new FileInputStream("C:\\\\Users\\\\"+ nombre_usuario + "\\\\AppData\\\\Roaming\\\\.minecraft\\\\logs\\\\latest.log");
 
 		  
@@ -47,13 +57,15 @@ public class comunicacionconserver {
 	
 	 public static void IntentarContactarconelServer() throws Exception {
 		 
+		 
+		 
 		 if(ValorTimeOut==0){
 			 
 			 RubyCraft.logger.info("---------------------------------------------------------------------------");
 	    	 RubyCraft.logger.info("COMUNICACION CON EL SERVIDOR DE RUBYCRAFT DESACTIVADA ACTIVALA EN CONFIG");
 	    	 RubyCraft.logger.info("---------------------------------------------------------------------------");
 			 
-		 }else if(!(ValorTimeOut==0))
+		 }/**else if(!(ValorTimeOut==0))
 		 
 		  try { 
 			clientecodigoensi();
@@ -63,7 +75,7 @@ public class comunicacionconserver {
 		    	  RubyCraft.logger.info("TIEMPO PARA DAR TIMEOUT:" + ValorTimeOut + "segundos");
 		    	  RubyCraft.logger.info("#################################################################################################################");
 		    	  
-		      }
+		      }**/
 	     }
 	
 	 
@@ -71,6 +83,41 @@ public class comunicacionconserver {
 		 
 		 
 		 
+	 }
+	 
+	 
+	 public static void RecibirMsgdeserver() throws UnknownHostException, IOException {
+		
+		
+		 try {
+				
+				Socket s = new Socket("joelcraft2.ddns.net",1234);
+				DataInputStream din = new DataInputStream(s.getInputStream());
+				DataOutputStream dout = new DataOutputStream(s.getOutputStream());
+				
+				BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+				String msgin="",msgout="";
+				
+				while(!msgin.equals("end")) {
+					
+					msgout = br.readLine();
+			//		dout.writeUTF(ms);
+					msgin = din.readUTF();
+					Minecraft.getMinecraft().player.sendChatMessage(msgin);
+					System.out.println(msgin);
+					
+				}
+				
+				
+			
+		}catch (Exception e) {
+			
+			System.out.println(e);
+		}
+				
+				
+			
+		
 	 }
 	 
 }

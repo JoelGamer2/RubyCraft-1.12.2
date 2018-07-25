@@ -1,6 +1,7 @@
 package RubyCraft.Eventos;
 
 import RubyCraft.RubyCraft;
+import RubyCraft.comunicacionconserver;
 import RubyCraft.Config.RubyCraftConfig;
 import RubyCraft.Handles.RubyCraftSoundhandler;
 import RubyCraft.Iniciar.Dimensiones;
@@ -11,6 +12,7 @@ import net.minecraft.util.text.TextFormatting;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent.PlayerTickEvent;
+import net.minecraftforge.fml.common.gameevent.TickEvent.WorldTickEvent;
 
 public class Todos_los_eventos {
 
@@ -45,6 +47,14 @@ public class Todos_los_eventos {
 		}
 	 }
 	}
+	
+	@SubscribeEvent
+	public void OnWorldTick(WorldTickEvent event) {
+		
+		
+		
+	}
+	
 	
 }
 

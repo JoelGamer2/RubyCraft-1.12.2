@@ -46,6 +46,8 @@ import RubyCraft.Bloques.ladrillo_de_andesita;
 import RubyCraft.Bloques.ladrillo_de_diorita;
 import RubyCraft.Bloques.ladrillo_de_granito;
 import RubyCraft.Bloques.ladrillo_de_infiedra;
+import RubyCraft.Bloques.madera_azul;
+import RubyCraft.Bloques.madera_verde;
 import RubyCraft.Bloques.mena_de_platino;
 import RubyCraft.Bloques.mena_de_ruby;
 import RubyCraft.Bloques.mena_de_ruby_end;
@@ -55,6 +57,9 @@ import RubyCraft.Bloques.mesa_de_zafiro_basica;
 import RubyCraft.Bloques.obsidiana_que_llora;
 import RubyCraft.Bloques.polvo_de_cemento_azul;
 import RubyCraft.Bloques.prueba;
+import RubyCraft.Bloques.tronco_azul;
+import RubyCraft.Bloques.tronco_verde;
+import RubyCraft.Bloques.item.ItemBlockVariants;
 import RubyCraft.Maquinas.mesa_de_conjuraciones;
 import RubyCraft.Maquinas.mesa_de_zafiro;
 import net.minecraft.block.Block;
@@ -62,6 +67,8 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
 public class Bloques {
@@ -110,6 +117,10 @@ public class Bloques {
     public static Block mena_de_platino;
     public static Block bloque_de_actualizaciones;
     public static Block prueba;
+    public static Block tronco_azul;
+    public static Block tronco_verde;
+    public static Block madera_azul;
+    public static Block madera_verde;
     
     //corales
     public static Block coral_azul;
@@ -173,7 +184,14 @@ public class Bloques {
         mena_de_platino = new mena_de_platino();
         bloque_de_actualizaciones = new bloque_de_actualizaciones();
         mesa_de_zafiro = new mesa_de_zafiro();
+        tronco_azul = new tronco_azul();
+        tronco_verde = new tronco_verde();
+        madera_azul = new madera_azul();
+        madera_verde = new madera_verde();
         
+        
+        //Bloques de arboles
+     
         
         //corales
         coral_azul = new coral_azul();
@@ -238,6 +256,10 @@ public class Bloques {
 		RegistrarBloque(mena_de_platino);
 		RegistrarBloque(bloque_de_actualizaciones);
 		RegistrarBloque(mesa_de_zafiro);
+		RegistrarBloque(tronco_azul);
+	    RegistrarBloque(tronco_verde);
+	    RegistrarBloque(madera_azul);
+	    RegistrarBloque(madera_verde);
 		
 		//corales
 		RegistrarBloque(coral_azul);
@@ -252,7 +274,6 @@ public class Bloques {
 	    RegistrarBloque( coral_rosa_muerto);
 
 	    //Bloques con subid
-	    
 	    
 	     //bloque de pruebas
         if(Control_de_Version.Version_de_desarrollador) {
@@ -306,6 +327,10 @@ public class Bloques {
 	    RegistrarRenderizado(mena_de_platino);
 	    RegistrarRenderizado(bloque_de_actualizaciones);
 	    RegistrarRenderizado(mesa_de_zafiro);
+	    RegistrarRenderizado(tronco_azul);
+	    RegistrarRenderizado(tronco_verde);
+	    RegistrarRenderizado(madera_azul);
+	    RegistrarRenderizado(madera_verde);
 	    
 	    //corales
 	    RegistrarRenderizado(coral_azul);
@@ -327,6 +352,7 @@ public class Bloques {
         
 	}
 	
+	
       private static void RegistrarBloque(Block block){
 		
 		ForgeRegistries.BLOCKS.register(block);
@@ -338,17 +364,12 @@ public class Bloques {
 	}
 	
       
-      private static void RegistrarBloquesConVariants(Block block, ItemBlock itemblock) {
-    	  
-    	  ForgeRegistries.BLOCKS.register(block);
-    	  block.setCreativeTab(RubyCraft.Rubycrafttab);
-    	  itemblock.setRegistryName(block.getRegistryName());
-    	  ForgeRegistries.ITEMS.register(itemblock);
-      }
+      
       
       
 	private static void RegistrarRenderizado(Block block){
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), 0, new ModelResourceLocation(Referencia.MOD_ID + ":" + block.getUnlocalizedName().substring(5)));	
 		}
+	
 	
 }

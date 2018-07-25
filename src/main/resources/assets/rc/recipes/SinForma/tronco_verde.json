@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "maderas",
+  "ingredients": [
+    {
+      "item": "minecraft:log",
+	  "data": 0
+    },
+	
+	{
+	
+	"item": "minecraft:cactus"
+	
+	}
+  ],
+  "result": {
+    "item": "rc:tronco_verde",
+    "count": 1
+  }
+}

@@ -32,6 +32,7 @@ public class Referencia {
 		LINGOTE_GALACTICO("lingote_galactico","lingote_galactico"),
 		PLATINO("platino","platino"),
 		ALGA("alga","alga"),
+		DETECTOR_DE_TIEMPO("detector_de_tiempo","detector_de_tiempo"),
 	
 		//Comida
 		PAN_DE_CALABAZA("pan_de_calabaza","pan_de_calabaza"),
@@ -101,6 +102,10 @@ public class Referencia {
         BLOQUE_DE_PLATINO("bloque_de_platino","bloque_de_platino"),
         MENA_DE_PLATINO("mena_de_platino","mena_de_platino"),
         BLOQUE_DE_ACTUALIZACIONES("bloque_de_actualizaciones","bloque_de_actualizaciones"),
+        TRONCO_AZUL("tronco_azul","tronco_azul"),
+        TRONCO_VERDE("tronco_verde","tronco_verde"),
+        MADERA_AZUL("madera_azul","madera_azul"),
+        MADERA_VERDE("madera_verde","madera_verde"),
         
         
         //Corales

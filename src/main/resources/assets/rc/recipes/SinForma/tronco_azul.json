@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "maderas",
+  "ingredients": [
+   {
+     "item": "minecraft:water_bucket"  },
+	
+	{
+	
+	"item": "minecraft:log",
+	"data":0
+	
+	}
+  ],
+  "result": {
+    "item": "rc:tronco_azul",
+    "count": 1
+  }
+} 

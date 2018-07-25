@@ -96,7 +96,7 @@ public class RubyCraft {
 		
 		RItems.Iniciar();
 		RItems.Registrar();
-		
+
 		
 		Herramientas.Iniciar();
 		Herramientas.registrar();
