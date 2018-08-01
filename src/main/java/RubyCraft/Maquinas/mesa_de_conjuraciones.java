@@ -2,8 +2,8 @@ package RubyCraft.Maquinas;
 
 import RubyCraft.Referencia;
 import RubyCraft.Bases.BloqueSinUsoEnEstaVersion;
+import RubyCraft.Dimensiones.Dimensiones;
 import RubyCraft.Handles.RubyCraftSoundhandler;
-import RubyCraft.Iniciar.Dimensiones;
 import RubyCraft.Iniciar.RItems;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;

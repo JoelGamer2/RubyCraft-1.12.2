@@ -73,6 +73,7 @@ item.elitros.name=2.0 Elytra
 item.casco_de_tortuga.name=Turtle Heltmet
 item.alga.name=Kelp
 item.alga_seca.name=Dried kelp
+item.espada_de_platino.name=Platinum Sword
 
 tile.ladrillomarino.name=Marine Bricks
 tile.bloque_de_ruby.name=Ruby Block

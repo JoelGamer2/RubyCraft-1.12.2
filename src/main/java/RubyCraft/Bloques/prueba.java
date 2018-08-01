@@ -1,6 +1,8 @@
 package RubyCraft.Bloques;
 
 import RubyCraft.Referencia;
+import RubyCraft.Config.RubyCraftConfig;
+import RubyCraft.Dimensiones.Dimensiones;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -26,6 +28,8 @@ public class prueba extends Block
 	@Override
 	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn,
 			EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
+		
+		playerIn.changeDimension(Dimensiones.iddimensionruby);
 		
 		return true;
 	}

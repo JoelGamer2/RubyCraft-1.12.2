@@ -1,8 +1,7 @@
-package RubyCraft.Iniciar;
+package RubyCraft.Dimensiones;
 
 import RubyCraft.RubyCraft;
 import RubyCraft.Config.RubyCraftConfig;
-import RubyCraft.Dimensiones.DimensiondeRuby;
 import net.minecraft.world.DimensionType;
 import net.minecraftforge.common.DimensionManager;
 

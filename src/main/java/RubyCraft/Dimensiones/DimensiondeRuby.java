@@ -1,7 +1,6 @@
 package RubyCraft.Dimensiones;
 
 import RubyCraft.Biomas.IniciarBiomas;
-import RubyCraft.Iniciar.Dimensiones;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;

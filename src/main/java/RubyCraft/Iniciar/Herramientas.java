@@ -11,6 +11,7 @@ import RubyCraft.Herramientas.azada_de_cobre;
 import RubyCraft.Herramientas.azada_de_ruby;
 import RubyCraft.Herramientas.azada_de_zafiro;
 import RubyCraft.Herramientas.espada_de_cobre;
+import RubyCraft.Herramientas.espada_de_platino;
 import RubyCraft.Herramientas.espada_de_ruby;
 import RubyCraft.Herramientas.espada_de_zafiro;
 import RubyCraft.Herramientas.hacha_de_cobre;
@@ -58,11 +59,14 @@ public class Herramientas {
 	public static Item hacha_de_cobre;
 	public static Item tijera_de_cobre;
 	
+	public static Item espada_de_platino;
+	
 	//ToolMaterial
 	
 	public static final ToolMaterial MaterialRuby = EnumHelper.addToolMaterial(Referencia.MOD_ID + ":rubytool", 4, 3000, 10.0F, 5.0F, 45);
 	public static final Item.ToolMaterial zafiromaterial = EnumHelper.addToolMaterial(Referencia.MOD_ID + ":zafirotool", 5, 2000, 35.0F, 8.0F, 45);
 	public static final Item.ToolMaterial CobreMaterial = EnumHelper.addToolMaterial(Referencia.MOD_ID + ":coppertool", 2, 500, 15.0F, 2.0F, 45);
+	public static final Item.ToolMaterial PlatinoMaterial = EnumHelper.addToolMaterial(Referencia.MOD_ID + ":platinotool", 6, 4000, 45.0F, 10.0F, 45);
 	
 	public static void Iniciar(){
 		
@@ -88,6 +92,8 @@ public class Herramientas {
 		azada_de_cobre = new azada_de_cobre(CobreMaterial);
 		hacha_de_cobre = new hacha_de_cobre(CobreMaterial);
 		tijera_de_cobre = new tijera_de_cobre(CobreMaterial);
+		
+		espada_de_platino = new espada_de_platino(PlatinoMaterial);
 		
 	}
 	
@@ -116,6 +122,8 @@ public class Herramientas {
 		RegistrarItem(hacha_de_cobre);
 		RegistrarItem(tijera_de_cobre);
 		
+		RegistrarItem(espada_de_platino);
+		
 	}
 	
 	public static void RegistrarRenders(){
@@ -142,6 +150,8 @@ public class Herramientas {
 		RegistrarRender(azada_de_cobre);
 		RegistrarRender(hacha_de_cobre);		
 		RegistrarRender(tijera_de_cobre);
+		
+		RegistrarRender(espada_de_platino);
 		
 	}
 	
