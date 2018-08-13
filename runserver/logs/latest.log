@@ -1,22 +1,117 @@
-[19:41:17] [Server thread/INFO]: Starting minecraft server version 1.12.2
-[19:41:22] [Server thread/INFO]: Loading properties
-[19:41:22] [Server thread/INFO]: Default game type: SURVIVAL
-[19:41:22] [Server thread/INFO]: Generating keypair
-[19:41:22] [Server thread/INFO]: Starting Minecraft server on *:25565
-[19:41:22] [Server thread/INFO]: Using default channel type
-[19:41:22] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[19:41:22] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[19:41:22] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[19:41:22] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[19:41:23] [Server thread/INFO]: Preparing level "world"
-[19:41:24] [Server thread/INFO]: Loaded 488 advancements
-[19:41:24] [Server thread/INFO]: Preparing start region for level 0
-[19:41:24] [Server thread/INFO]: Done (1,024s)! For help, type "help" or "?"
-[19:41:24] [Server thread/INFO]: Stopping server
-[19:41:24] [Server thread/INFO]: Saving players
-[19:41:24] [Server thread/INFO]: Saving worlds
-[19:41:24] [Server thread/INFO]: Saving chunks for level 'world'/overworld
-[19:41:24] [Server thread/INFO]: Saving chunks for level 'world'/the_nether
-[19:41:24] [Server thread/INFO]: Saving chunks for level 'world'/the_end
-[19:41:24] [Server thread/INFO]: Saving chunks for level 'world'/Ruby
-[19:41:25] [Server Shutdown Thread/INFO]: Stopping server
+[21:36:39] [main/INFO] [GradleStart]: Extra: []
+[21:36:39] [main/INFO] [GradleStart]: Running with arguments: [--tweakClass, net.minecraftforge.fml.common.launcher.FMLServerTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[21:36:39] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLServerTweaker
+[21:36:39] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLServerTweaker
+[21:36:39] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[21:36:39] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLServerTweaker
+[21:36:41] [main/INFO] [FML]: Forge Mod Loader version 14.23.4.2747 for Minecraft 1.12.2 loading
+[21:36:41] [main/INFO] [FML]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_171, running on Windows 10:amd64:10.0, installed at C:\Program Files\Java\jre1.8.0_171
+[21:36:41] [main/ERROR] [FML]: Apache Maven library folder was not in the format expected. Using default libraries directory.
+[21:36:41] [main/ERROR] [FML]: Full: C:\Users\pc\.gradle\caches\modules-2\files-2.1\org.apache.maven\maven-artifact\3.5.3\7dc72b6d6d8a6dced3d294ed54c2cc3515ade9f4\maven-artifact-3.5.3.jar
+[21:36:41] [main/ERROR] [FML]: Trimmed: c:/users/pc/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.5.3/
+[21:36:41] [main/INFO] [FML]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[21:36:41] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLCorePlugin (net.minecraftforge.fml.relauncher.FMLCorePlugin), we are in deobf and it's a forge core plugin
+[21:36:41] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLForgePlugin (net.minecraftforge.classloading.FMLForgePlugin), we are in deobf and it's a forge core plugin
+[21:36:41] [main/INFO] [FML]: Searching C:\Users\pc\Desktop\Juegos\RubyCraft-1.12.2\runserver\.\mods for mods
+[21:36:41] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
+[21:36:41] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugin
+[21:36:41] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
+[21:36:41] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[21:36:41] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[21:36:41] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[21:36:41] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[21:36:41] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[21:36:41] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[21:36:42] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thing
+[21:36:42] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[21:36:42] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[21:36:43] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[21:36:43] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
+[21:36:43] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
+[21:36:44] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.server.MinecraftServer}
+[21:36:48] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Starting minecraft server version 1.12.2
+[21:36:48] [Server thread/INFO] [FML]: MinecraftForge v14.23.4.2747 Initialized
+[21:36:48] [Server thread/INFO] [FML]: Starts to replace vanilla recipe ingredients with ore ingredients.
+[21:36:48] [Server thread/INFO] [FML]: Replaced 1036 ore ingredients
+[21:36:48] [Server thread/INFO] [FML]: Searching C:\Users\pc\Desktop\Juegos\RubyCraft-1.12.2\runserver\.\mods for mods
+[21:36:49] [Server thread/INFO] [FML]: Forge Mod Loader has identified 5 mods to load
+[21:36:49] [Server thread/WARN] [FML]: Missing English translation for FML: assets/fml/lang/en_us.lang
+[21:36:50] [Server thread/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, rc] at CLIENT
+[21:36:50] [Server thread/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, rc] at SERVER
+[21:36:50] [Server thread/INFO] [FML]: Processing ObjectHolder annotations
+[21:36:50] [Server thread/INFO] [FML]: Found 1168 ObjectHolder annotations
+[21:36:50] [Server thread/INFO] [FML]: Identifying ItemStackHolder annotations
+[21:36:50] [Server thread/INFO] [FML]: Found 0 ItemStackHolder annotations
+[21:36:51] [Server thread/INFO] [FML]: Configured a dormant chunk cache size of 0
+[21:36:51] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[21:36:51] [Server thread/INFO] [RubyCraft]: *********************************************************************
+[21:36:51] [Server thread/INFO] [RubyCraft]: THIS IS A SERVER STARTING MOD... PRE INIT
+[21:36:51] [Server thread/INFO] [RubyCraft]: *********************************************************************
+[21:36:51] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Found status: AHEAD Target: null
+[21:36:51] [Server thread/INFO] [FML]: Applying holder lookups
+[21:36:51] [Server thread/INFO] [FML]: Holder lookups applied
+[21:36:51] [Server thread/INFO] [FML]: Applying holder lookups
+[21:36:51] [Server thread/INFO] [FML]: Holder lookups applied
+[21:36:51] [Server thread/INFO] [FML]: Applying holder lookups
+[21:36:51] [Server thread/INFO] [FML]: Holder lookups applied
+[21:36:51] [Server thread/INFO] [FML]: Applying holder lookups
+[21:36:51] [Server thread/INFO] [FML]: Holder lookups applied
+[21:36:51] [Server thread/INFO] [FML]: Injecting itemstacks
+[21:36:51] [Server thread/INFO] [FML]: Itemstack injection complete
+[21:36:51] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Loading properties
+[21:36:51] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Default game type: SURVIVAL
+[21:36:51] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Generating keypair
+[21:36:52] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Starting Minecraft server on *:25565
+[21:36:52] [Server thread/INFO] [net.minecraft.network.NetworkSystem]: Using default channel type
+[21:36:52] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[21:36:52] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer]: The server will make no attempt to authenticate usernames. Beware.
+[21:36:52] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[21:36:52] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer]: To change this, set "online-mode" to "true" in the server.properties file.
+[21:36:52] [Server thread/INFO] [FML]: Applying holder lookups
+[21:36:52] [Server thread/INFO] [FML]: Holder lookups applied
+[21:36:52] [Server thread/INFO] [RubyCraft]: *********************************************************************
+[21:36:52] [Server thread/INFO] [RubyCraft]: THIS IS A SERVER STARTING MOD... INIT
+[21:36:52] [Server thread/INFO] [RubyCraft]: *********************************************************************
+[21:36:52] [Server thread/INFO] [FML]: Injecting itemstacks
+[21:36:52] [Server thread/INFO] [FML]: Itemstack injection complete
+[21:36:52] [Server thread/INFO] [RubyCraft]: DETECTADO:SERVER Desactivando algunas cosas que pueden llevar crash en el server
+[21:36:52] [Server thread/INFO] [RubyCraft]: *********************************************************************
+[21:36:52] [Server thread/INFO] [RubyCraft]: THIS IS A SERVER STARTING MOD... POST INIT
+[21:36:52] [Server thread/INFO] [RubyCraft]: *********************************************************************
+[21:36:53] [Server thread/INFO] [FML]: Forge Mod Loader has successfully loaded 5 mods
+[21:36:53] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Preparing level "world"
+[21:36:53] [Server thread/INFO] [FML.ModTracker]: This world was saved with mod forge version 14.23.1.2589 and it is now at version 14.23.4.2747, things may not work well
+[21:36:53] [Server thread/INFO] [FML.ModTracker]: This world was saved with mod rc version 1.1 and it is now at version 1.2, things may not work well
+[21:36:53] [Server thread/INFO] [FML]: Injecting existing registry data into this server instance
+[21:36:53] [Server thread/INFO] [FML]: Registry Block: Found a missing id from the world rc:tronco_de_madera_verde
+[21:36:53] [Server thread/INFO] [FML]: Registry Block: Found a missing id from the world rc:prueba
+[21:36:53] [Server thread/INFO] [FML]: Registry Item: Found a missing id from the world rc:tronco_de_madera_verde
+[21:36:53] [Server thread/INFO] [FML]: Registry Item: Found a missing id from the world rc:prueba
+[21:36:53] [Server thread/ERROR] [FML]: Unidentified mapping from registry minecraft:blocks
+[21:36:53] [Server thread/ERROR] [FML]:     rc:prueba: 311
+[21:36:53] [Server thread/ERROR] [FML]:     rc:tronco_de_madera_verde: 259
+[21:36:53] [Server thread/ERROR] [FML]: Unidentified mapping from registry minecraft:items
+[21:36:53] [Server thread/ERROR] [FML]:     rc:tronco_de_madera_verde: 4157
+[21:36:53] [Server thread/ERROR] [FML]:     rc:prueba: 4211
+[21:36:53] [Server thread/WARN] [FML]: Forge Mod Loader detected missing registry entries.
+
+There are 4 missing entries in this save.
+If you continue the missing entries will get removed.
+A world backup will be automatically created in your saves directory.
+
+Missing minecraft:blocks:
+    rc:tronco_de_madera_verde
+    rc:prueba
+Missing minecraft:items:
+    rc:tronco_de_madera_verde
+    rc:prueba
+
+
+Run the command /fml confirm or or /fml cancel to proceed.
+Alternatively start the server with -Dfml.queryResult=confirm or -Dfml.queryResult=cancel to preselect the answer.
+[21:36:54] [Actualizaciones/INFO] [RubyCraft]: ============================================================
+[21:36:54] [Actualizaciones/INFO] [RubyCraft]: 1.1 Esta es la Ultima Version de RubyCraft Disponible
+[21:36:54] [Actualizaciones/INFO] [RubyCraft]: Nuevo archivo de Config
+[21:36:54] [Actualizaciones/INFO] [RubyCraft]: Cosas de minecraft 1.13
+[21:36:54] [Actualizaciones/INFO] [RubyCraft]: Mejoras en general del Sistema
+[21:36:54] [Actualizaciones/INFO] [RubyCraft]: ============================================================

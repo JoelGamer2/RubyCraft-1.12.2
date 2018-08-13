@@ -17,41 +17,51 @@ import net.minecraft.client.Minecraft;
 
 public class comunicacionconserver {
 	
-	 public static String nombre_usuario = " ";
-	 public static int ValorTimeOut;
-	 public static String Mensaje = "";
-	//		 FileInputStream fr=new FileInputStream("C:\\\\Users\\\\"+ nombre_usuario + "\\\\AppData\\\\Roaming\\\\.minecraft\\\\logs\\\\latest.log");
+	 public static int ValorTimeOut;	 
+	 private static int puerto = 4444;
 
 		  
 	public static void clientecodigoensi() throws Exception {
 		 
-		 nombre_usuario = System.getProperty("user.name");
+	try {
+						
+			Socket s = new Socket("joelcraft2.ddns.net",puerto);
+			DataInputStream din = new DataInputStream(s.getInputStream());
+			DataOutputStream dout = new DataOutputStream(s.getOutputStream());
+			s.setSoTimeout(ValorTimeOut*1000);
+			
+			
 		
-		//    Socket socket = null;
-		    String host = "joelcraft2.ddns.net";
-		    Socket socket=new Socket();   
-		    socket.connect(new InetSocketAddress(host,1234),ValorTimeOut); 
-		    socket.setSoTimeout(ValorTimeOut);
-	        //socket = new Socket(host, 5643);
-
-            
-	        File file = new File("C:\\Users\\"+ nombre_usuario + "\\AppData\\Roaming\\.minecraft\\logs\\latest.log");
-		    
-	        // Get the size of the file
-	        long length = file.length();
-	        byte[] bytes = new byte[999999];
-	        InputStream in = new FileInputStream(file);
-	        OutputStream out = socket.getOutputStream();
-
-	        int count;
-	        while ((count = in.read(bytes)) > 0) {
-	            out.write(bytes, 0, count);
-	        }
-
-	        out.close();
-	        in.close();
-	        socket.close();
+			String msgin="",msgout="";
+			
+			
+			
+			while(!msgin.equals("end") ) {
+										
+				msgin = din.readUTF();
+				System.out.println(msgin);
+				dout.writeUTF("Cliente online");
+				dout.flush();
+				
+				if(msgin.equalsIgnoreCase("Server Online")) {
+					
+				RubyCraft.logger.info("abierto");
+				dout.close();
+				}
+			}
+			
+				
+			
 		
+	}catch (Exception e) {
+		if(!e.equals("java.net.SocketException")) {
+			
+			  RubyCraft.logger.info("#################################################################################################################");
+	    	  RubyCraft.logger.info("RUBYCRAFT INTENTO CONECTAR CON EL SERVIDOR PERO NO PUDO ERROR: " + e);
+	    	  RubyCraft.logger.info("TIEMPO PARA DAR TIMEOUT:" + ValorTimeOut + "segundos");
+	    	  RubyCraft.logger.info("#################################################################################################################");
+		}
+	}
 		   
 		}
 	
@@ -65,7 +75,7 @@ public class comunicacionconserver {
 	    	 RubyCraft.logger.info("COMUNICACION CON EL SERVIDOR DE RUBYCRAFT DESACTIVADA ACTIVALA EN CONFIG");
 	    	 RubyCraft.logger.info("---------------------------------------------------------------------------");
 			 
-		 }/**else if(!(ValorTimeOut==0))
+		 }else if(!(ValorTimeOut==0))
 		 
 		  try { 
 			clientecodigoensi();
@@ -75,7 +85,7 @@ public class comunicacionconserver {
 		    	  RubyCraft.logger.info("TIEMPO PARA DAR TIMEOUT:" + ValorTimeOut + "segundos");
 		    	  RubyCraft.logger.info("#################################################################################################################");
 		    	  
-		      }**/
+		      }
 	     }
 	
 	 
@@ -83,41 +93,6 @@ public class comunicacionconserver {
 		 
 		 
 		 
-	 }
-	 
-	 
-	 public static void RecibirMsgdeserver() throws UnknownHostException, IOException {
-		
-		
-		 try {
-				
-				Socket s = new Socket("joelcraft2.ddns.net",1234);
-				DataInputStream din = new DataInputStream(s.getInputStream());
-				DataOutputStream dout = new DataOutputStream(s.getOutputStream());
-				
-				BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-				String msgin="",msgout="";
-				
-				while(!msgin.equals("end")) {
-					
-					msgout = br.readLine();
-			//		dout.writeUTF(ms);
-					msgin = din.readUTF();
-					Minecraft.getMinecraft().player.sendChatMessage(msgin);
-					System.out.println(msgin);
-					
-				}
-				
-				
-			
-		}catch (Exception e) {
-			
-			System.out.println(e);
-		}
-				
-				
-			
-		
 	 }
 	 
 }

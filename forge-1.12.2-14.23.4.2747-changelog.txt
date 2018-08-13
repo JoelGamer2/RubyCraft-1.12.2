@@ -1,5 +1,84 @@
 Changelog:
-Build 2727:
+Build 2747:
+	mezz: Improve performance of FluidRegistry.getBucketFluids
+
+Build 1.12.2-14.23.4.2746:
+	bs2609:
+		Fix received data for last vertex format element not being recorded
+		(#5074)
+
+Build 1.12.2-14.23.4.2745:
+	Karthas077: Fix missing lang entry for Swim Speed attribute (#5064)
+
+Build 1.12.2-14.23.4.2744:
+	Karthas077: Added Swim Speed Attribute to EntityLivingBase (#4990)
+
+Build 1.12.2-14.23.4.2743:
+	bs2609: Add function to lookup model location for an ItemStack (#5017)
+
+Build 1.12.2-14.23.4.2742:
+	gegy1000:
+		Resource type sensitive ResourceManager reloading, Disabled by default,
+		but may increase performance. (#4658)
+	bs2609: Allow custom SpawnPlacementType registration (#4973)
+
+Build 1.12.2-14.23.4.2741:
+	InsomniaKitten: Added CreativeTabs#getBackgroundImage (#5034)
+	cbrittain10:
+		Add functionality in IItemHandler to test if a slot can accept an item
+		(#5033)
+	bs2609: Fire colour events for mesa and swamp biomes (#5029)
+	Bward7864: Improve crash report details (#5011)
+
+Build 1.12.2-14.23.4.2740:
+	Chollis81: Add wooden doors to the OreDictionary. (#5036)
+
+Build 1.12.2-14.23.4.2739:
+	bs2609: Update and clean up Forge fluid render model (#4763)
+
+Build 1.12.2-14.23.4.2738:
+	mezz:
+		Allow configuring log levels using system properties. (#5024)
+		Defaults are:
+		-Dforge.logging.mojang.level=info (note that setting this to debug or
+		trace will enable extra debug behavior which may slow things down or
+		detect issues and crash)
+		-Dforge.logging.console.level=info
+		-Dforge.logging.file.level=info
+		-Dforge.logging.debugFile.level=trace
+
+Build 1.12.2-14.23.4.2737:
+	mezz: Update README on github to fix the CLA section
+
+Build 1.12.2-14.23.4.2736:
+	bs2609: Add support for FluidStack-dependant colouring to Forge bucket (#4952)
+
+Build 1.12.2-14.23.4.2735:
+	ichhabads:
+		Use itemstack in LivingEntityUseItemEvent.Finish before it was used
+		(#5015)
+
+Build 1.12.2-14.23.4.2734:
+	bloodmc: Check use item result before calling onItemUseFirst. (#5016)
+
+Build 1.12.2-14.23.4.2733:
+	tterrag1098: Clean up and improve ICapabilityProvider javadocs (#4978)
+
+Build 1.12.2-14.23.4.2732:
+	tterrag1098: Fix potential deadlock when chunkload raises non-IO exception (#4861)
+	mezz: Update license header on ChunkIOThreadPoolExecutor
+
+Build 1.12.2-14.23.4.2730:
+	LexManos: Fix MDK not having license texts.
+
+Build 1.12.2-14.23.4.2729:
+	bs2609: Change some client hooks to use GlStateManager functions (#5010)
+
+Build 1.12.2-14.23.4.2728:
+	Weissmoon: Write full class name in undefined packet error messages. (#4970)
+	marvinroesch99: Move some test mods into appropriate packages (#5006)
+
+Build 1.12.2-14.23.4.2727:
 	bs2609:
 		Fix ItemHandlerHelper.giveItemToPlayer creating item entities with
 		incorrect contents (#5007)

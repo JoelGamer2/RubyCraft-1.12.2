@@ -69,8 +69,8 @@ public class RubyCraftConfig {
 		Property Actualizacion  = config.get(CATEGORY_NAME_EVENTOS, "Mostrar_Notificaciones_de_Actualizaciones", true);
 		Actualizacion.setComment("Te notifica si esta en true de actualizaciones si lo pones en false en consola seguira apareciendo igualmente. Por defecto true");
 	    
-		Property Servercomunicacion = config.get(CATEGORY_NAME_EXTRAS, "comunicacion_con_el_server_time_of_timeout", 10);
-		Servercomunicacion.setComment("Si lo pones en 0 se desactivara la comunicacion con el servidor de rubycraft si lo pones mas alto de 0 estara activado y sera el timepo de espera por si el servidor a lento es recomendable o desactivarlo o dejarlo como esta porque el sever no esta 24h a si que. DEFAULT:10");
+		Property Servercomunicacion = config.get(CATEGORY_NAME_EXTRAS, "comunicacion_con_el_server_time_of_timeout", 1);
+		Servercomunicacion.setComment("Si lo pones en 0 se desactivara la comunicacion con el servidor de rubycraft si lo pones mas alto de 0 estara activado y sera el timepo de espera por si el servidor a lento es recomendable o desactivarlo o dejarlo como esta porque el sever no esta 24h a si que. DEFAULT:1 el 1 es el tiempo de espera en segundos");
 		
 		Property iddimension = config.get(CATEGORY_NAME_EXTRAS, "DimensionRuby_ID", 2);
 		iddimension.setComment("Esto es la id de la dimension de ruby:");
