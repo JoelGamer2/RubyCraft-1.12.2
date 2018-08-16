@@ -23,45 +23,42 @@ public class comunicacionconserver {
 		  
 	public static void clientecodigoensi() throws Exception {
 		 
-	try {
+	
 						
-			Socket s = new Socket("joelcraft2.ddns.net",puerto);
-			DataInputStream din = new DataInputStream(s.getInputStream());
-			DataOutputStream dout = new DataOutputStream(s.getOutputStream());
-			s.setSoTimeout(ValorTimeOut*1000);
-			
+		Socket s = new Socket("joelcraft2.ddns.net",puerto);
+		DataInputStream din = new DataInputStream(s.getInputStream());
+		DataOutputStream dout = new DataOutputStream(s.getOutputStream());
+		
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		String msgin="",msgout="";
+		
+		
+		
+		while(!msgin.equals("end") ) {
 			
 		
-			String msgin="",msgout="";
+			
+			dout.writeUTF(Referencia.VERSION);
 			
 			
 			
-			while(!msgin.equals("end") ) {
-										
-				msgin = din.readUTF();
-				System.out.println(msgin);
-				dout.writeUTF("Cliente online");
-				dout.flush();
-				
-				if(msgin.equalsIgnoreCase("Server Online")) {
-					
-				RubyCraft.logger.info("abierto");
+			msgin = din.readUTF();
+            RubyCraft.logger.info(msgin);			
+			
+			if(msgin.equalsIgnoreCase("Inicia")) {
+				RubyCraft.ModActualizado = true;
 				dout.close();
-				}
+				
+			}else if(msgin.equalsIgnoreCase("Apaga")) {
+				RubyCraft.ModActualizado = false;
+				dout.close();
 			}
 			
-				
-			
-		
-	}catch (Exception e) {
-		if(!e.equals("java.net.SocketException")) {
-			
-			  RubyCraft.logger.info("#################################################################################################################");
-	    	  RubyCraft.logger.info("RUBYCRAFT INTENTO CONECTAR CON EL SERVIDOR PERO NO PUDO ERROR: " + e);
-	    	  RubyCraft.logger.info("TIEMPO PARA DAR TIMEOUT:" + ValorTimeOut + "segundos");
-	    	  RubyCraft.logger.info("#################################################################################################################");
 		}
-	}
+		
+	
+	
 		   
 		}
 	

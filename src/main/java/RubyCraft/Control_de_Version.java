@@ -23,7 +23,9 @@ public class Control_de_Version {
 				RubyCraft.Navidad = true;
 			}
 			
-		
+		if(Desactivar_comunicacion_con_server) {
+			RubyCraft.ModActualizado = true;
+		  }
 		}
 		
 	}

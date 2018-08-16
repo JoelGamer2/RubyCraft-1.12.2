@@ -24,6 +24,7 @@ public class OreGen implements IWorldGenerator
 	
 	public OreGen() 
 	{
+		MenaRuby = new WorldGenMinable(Bloques.mena_de_ruby.getDefaultState(), 6);
 		MenaRubyEnd = new WorldGenMinable(Bloques.mena_de_ruby_end.getDefaultState(), 6);
 		
 		MenaZafiro = new WorldGenMinable(Bloques.mena_de_zafiro.getDefaultState(), 4);

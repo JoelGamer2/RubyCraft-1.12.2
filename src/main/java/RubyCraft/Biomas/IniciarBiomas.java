@@ -15,7 +15,7 @@ public class IniciarBiomas {
 	
 	public static void registarBiomas() {
 		
-		iniciarbioma(RubyBioma, "BiomaRuby", BiomeType.WARM, Type.HILLS, Type.DENSE, Type.FOREST);
+		iniciarbioma(RubyBioma, "Bioma de Ruby", BiomeType.WARM, Type.HILLS, Type.DENSE, Type.FOREST);
 		
 	}
 	

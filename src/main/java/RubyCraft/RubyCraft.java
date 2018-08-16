@@ -44,6 +44,7 @@ public class RubyCraft {
 	public static boolean Hallowen = false;
 	public static boolean Dia_de_Los_Inocentes = false;
 	public static boolean es_un_cliente_y_no_un_server = false;
+	public static boolean ModActualizado = true;
 	
 	public static final org.apache.logging.log4j.Logger logger = LogManager.getFormatterLogger("RubyCraft");
 	
@@ -58,8 +59,7 @@ public class RubyCraft {
 	
 	@EventHandler
 	public void preinit(FMLPreInitializationEvent event) throws Exception{
-       
-		Eventos_Calendario.Iniciar_Test_de_Calendario();
+		
 		
 		if(event.getSide()==Side.CLIENT) {
 			es_un_cliente_y_no_un_server = true;
@@ -69,10 +69,12 @@ public class RubyCraft {
 			es_un_cliente_y_no_un_server = false;
 		}
 		
-		Control_de_Version.Iniciar();
+		  Control_de_Version.Iniciar(); 
 		RubyCraftConfig.preInit();
 		RubyCraftConfig.clientPreInit();
-		
+		if(Control_de_Version.Desactivar_comunicacion_con_server == false) {
+		     comunicacionconserver.IntentarContactarconelServer();
+		    	   }
 		if(VersionTrol == true){
 			
 			
@@ -85,24 +87,29 @@ public class RubyCraft {
 		}else if(Control_de_Version.Version_de_desarrollador){
 			Buscar_Actualizaciones.MirarActualizacionesI();
 		}
+		
+		
+			
+		Eventos_Calendario.Iniciar_Test_de_Calendario();
+			
 		BuscarVersionTrol.MirarVersionTrol();
 				
 		Evento.Iniciar();
 		
-        Registrar_generaciones.Iniciar();
+       
 		
 		Armaduras.Iniciar();
-		Armaduras.registrar();
+		
 		
 		RItems.Iniciar();
-		RItems.Registrar();
+		
 
 		
 		Herramientas.Iniciar();
-		Herramientas.registrar();
+		
 		
 		Bloques.Iniciar();
-		Bloques.Registrar();
+		
 		
 		//Escaleras.Iniciar();
 	//	Escaleras.Registrar();
@@ -111,12 +118,19 @@ public class RubyCraft {
 		
 		
 		ModificarCosasMineCraftVanilla.preinit();
-		GameRegistry.registerWorldGenerator(new OreGen(), 100);
+		
 		
 		Dimensiones.registrarDimensiones();
 		IniciarBiomas.registarBiomas();
 		
-		
+		if(ModActualizado) {
+			Armaduras.registrar();
+			RItems.Registrar();
+			Herramientas.registrar();
+			Bloques.Registrar(); 
+			Registrar_generaciones.Iniciar();
+			GameRegistry.registerWorldGenerator(new OreGen(), 100);
+		}
 	}
 	
 	@EventHandler
@@ -143,9 +157,7 @@ public class RubyCraft {
 	@EventHandler
 	public void postinit(FMLPostInitializationEvent event) throws Exception{
        if(event.getSide()==Side.CLIENT) {
-    	   if(!Control_de_Version.Desactivar_comunicacion_con_server) {
-    	 comunicacionconserver.IntentarContactarconelServer();
-    	   }
+    	  
     	 RubyCraft.logger.info("DETECTADO:CLIENTE");
     	 es_un_cliente_y_no_un_server = true;
 		}else if(event.getSide()==Side.SERVER) {

@@ -17,7 +17,7 @@ public class BiomaRuby extends Biome {
 	
 	public BiomaRuby() {
 		//para lo del agua https://www.mathsisfun.com/hexadecimal-decimal-colors.html
-		super(new BiomeProperties("BiomaRuby").setBaseHeight(1.5F).setHeightVariation(1.2F).setTemperature(0.6F).setWaterColor(color).setRainDisabled());
+		super(new BiomeProperties("Bioma de Ruby").setBaseHeight(1.5F).setHeightVariation(1.2F).setTemperature(0.6F).setWaterColor(color).setRainDisabled());
 		
 	    this.spawnableMonsterList.clear();
 	    this.spawnableCaveCreatureList.clear();
@@ -28,6 +28,7 @@ public class BiomaRuby extends Biome {
 		this.spawnableMonsterList.add(new SpawnListEntry(EntityCreeper.class, 100, 3, 10));
 		
 		
+		this.decorator.bigMushroomsPerChunk = 4;
 		
 		
 	}
