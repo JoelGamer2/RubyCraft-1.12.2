@@ -1,6 +1,7 @@
 package RubyCraft.Biomas;
 
 import RubyCraft.Biomas.Biomass.BiomaRuby;
+import RubyCraft.Biomas.Biomass.BiomaZafiro;
 import net.minecraft.world.biome.Biome;
 import net.minecraftforge.common.BiomeDictionary;
 import net.minecraftforge.common.BiomeDictionary.Type;
@@ -12,10 +13,12 @@ import net.minecraftforge.fml.common.registry.ForgeRegistries;
 public class IniciarBiomas {
 
 	public static final Biome RubyBioma = new BiomaRuby();
+	public static final Biome ZafiroBioma = new BiomaZafiro();
 	
 	public static void registarBiomas() {
 		
 		iniciarbioma(RubyBioma, "Bioma de Ruby", BiomeType.WARM, Type.HILLS, Type.DENSE, Type.FOREST);
+		iniciarbioma(ZafiroBioma, "Bioma de Zafiro", BiomeType.WARM, Type.PLAINS, Type.DENSE);
 		
 	}
 	
