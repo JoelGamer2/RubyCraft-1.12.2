@@ -44,13 +44,15 @@ public class comunicacionconserver {
 			
 			
 			msgin = din.readUTF();
-            RubyCraft.logger.info(msgin);			
+           		
 			
 			if(msgin.equalsIgnoreCase("Inicia")) {
+				RubyCraft.logger.info("El Server determino que esta es la ultima version de RubyCraft a si que se procede a cargar el mod Mensaje del server:" + msgin);
 				RubyCraft.ModActualizado = true;
 				dout.close();
 				
 			}else if(msgin.equalsIgnoreCase("Apaga")) {
+				RubyCraft.logger.info("El Server determino que esta no es la ultima version de RubyCraft no se cargara el mod Mensaje del server:" + msgin);
 				RubyCraft.ModActualizado = false;
 				dout.close();
 			}

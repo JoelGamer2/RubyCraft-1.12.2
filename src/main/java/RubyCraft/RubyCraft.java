@@ -142,7 +142,7 @@ public class RubyCraft {
 		
 		RubyCraft.proxy.init();
     RubyCraftSoundhandler.Iniciar();
-		if(VersionTrol == false){
+		if(VersionTrol == false && RubyCraft.ModActualizado){
 		Crafteos.IniciarTodo();
 
 		}
