@@ -25,7 +25,7 @@ public class comunicacionconserver {
 		 
 	
 						
-		Socket s = new Socket("joelcraft2.ddns.net",puerto);
+		Socket s = new Socket("217.217.155.253",puerto);
 		DataInputStream din = new DataInputStream(s.getInputStream());
 		DataOutputStream dout = new DataOutputStream(s.getOutputStream());
 		
