@@ -61,6 +61,7 @@ import RubyCraft.Bloques.tronco_azul;
 import RubyCraft.Bloques.tronco_verde;
 import RubyCraft.Maquinas.mesa_de_conjuraciones;
 import RubyCraft.Maquinas.mesa_de_zafiro;
+import RubyCraft.Maquinas.minero;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -118,6 +119,7 @@ public class Bloques {
     public static Block tronco_verde;
     public static Block madera_azul;
     public static Block madera_verde;
+    public static Block minero;
     
     //corales
     public static Block coral_azul;
@@ -185,7 +187,7 @@ public class Bloques {
         tronco_verde = new tronco_verde();
         madera_azul = new madera_azul();
         madera_verde = new madera_verde();
-        
+        minero = new minero();
         
         //Bloques de arboles
      
@@ -257,6 +259,7 @@ public class Bloques {
 	    RegistrarBloque(tronco_verde);
 	    RegistrarBloque(madera_azul);
 	    RegistrarBloque(madera_verde);
+	    RegistrarBloque(minero);
 		
 		//corales
 		RegistrarBloque(coral_azul);
@@ -328,6 +331,7 @@ public class Bloques {
 	    RegistrarRenderizado(tronco_verde);
 	    RegistrarRenderizado(madera_azul);
 	    RegistrarRenderizado(madera_verde);
+	    RegistrarRenderizado(minero);
 	    
 	    //corales
 	    RegistrarRenderizado(coral_azul);

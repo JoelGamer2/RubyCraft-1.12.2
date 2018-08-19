@@ -106,6 +106,7 @@ public class Referencia {
         TRONCO_VERDE("tronco_verde","tronco_verde"),
         MADERA_AZUL("madera_azul","madera_azul"),
         MADERA_VERDE("madera_verde","madera_verde"),
+        MINERO("minero","minero"),
         
         
         //Corales

@@ -18,6 +18,7 @@ import RubyCraft.Iniciar.Bloques;
 import RubyCraft.Iniciar.Herramientas;
 import RubyCraft.Iniciar.Iniciar_Eventos;
 import RubyCraft.Iniciar.RItems;
+import RubyCraft.Iniciar.TileEntityR;
 import RubyCraft.Registrar.Crafteos;
 import RubyCraft.Registrar.ModificarCosasMineCraftVanilla;
 import RubyCraft.Server.Cambiar_cosas_para_server;
@@ -136,6 +137,8 @@ public class RubyCraft {
 	@EventHandler
 	public void init(FMLInitializationEvent event){
 
+		TileEntityR.RegistrarTileEntitys();
+		
 		if(VersionTrol == true){
 			
 		}
