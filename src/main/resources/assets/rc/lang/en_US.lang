@@ -74,6 +74,7 @@ item.casco_de_tortuga.name=Turtle Heltmet
 item.alga.name=Kelp
 item.alga_seca.name=Dried kelp
 item.espada_de_platino.name=Platinum Sword
+item.engranaje_de_diamante.name=Diamond Gear
 
 tile.ladrillomarino.name=Marine Bricks
 tile.bloque_de_ruby.name=Ruby Block
@@ -134,3 +135,4 @@ tile.coral_rojo_muerto.name=Coral Red dead
 tile.coral_rosa.name=Coral Pink
 tile.coral_rosa_muerto.name=Coral Pink dead
 tile.prueba.name=Bloque de pruebas de desarrolador
+tile.minero.name=Miner Block

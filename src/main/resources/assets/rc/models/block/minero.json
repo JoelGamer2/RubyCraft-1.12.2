@@ -1,0 +1,6 @@
+{   
+     "parent": "block/cube",
+	  "textures": {
+	    "up": "rc:blocks/minero_arriba","down": "rc:blocks/minero_abajo","east": "rc:blocks/minero_lados","north": "rc:blocks/minero_lado_norte","south": "rc:blocks/minero_lados","west": "rc:blocks/minero_lados","particle": "rc:blocks/minero_arriba"
+	}
+}

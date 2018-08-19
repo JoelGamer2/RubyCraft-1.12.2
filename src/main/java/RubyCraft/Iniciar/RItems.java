@@ -14,6 +14,7 @@ import RubyCraft.Items.anillo;
 import RubyCraft.Items.barra_de_aluminio;
 import RubyCraft.Items.cobre;
 import RubyCraft.Items.colores;
+import RubyCraft.Items.engranaje_de_diamante;
 import RubyCraft.Items.huevo_frito;
 import RubyCraft.Items.lingote_galactico;
 import RubyCraft.Items.manzana_de_diamante;
@@ -53,6 +54,7 @@ public class RItems {
 	public static Item lingote_galactico;
 	public static Item platino;
 	public static Item alga;
+	public static Item engranaje_de_diamante;
 	
 	//Comida
 	public static Item pan_de_calabaza;
@@ -81,6 +83,7 @@ public class RItems {
 		lingote_galactico = new lingote_galactico();
 		platino = new platino();
 		alga = new alga();
+		engranaje_de_diamante = new engranaje_de_diamante();
 		
 		//Comida
 		pan_de_calabaza = new pan_de_calabaza(10, 1.0F, false);
@@ -110,6 +113,7 @@ public class RItems {
 		RegistrarItem(platino);
 		RegistrarItem(alga);
 		RegistrarItem(alga_seca);
+		RegistrarItem(engranaje_de_diamante);
 		
 		//Comidas
 		RegistrarItem(pan_de_calabaza);
@@ -139,6 +143,7 @@ public class RItems {
 		RegistrarRender(platino);
 		RegistrarRender(alga);
 		RegistrarRender(alga_seca);
+		RegistrarRender(engranaje_de_diamante);
 		
 		//Comidad
 		RegistrarRender(pan_de_calabaza);

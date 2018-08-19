@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "heh",
+	"ere",
+	"heh"
+  ],
+  "key": {
+    "h": {
+      "item": "minecraft:iron_block"
+    },
+	
+	"r": {
+	"item": "rc:bloque_de_ruby"
+	},
+	
+	"e": {
+      "item": "rc:engranaje_de_diamante"
+    }
+	
+  },
+  "result": {
+    "item": "rc:minero",
+    "count": 1
+  }
+}

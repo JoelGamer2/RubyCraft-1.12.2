@@ -74,6 +74,7 @@ item.casco_de_tortuga.name=Casco de Tortuga
 item.alga.name=Alga
 item.alga_seca.name=Alga seca
 item.espada_de_platino.name=Espada de Platino
+item.engranaje_de_diamante.name=Engranaje de Diamante
 
 tile.ladrillomarino.name=Ladrillo Marino
 tile.bloque_de_ruby.name=Bloque de Ruby
@@ -134,3 +135,4 @@ tile.coral_rojo_muerto.name=Coral Rojo Muerto
 tile.coral_rosa.name=Coral Rosa
 tile.coral_rosa_muerto.name=Coral Rosa Muerto
 tile.prueba.name=Bloque de pruebas de desarrolador
+tile.minero.name=Minador

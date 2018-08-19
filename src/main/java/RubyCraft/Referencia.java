@@ -32,8 +32,8 @@ public class Referencia {
 		LINGOTE_GALACTICO("lingote_galactico","lingote_galactico"),
 		PLATINO("platino","platino"),
 		ALGA("alga","alga"),
-		DETECTOR_DE_TIEMPO("detector_de_tiempo","detector_de_tiempo"),
-	
+		ENGRANAJE_DE_DIAMANTE("engranaje_de_diamante","engranaje_de_diamante"),
+	    
 		//Comida
 		PAN_DE_CALABAZA("pan_de_calabaza","pan_de_calabaza"),
 		HUEVO_FRITO("huevo_frito","huevo_frito"),

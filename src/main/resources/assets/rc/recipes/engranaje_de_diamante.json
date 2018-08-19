@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " d ",
+	"drd",
+	" d "
+  ],
+   "key": {
+   
+    "d": {
+      "item": "minecraft:diamond"
+    },
+  
+   "r": {
+      "item": "rc:ruby"
+    }
+	
+},
+	
+  
+  "result": {
+    "item": "rc:engranaje_de_diamante",
+    "count": 1
+  }
+}

@@ -1,0 +1,3 @@
+
+gradlew runClient
+pause

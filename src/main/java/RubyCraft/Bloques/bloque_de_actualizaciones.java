@@ -6,6 +6,7 @@ import RubyCraft.Control_de_Version;
 import RubyCraft.Referencia;
 import RubyCraft.Actualizaciones.Buscar_Actualizaciones;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockCactus;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.Minecraft;
@@ -47,11 +48,12 @@ public class bloque_de_actualizaciones extends Block {
 	
 	 public boolean onBlockActivated(World world, BlockPos pos, IBlockState state, EntityPlayer player, EnumHand hand, EnumFacing facing, float x, float y, float z){
 		if (!player.isSneaking()){
-		 
+		    Buscar_Actualizaciones.MirarActualizaciones();
 			if(!Referencia.VERSION.equals(UltimaVersion) && !Control_de_Version.Version_de_desarrollador){
 				
-				Buscar_Actualizaciones.MirarActualizaciones();
-				actualizacion = 15;
+				  actualizacion = 15;
+	        	  world.updateComparatorOutputLevel(pos, this);
+				
 				Minecraft.getMinecraft().player.sendMessage(new TextComponentTranslation(TextFormatting.GRAY + "[" + TextFormatting.GREEN + "RubyCraft" + TextFormatting.GRAY + "] " + TextFormatting.GOLD + Minecraft.getMinecraft().player.getName() + " Hay Una Nueva Version Disponible: " + TextFormatting.RED + UltimaVersion));
 				Minecraft.getMinecraft().player.sendMessage(new TextComponentTranslation(TextFormatting.GRAY + "[" + TextFormatting.GREEN + "RubyCraft" + TextFormatting.GRAY + "] " + TextFormatting.GOLD + Mensaje1));
 				if(Mensaje2a == true){
@@ -66,12 +68,11 @@ public class bloque_de_actualizaciones extends Block {
 				Minecraft.getMinecraft().player.sendMessage(new TextComponentTranslation(TextFormatting.GRAY + "[" + TextFormatting.GREEN + "RubyCraft" + TextFormatting.GRAY + "] " + TextFormatting.GOLD + Minecraft.getMinecraft().player.getName() + " Cuidado esta es la DeveloperBuild " + TextFormatting.GOLD + "puede ocurrir muchos bugs Version: " + TextFormatting.RED + Referencia.VERSION + TextFormatting.RED + " INDEV"));
 			
 			  }else if(Referencia.VERSION.equals(UltimaVersion) && !Control_de_Version.Version_de_desarrollador){
-				
+				actualizacion = 0;
+				world.updateComparatorOutputLevel(pos, this);
 				Minecraft.getMinecraft().player.sendMessage(new TextComponentTranslation(TextFormatting.GRAY + "[" + TextFormatting.GREEN + "RubyCraft" + TextFormatting.GRAY + "] " + TextFormatting.GOLD + Minecraft.getMinecraft().player.getName() + " Estas en la Version:" + TextFormatting.GREEN + Referencia.VERSION + TextFormatting.GOLD + " La Ultima " + TextFormatting.GOLD + "Version es la:" + TextFormatting.RED + UltimaVersion));
 				Buscar_Actualizaciones.MirarActualizaciones();
 			}
-			
-			
 		}
 		return true;
 	
@@ -86,7 +87,7 @@ public class bloque_de_actualizaciones extends Block {
         return 4;
     }
 
-	
+
 	  /**
      * Ticks the block if it's been scheduled
      */
@@ -94,6 +95,8 @@ public class bloque_de_actualizaciones extends Block {
     {
         if (!world.isRemote)
         {
+        
+        	  world.updateComparatorOutputLevel(pos, this);
         hasComparatorInputOverride(state);
         }
     }
@@ -105,7 +108,7 @@ public class bloque_de_actualizaciones extends Block {
      */
     public boolean hasComparatorInputOverride(IBlockState state)
     {
-        return true;
+        return  true;
     }
 
     /**
