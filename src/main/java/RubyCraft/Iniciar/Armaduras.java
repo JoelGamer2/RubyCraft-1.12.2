@@ -3,6 +3,7 @@ package RubyCraft.Iniciar;
 import RubyCraft.Referencia;
 import RubyCraft.RubyCraft;
 import RubyCraft.ArmadurasConEventos.casco_de_tortuga;
+import RubyCraft.ArmadurasConEventos.pantacas_de_uranio;
 import RubyCraft.Bases.ArmadurasBases;
 import RubyCraft.Handles.RubyCraftSoundhandler;
 import net.minecraft.client.Minecraft;
@@ -59,7 +60,7 @@ public class Armaduras {
      
      casco_de_uranio = new ArmadurasBases(UranioArmorMaterial, 1, EntityEquipmentSlot.HEAD, "casco_de_uranio");
      pechera_de_uranio = new ArmadurasBases(UranioArmorMaterial, 1, EntityEquipmentSlot.CHEST, "pechera_de_uranio");
-     pantacas_de_uranio = new ArmadurasBases(UranioArmorMaterial, 2, EntityEquipmentSlot.LEGS, "pantacas_de_uranio");
+     pantacas_de_uranio = new pantacas_de_uranio(UranioArmorMaterial, 2, EntityEquipmentSlot.LEGS, "pantacas_de_uranio");
      botas_de_uranio = new ArmadurasBases(UranioArmorMaterial, 1, EntityEquipmentSlot.FEET, "botas_de_uranio");
      
      elitros = new ArmadurasBases(elitromaterial, 1, EntityEquipmentSlot.CHEST, "elitros");

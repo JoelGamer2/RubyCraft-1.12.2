@@ -3,6 +3,9 @@ itemGroup.rc=RubyCraft
 death.attack.Troleo=%1$s a Muerto por descuidarse.
 death.attack.Troleo.player=%$s a Sido Troleado Por %2$s.
 
+death.attack.RadioActividad=%1$s a Muerto por Tener demasiada RadioActividad.
+death.attack.RadioActividad.player=%$s a Muerto por Radioactividad pero le Troleo %2$s.
+
 block.mesa_de_conjuraciones_error=Mesa de Conjuraciones Error
 block.mesa_de_conjuraciones_hechizo=Mesa de Conjuraciones Hechizo
 record.cancion_sans=Cancion Sans
