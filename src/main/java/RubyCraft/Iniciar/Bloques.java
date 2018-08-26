@@ -265,13 +265,13 @@ public class Bloques {
 		RegistrarBloque(coral_azul);
 		RegistrarBloque(coral_azul_muerto);
 		RegistrarBloque(coral_amarillo);
-	    RegistrarBloque( coral_amarillo_muerto);
-	    RegistrarBloque( coral_morado);
+	    RegistrarBloque(coral_amarillo_muerto);
+	    RegistrarBloque(coral_morado);
 	    RegistrarBloque(coral_morado_muerto);
-	    RegistrarBloque( coral_rojo);
-	    RegistrarBloque( coral_rojo_muerto);
-	    RegistrarBloque( coral_rosa);
-	    RegistrarBloque( coral_rosa_muerto);
+	    RegistrarBloque(coral_rojo);
+	    RegistrarBloque(coral_rojo_muerto);
+	    RegistrarBloque(coral_rosa);
+	    RegistrarBloque(coral_rosa_muerto);
 
 	    //Bloques con subid
 	    
