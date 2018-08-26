@@ -25,7 +25,6 @@ public class Coral_vivo_toque_de_seda extends Block{
 	}
 	@Override
 	protected boolean canSilkHarvest() {
-		// TODO Auto-generated method stub
 		return true;
 	}
 }
