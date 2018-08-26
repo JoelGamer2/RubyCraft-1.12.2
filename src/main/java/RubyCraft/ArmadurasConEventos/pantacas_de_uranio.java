@@ -14,16 +14,13 @@ import net.minecraft.world.World;
 public class pantacas_de_uranio extends ItemArmor {
 	
 	public static boolean Puesto = false;
-	public static int pocion = 19;
 	public pantacas_de_uranio(ArmorMaterial material, int render, EntityEquipmentSlot donde_se_equipa, String unlocalizedName) {
 		super(material, render, donde_se_equipa);
 		
 		this.setUnlocalizedName(unlocalizedName);
-		this.setRegistryName(new ResourceLocation(Referencia.MOD_ID, unlocalizedName));
-		
+		this.setRegistryName(new ResourceLocation(Referencia.MOD_ID, unlocalizedName));	
 	}
 
-	
 	 public static void Iniciar(EntityPlayer player, World world) {
 	        ItemStack casco = player.getItemStackFromSlot(EntityEquipmentSlot.HEAD);
 	        ItemStack pechera = player.getItemStackFromSlot(EntityEquipmentSlot.CHEST);  
@@ -31,13 +28,8 @@ public class pantacas_de_uranio extends ItemArmor {
 	        ItemStack botas = player.getItemStackFromSlot(EntityEquipmentSlot.FEET);  
 
 	            if (casco.getItem() == Armaduras.casco_de_uranio && pechera.getItem() == Armaduras.pechera_de_uranio && pantacas.getItem() == Armaduras.pantacas_de_uranio && botas.getItem() == Armaduras.botas_de_uranio) {	                 	            		
-	            		           
 	            	Puesto = true;
-	            	
-	            	 player.removeActivePotionEffect(Potion.getPotionById(pocion));
-	            	
-	            	 
-	              }
+	            }
 	        }
 	   
 	 
@@ -47,6 +39,4 @@ public class pantacas_de_uranio extends ItemArmor {
 		
 	}
 	
-	 
-	 
 }

@@ -1,5 +1,6 @@
 package RubyCraft.Eventos;
 
+import RubyCraft.Referencia;
 import RubyCraft.RubyCraft;
 import RubyCraft.comunicacionconserver;
 import RubyCraft.ArmadurasConEventos.pantacas_de_uranio;
