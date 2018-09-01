@@ -1,9 +1,6 @@
 package RubyCraft.Eventos;
 
-import RubyCraft.Referencia;
 import RubyCraft.RubyCraft;
-import RubyCraft.comunicacionconserver;
-import RubyCraft.ArmadurasConEventos.pantacas_de_uranio;
 import RubyCraft.Config.RubyCraftConfig;
 import RubyCraft.Dimensiones.Dimensiones;
 import RubyCraft.Handles.RubyCraftSoundhandler;
@@ -13,12 +10,9 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemStack;
-import net.minecraft.potion.Potion;
-import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.util.text.TextFormatting;
-import net.minecraft.world.World;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent.PlayerTickEvent;
@@ -48,7 +42,6 @@ public class Todos_los_eventos {
 	
 	@SubscribeEvent
 	public void OnPlayerTickEvent(PlayerTickEvent player) {
-		tick ++;
 		//Poner Musica dimension
 		
 		//player.player.playSound(RubyCraftSoundhandler.casco_de_tortuga, 1.0F, 1.0F);
@@ -72,18 +65,18 @@ public class Todos_los_eventos {
 
 	            if (!(casco.getItem() == Armaduras.casco_de_uranio) || !(pechera.getItem() == Armaduras.pechera_de_uranio) || !(pantacas.getItem() == Armaduras.pantacas_de_uranio) || !(botas.getItem() == Armaduras.botas_de_uranio)) {	                 	            		
 	            		           
-	            	pantacas_de_uranio.Puesto = false;
-	            	       	 
+	            	
+	            	if(player.player.inventory.hasItemStack(new ItemStack(RItems.uranio))) {
+	        			
+	        			
+	        				player.player.attackEntityFrom(RadioActividad, 4.0F);
+	        			
+	        			
+	        		}
 	              }
 		
 		//Dar Jugador veneno si no tiene puesta la armadura de uranio para cojer uranio
-		if(player.player.inventory.hasItemStack(new ItemStack(RItems.uranio)) && !pantacas_de_uranio.Puesto) {
-			
-			if(tick == cooldown || cooldown < tick) {
-				player.player.attackEntityFrom(RadioActividad, 4.0F);
-			tick = 0;
-			}
-		}
+		
 		
 	}
 	
