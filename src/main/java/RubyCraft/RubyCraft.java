@@ -10,7 +10,7 @@ import RubyCraft.Biomas.IniciarBiomas;
 import RubyCraft.Config.RubyCraftConfig;
 import RubyCraft.Dimensiones.Dimensiones;
 import RubyCraft.Eventos.Evento;
-import RubyCraft.Generacion.OreGen;
+import RubyCraft.Generacion.OreGenDimensiones;
 import RubyCraft.Generacion.Registrar_generaciones;
 import RubyCraft.Handles.RubyCraftSoundhandler;
 import RubyCraft.Iniciar.Armaduras;
@@ -130,7 +130,6 @@ public class RubyCraft {
 			Herramientas.registrar();
 			Bloques.Registrar(); 
 			Registrar_generaciones.Iniciar();
-			GameRegistry.registerWorldGenerator(new OreGen(), 100);
 		}
 	}
 	

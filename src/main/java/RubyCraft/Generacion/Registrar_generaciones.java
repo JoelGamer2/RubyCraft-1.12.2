@@ -1,11 +1,14 @@
 package RubyCraft.Generacion;
 
+import net.minecraftforge.fml.common.registry.GameRegistry;
+
 public class Registrar_generaciones {
 
 	public static void Iniciar(){
 		
 
-	//	GameRegistry.registerWorldGenerator(new OreGen(Bloques.mena_de_ruby, 3, 0, 70, 10), 100);
+		GameRegistry.registerWorldGenerator(new OreGenDimensiones(), 100);
+		GameRegistry.registerWorldGenerator(new OreGenOverworld(), 100);
 	
 
 	}

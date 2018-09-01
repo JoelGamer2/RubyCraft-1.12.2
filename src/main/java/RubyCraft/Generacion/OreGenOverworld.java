@@ -2,9 +2,7 @@ package RubyCraft.Generacion;
 
 import java.util.Random;
 
-import RubyCraft.Dimensiones.Dimensiones;
 import RubyCraft.Iniciar.Bloques;
-import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
@@ -13,22 +11,20 @@ import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraftforge.fml.common.IWorldGenerator;
 
-public class OreGen implements IWorldGenerator
+public class OreGenOverworld implements IWorldGenerator
 {
 	private WorldGenerator MenaRuby;
-	private WorldGenerator MenaRubyEnd;
+	
 	
 	private WorldGenerator MenaZafiro;
-	private WorldGenerator MenaZafiroEnd;
+
 	
 	
-	public OreGen() 
+	public OreGenOverworld() 
 	{
 		MenaRuby = new WorldGenMinable(Bloques.mena_de_ruby.getDefaultState(), 6);
-		MenaRubyEnd = new WorldGenMinable(Bloques.mena_de_ruby_end.getDefaultState(), 6);
 		
 		MenaZafiro = new WorldGenMinable(Bloques.mena_de_zafiro.getDefaultState(), 4);
-		MenaZafiroEnd = new WorldGenMinable(Bloques.mena_de_zafiro_end.getDefaultState(), 4);
 		
 	}
 
@@ -44,17 +40,6 @@ public class OreGen implements IWorldGenerator
 			
 			break;
 			
-		case 1:
-			
-			runGenerator(MenaRubyEnd, world, rand, chunkX, chunkZ, 6, 0, 101);
-			
-			runGenerator(MenaZafiroEnd, world, rand, chunkX, chunkZ, 6, 0, 101);
-			
-			break;
-			
-		case -1:
-		
-			break;
 		
 		}
 	}
