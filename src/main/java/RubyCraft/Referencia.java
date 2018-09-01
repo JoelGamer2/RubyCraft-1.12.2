@@ -82,7 +82,6 @@ public class Referencia {
 		CUARZO_AZUL("cuarzo_azul","cuarzo_azul"),
 	    CUARZO_VERDE("cuarzo_verde","cuarzo_verde"),
 	    CUARZO_ROJO("cuarzo_rojo","cuarzo_rojo"),
-		POLVO_DE_CEMENTO_AZUL("polvo_de_cemento_azul","polvo_de_cemento_azul"),
 		MENA_DE_RUBY("mena_de_ruby","mena_de_ruby"),
 		MENA_DE_ZAFIRO("mena_de_zafiro","mena_de_zafiro"),
 		MENA_DE_ZAFIRO_END("mena_de_zafiro_end","mena_de_zafiro_end"),
