@@ -9,8 +9,7 @@
   "key": {
   
     "p": {
-      "item": "minecraft:stone",
-	  "data": 0
+      "item": "rc:bloque_de_platino"
     },
 	
 
@@ -20,7 +19,7 @@
 	 
   },
   "result": {
-    "item": "rc:bloque_reforzado_tier_1",
+    "item": "rc:bloque_reforzado_tier_5",
     "count": 1
   }
 }

@@ -3,14 +3,13 @@
   "group": "bloques_reforzados",
   "pattern": [
     "ooo",
-	"opo",
+	"ozo",
 	"ooo"
   ],
   "key": {
   
-    "p": {
-      "item": "minecraft:stone",
-	  "data": 0
+    "z": {
+      "item": "rc:bloque_de_zafiro"
     },
 	
 
@@ -20,7 +19,7 @@
 	 
   },
   "result": {
-    "item": "rc:bloque_reforzado_tier_1",
+    "item": "rc:bloque_reforzado_tier_4",
     "count": 1
   }
 }

@@ -13,7 +13,8 @@ public class bloque_reforzado_tier_1 extends Block {
 		setUnlocalizedName(Referencia.RubyCraftBloques.BLOQUE_REFORZADO_TIER_I.getUnlocalizedName());
 		setRegistryName(Referencia.RubyCraftBloques.BLOQUE_REFORZADO_TIER_I.getRegistryName());
 		
-		setHardness(50.0F);
+		setHardness(70.0F);
+		setResistance(50.0F);
 		setHarvestLevel("pickaxe", 3);
 		setSoundType(SoundType.METAL);	
 		

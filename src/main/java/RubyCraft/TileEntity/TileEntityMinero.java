@@ -67,6 +67,10 @@ public class TileEntityMinero extends TileEntity implements ITickable {
 			if(!world.isRemote) { 
 				
 				 InventoryHelper.spawnItemStack(world, this.x + 1, this.pos.getY() + 2, this.z + 1, new ItemStack(block));
+
+
+				
+				
 			 }
 			
 		}

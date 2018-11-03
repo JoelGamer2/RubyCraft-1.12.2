@@ -3,14 +3,13 @@
   "group": "bloques_reforzados",
   "pattern": [
     "ooo",
-	"opo",
+	"oro",
 	"ooo"
   ],
   "key": {
   
-    "p": {
-      "item": "minecraft:stone",
-	  "data": 0
+    "r": {
+      "item": "rc:bloque_de_ruby"
     },
 	
 
@@ -20,7 +19,7 @@
 	 
   },
   "result": {
-    "item": "rc:bloque_reforzado_tier_1",
+    "item": "rc:bloque_reforzado_tier_3",
     "count": 1
   }
 }

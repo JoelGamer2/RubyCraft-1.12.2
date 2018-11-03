@@ -1,7 +1,9 @@
-package RubyCraft;
+package Eventos;
 
 import java.util.Calendar;
 
+import RubyCraft.Control_de_Version;
+import RubyCraft.RubyCraft;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -16,7 +18,14 @@ public class Eventos_Calendario {
 		//Testear Navidad
 			Calendar calendar = Calendar.getInstance();
 		if (calendar.get(2) + 1 == 12 && calendar.get(5) >= 24 && calendar.get(5) <= 31 && Control_de_Version.Navidad_Activar == false){
-	        RubyCraft.Navidad = true;
+			 Verificar_Fechas.Navidad = true;
+		       
+		       if(RubyCraft.es_un_cliente_y_no_un_server) {
+		    	   Verificar_Fechas.Iniciar();
+		       }else if(!RubyCraft.es_un_cliente_y_no_un_server) {
+		    	   RubyCraft.Navidad = true;
+		    	   
+		       }
 	      
 	        Texturas_Navidad();
 	        
@@ -26,9 +35,13 @@ public class Eventos_Calendario {
 	    }else{
 	    	//Testear Hallowen
 	    	if(calendar.get(2) + 1 == 10 && calendar.get(5) == 31){
-	    		RubyCraft.Hallowen = true;
-	    	
-	    		Texturas_Hallowen();
+	    		 Verificar_Fechas.HalloWen = true;
+	    		 if(RubyCraft.es_un_cliente_y_no_un_server) {
+	    			 Verificar_Fechas.Iniciar();
+	  		       }else if(!RubyCraft.es_un_cliente_y_no_un_server) {
+			    	   RubyCraft.Hallowen = true;
+			    	   
+			       }
 	    		
 	    		} else if (Control_de_Version.Navidad_Activar == false){
 	    			RubyCraft.Navidad = false;
