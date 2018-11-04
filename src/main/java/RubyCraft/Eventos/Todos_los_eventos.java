@@ -9,10 +9,12 @@ import RubyCraft.Iniciar.RItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.EntityEquipmentSlot;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.util.text.TextFormatting;
+import net.minecraft.world.EnumDifficulty;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent.PlayerTickEvent;
@@ -21,15 +23,17 @@ import net.minecraftforge.fml.common.gameevent.TickEvent.WorldTickEvent;
 public class Todos_los_eventos {
 
 	public static boolean Iniciadosesion = true;
+	public static DamageSource MuetePorInsolacion = new DamageSource("Insolacion").setMagicDamage().setDamageIsAbsolute();
 	public static int tick = 0;
 	public static int cooldown = 200;
-	
-	  public static DamageSource RadioActividad = new DamageSource("RadioActividad").setMagicDamage();
+	public static boolean Mensaje = false;
+	public static DamageSource RadioActividad = new DamageSource("RadioActividad").setMagicDamage();
 
 	
 	//Mensaje de donde has muerto
 	@SubscribeEvent
 	public void onPlayerDeath(LivingDeathEvent event){
+		
 		
 		if(event.getEntity() instanceof EntityPlayer){
 			if(RubyCraftConfig.ValorEventodeMuerte==true) {
@@ -42,6 +46,28 @@ public class Todos_los_eventos {
 	
 	@SubscribeEvent
 	public void OnPlayerTickEvent(PlayerTickEvent player) {
+		
+		if(player.player.getName().equalsIgnoreCase("JoelGamer2") || player.player.getName().equalsIgnoreCase("Patxis") || player.player.getName().equalsIgnoreCase("Markus_Parker") | player.player.getName().equalsIgnoreCase("Maverick8812") || player.player.getName().equalsIgnoreCase("totalgamer23") || player.player.getName().equalsIgnoreCase("Juanathan_M") || player.player.getName().equalsIgnoreCase("Zedraliu")) {
+			
+		  if(!player.player.capabilities.isCreativeMode && !player.player.inventory.hasItemStack(new ItemStack(RItems.zafiro, 1))) {
+			  player.player.capabilities.allowFlying = false;
+			    player.player.capabilities.isFlying = false;
+		}else if(player.player.capabilities.isCreativeMode && !player.player.inventory.hasItemStack(new ItemStack(RItems.zafiro, 1))) {
+			      player.player.capabilities.allowFlying = true;
+		}
+		  
+		  
+		if(player.player.world.getWorldTime() <= 12800 && player.player.world.getDifficulty() == EnumDifficulty.HARD && !player.player.inventory.hasItemStack(new ItemStack(RItems.ruby,1))) {	
+			if(player.player.posY < 90) {
+			
+			player.player.attackEntityFrom(MuetePorInsolacion, 1.0F);
+			
+		
+			}
+		}
+		
+	}
+		
 		//Poner Musica dimension
 		
 		//player.player.playSound(RubyCraftSoundhandler.casco_de_tortuga, 1.0F, 1.0F);

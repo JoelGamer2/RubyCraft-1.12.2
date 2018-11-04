@@ -2,6 +2,8 @@ itemGroup.rc=RubyCraft
 
 death.attack.Troleo=%1$s a Muerto por descuidarse.
 death.attack.Troleo.player=%$s a Sido Troleado Por %2$s.
+death.attack.Insolacion=%1$s a Muerto Por Insolacion
+death.attack.Troleo.player=%$s a Muerto Por Insolacion con la ayuda %2$s.
 
 death.attack.RadioActividad=%1$s a Muerto por Tener demasiada RadioActividad.
 death.attack.RadioActividad.player=%$s a Muerto por Radioactividad pero le Troleo %2$s.
