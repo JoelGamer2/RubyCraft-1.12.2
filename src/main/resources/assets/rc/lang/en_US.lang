@@ -80,6 +80,8 @@ item.alga.name=Kelp
 item.alga_seca.name=Dried kelp
 item.espada_de_platino.name=Platinum Sword
 item.engranaje_de_diamante.name=Diamond Gear
+item.pompa_de_imunidad.name=immunity pomp
+item.anillo_angelico.name=Angelical Ring
 
 tile.ladrillomarino.name=Marine Bricks
 tile.bloque_de_ruby.name=Ruby Block

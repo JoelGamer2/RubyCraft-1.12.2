@@ -11,6 +11,7 @@ import RubyCraft.Items.alga_seca;
 import RubyCraft.Items.aluminio;
 import RubyCraft.Items.amuleto;
 import RubyCraft.Items.anillo;
+import RubyCraft.Items.anillo_angelico;
 import RubyCraft.Items.barra_de_aluminio;
 import RubyCraft.Items.cobre;
 import RubyCraft.Items.colores;
@@ -22,6 +23,7 @@ import RubyCraft.Items.molde_para_cofres;
 import RubyCraft.Items.palo_verde;
 import RubyCraft.Items.pan_de_calabaza;
 import RubyCraft.Items.platino;
+import RubyCraft.Items.pompa_de_imunidad;
 import RubyCraft.Items.ruby;
 import RubyCraft.Items.uranio;
 import RubyCraft.Items.varita;
@@ -55,6 +57,8 @@ public class RItems {
 	public static Item platino;
 	public static Item alga;
 	public static Item engranaje_de_diamante;
+	public static Item pompa_de_imunidad;
+	public static Item anillo_angelico;
 	
 	//Comida
 	public static Item pan_de_calabaza;
@@ -84,6 +88,8 @@ public class RItems {
 		platino = new platino();
 		alga = new alga();
 		engranaje_de_diamante = new engranaje_de_diamante();
+		pompa_de_imunidad = new pompa_de_imunidad();
+		anillo_angelico = new anillo_angelico();
 		
 		//Comida
 		pan_de_calabaza = new pan_de_calabaza(10, 1.0F, false);
@@ -114,6 +120,8 @@ public class RItems {
 		RegistrarItem(alga);
 		RegistrarItem(alga_seca);
 		RegistrarItem(engranaje_de_diamante);
+		RegistrarItem(pompa_de_imunidad);
+		RegistrarItem(anillo_angelico);
 		
 		//Comidas
 		RegistrarItem(pan_de_calabaza);
@@ -144,6 +152,8 @@ public class RItems {
 		RegistrarRender(alga);
 		RegistrarRender(alga_seca);
 		RegistrarRender(engranaje_de_diamante);
+		RegistrarRender(pompa_de_imunidad);
+		RegistrarRender(anillo_angelico);
 		
 		//Comidad
 		RegistrarRender(pan_de_calabaza);

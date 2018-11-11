@@ -33,6 +33,8 @@ public class Referencia {
 		PLATINO("platino","platino"),
 		ALGA("alga","alga"),
 		ENGRANAJE_DE_DIAMANTE("engranaje_de_diamante","engranaje_de_diamante"),
+		POMPA_DE_IMUNIDAD("pompa_de_imunidad","pompa_de_imunidad"),
+		ANILLO_ANGELICO("anillo_angelico","anillo_angelico"),
 	    
 		//Comida
 		PAN_DE_CALABAZA("pan_de_calabaza","pan_de_calabaza"),
@@ -109,7 +111,25 @@ public class Referencia {
         TRONCO_VERDE("tronco_verde","tronco_verde"),
         MADERA_AZUL("madera_azul","madera_azul"),
         MADERA_VERDE("madera_verde","madera_verde"),
-        MINERO("minero","minero"),
+        MINERO("minero","minero"), 
+        MONTON_DE_FOSILES("monton_de_fosiles","monton_de_fosiles"),
+        HIELO_GLACIAR("hielo_glaciar","hielo_glaciar"),
+        HIELO_GLACIAR_HUESO("hielo_glaciar_hueso","hielo_glaciar_hueso"),
+        HIELO_GLACIAR_ADN("hielo_glaciar_adn","hielo_glaciar_adn"),
+        HIELO_GLACIAR_AMBAR("hielo_glaciar_ambar","hielo_glaciar_ambar"),  
+        BARRO("barro","barro"),
+        BARRO_CONGELADO("barro_congelado","barro_congelado"),
+        BARRO_CONGELADO_HUESO("barro_congelado_hueso","barro_congelado_hueso"),
+        BARRO_CONGELADO_ADN("barro_congelado_adn","barro_congelado_adn"),
+        BARRO_CONGELADO_AMBAR("barro_congelado_ambar","barro_congelado_ambar"),     
+        ROCA_FOSIL("roca_fosil","roca_fosil"),
+        ROCA_FOSIL_HUESO("roca_fosil_hueso","roca_fosil_hueso"),
+        ROCA_FOSIL_ADN("roca_fosil_adn","roca_fosil_adn"),
+        ROCA_FOSIL_AMBAR("roca_fosil_ambar","roca_fosil_ambar"),    
+        MADERA_FOSIL("madera_fosil","madera_fosil"),
+        MADERA_FOSIL_HUESO("madera_fosil_hueso","madera_fosil_hueso"),
+        MADERA_FOSIL_ADN("madera_fosil_adn","madera_fosil_adn"),
+        MADERA_FOSIL_AMBAR("madera_fosil_ambar","madera_fosil_ambar"),
         
         
         //Corales

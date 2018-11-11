@@ -18,6 +18,15 @@ import RubyCraft.Bloques.Cuarzo_verde;
 import RubyCraft.Bloques.Ladrillo_Marino;
 import RubyCraft.Bloques.Ladrillo_de_obsidiana;
 import RubyCraft.Bloques.Ladrillo_del_Bosque;
+import RubyCraft.Bloques.Roca_fosil;
+import RubyCraft.Bloques.Roca_fosil_adn;
+import RubyCraft.Bloques.Roca_fosil_ambar;
+import RubyCraft.Bloques.Roca_fosil_hueso;
+import RubyCraft.Bloques.barro;
+import RubyCraft.Bloques.barro_congelado;
+import RubyCraft.Bloques.barro_congelado_adn;
+import RubyCraft.Bloques.barro_congelado_ambar;
+import RubyCraft.Bloques.barro_congelado_hueso;
 import RubyCraft.Bloques.bloque_de_actualizaciones;
 import RubyCraft.Bloques.bloque_de_blaze;
 import RubyCraft.Bloques.bloque_de_caca;
@@ -46,11 +55,19 @@ import RubyCraft.Bloques.coral_rosa_muerto;
 import RubyCraft.Bloques.cristal_azul_claro;
 import RubyCraft.Bloques.cristal_verde_lima;
 import RubyCraft.Bloques.generar_dragon;
+import RubyCraft.Bloques.hielo_glaciar;
+import RubyCraft.Bloques.hielo_glaciar_adn;
+import RubyCraft.Bloques.hielo_glaciar_ambar;
+import RubyCraft.Bloques.hielo_glaciar_hueso;
 import RubyCraft.Bloques.ladrillo_de_andesita;
 import RubyCraft.Bloques.ladrillo_de_diorita;
 import RubyCraft.Bloques.ladrillo_de_granito;
 import RubyCraft.Bloques.ladrillo_de_infiedra;
 import RubyCraft.Bloques.madera_azul;
+import RubyCraft.Bloques.madera_fosil;
+import RubyCraft.Bloques.madera_fosil_adn;
+import RubyCraft.Bloques.madera_fosil_ambar;
+import RubyCraft.Bloques.madera_fosil_hueso;
 import RubyCraft.Bloques.madera_verde;
 import RubyCraft.Bloques.mena_de_platino;
 import RubyCraft.Bloques.mena_de_ruby;
@@ -58,6 +75,7 @@ import RubyCraft.Bloques.mena_de_ruby_end;
 import RubyCraft.Bloques.mena_de_zafiro;
 import RubyCraft.Bloques.mena_de_zafiro_end;
 import RubyCraft.Bloques.mesa_de_zafiro_basica;
+import RubyCraft.Bloques.monton_de_fosiles;
 import RubyCraft.Bloques.obsidiana_que_llora;
 import RubyCraft.Bloques.prueba;
 import RubyCraft.Bloques.tronco_azul;
@@ -128,6 +146,32 @@ public class Bloques {
 	public static Block madera_verde;
 	public static Block minero;
 
+	
+	public static Block monton_de_fosiles;
+	
+	// Bloques Evento Navidad
+	
+	public static Block hielo_glaciar;
+	public static Block hielo_glaciar_hueso;
+	public static Block hielo_glaciar_adn;
+	public static Block hielo_glaciar_ambar;
+	
+	public static Block barro;
+	public static Block barro_congelado;
+	public static Block barro_congelado_hueso;
+	public static Block barro_congelado_adn;
+	public static Block barro_congelado_ambar;
+	
+	public static Block roca_fosil;
+	public static Block roca_fosil_hueso;
+	public static Block roca_fosil_adn;
+	public static Block roca_fosil_ambar;
+	
+	public static Block madera_fosil;
+	public static Block madera_fosil_hueso;
+	public static Block madera_fosil_adn;
+	public static Block madera_fosil_ambar;
+	
 	// corales
 	public static Block coral_azul;
 	public static Block coral_azul_muerto;
@@ -198,7 +242,29 @@ public class Bloques {
 		madera_azul = new madera_azul();
 		madera_verde = new madera_verde();
 		minero = new minero();
-
+        
+		 monton_de_fosiles = new monton_de_fosiles();
+		 hielo_glaciar = new hielo_glaciar();
+		 hielo_glaciar_hueso = new hielo_glaciar_hueso();
+		 hielo_glaciar_adn = new hielo_glaciar_adn();
+		 hielo_glaciar_ambar = new hielo_glaciar_ambar();
+				
+		 barro = new barro();
+	     barro_congelado = new barro_congelado();
+	     barro_congelado_hueso = new barro_congelado_hueso();
+		 barro_congelado_adn = new barro_congelado_adn();
+	     barro_congelado_ambar = new barro_congelado_ambar();
+				 
+		 roca_fosil = new Roca_fosil();
+		 roca_fosil_hueso = new Roca_fosil_hueso();
+		 roca_fosil_adn = new Roca_fosil_adn();
+		 roca_fosil_ambar = new Roca_fosil_ambar();
+				
+		 madera_fosil = new madera_fosil();
+		 madera_fosil_hueso = new madera_fosil_hueso();
+		 madera_fosil_adn = new madera_fosil_adn();
+		 madera_fosil_ambar = new madera_fosil_ambar();
+		 
 		// Bloques de arboles
 
 		// corales
@@ -272,6 +338,26 @@ public class Bloques {
 		RegistrarBloque(madera_azul);
 		RegistrarBloque(madera_verde);
 		RegistrarBloque(minero);
+	     RegistrarBloque(hielo_glaciar);
+		 RegistrarBloque(hielo_glaciar_hueso);
+		 RegistrarBloque(hielo_glaciar_adn);
+		 RegistrarBloque(hielo_glaciar_ambar); 
+				
+		 RegistrarBloque(barro); 
+	     RegistrarBloque(barro_congelado); 
+	     RegistrarBloque(barro_congelado_hueso); 
+		 RegistrarBloque(barro_congelado_adn); 
+	     RegistrarBloque(barro_congelado_ambar); 
+				 
+		 RegistrarBloque(roca_fosil); 
+		 RegistrarBloque(roca_fosil_hueso); 
+		 RegistrarBloque(roca_fosil_adn); 
+		 RegistrarBloque(roca_fosil_ambar); 
+				
+		 RegistrarBloque(madera_fosil); 
+		 RegistrarBloque(madera_fosil_hueso); 
+		 RegistrarBloque(madera_fosil_adn); 
+		 RegistrarBloque(madera_fosil_ambar); 
 
 		// corales
 		RegistrarBloque(coral_azul);
@@ -347,6 +433,27 @@ public class Bloques {
 		RegistrarRenderizado(madera_azul);
 		RegistrarRenderizado(madera_verde);
 		RegistrarRenderizado(minero);
+		
+	     RegistrarRenderizado(hielo_glaciar);
+		 RegistrarRenderizado(hielo_glaciar_hueso);
+		 RegistrarRenderizado(hielo_glaciar_adn);
+		 RegistrarRenderizado(hielo_glaciar_ambar); 
+				
+		 RegistrarRenderizado(barro); 
+	     RegistrarRenderizado(barro_congelado); 
+	     RegistrarRenderizado(barro_congelado_hueso); 
+		 RegistrarRenderizado(barro_congelado_adn); 
+	     RegistrarRenderizado(barro_congelado_ambar); 
+				 
+		 RegistrarRenderizado(roca_fosil); 
+		 RegistrarRenderizado(roca_fosil_hueso); 
+		 RegistrarRenderizado(roca_fosil_adn); 
+		 RegistrarRenderizado(roca_fosil_ambar); 
+				
+		 RegistrarRenderizado(madera_fosil); 
+		 RegistrarRenderizado(madera_fosil_hueso); 
+		 RegistrarRenderizado(madera_fosil_adn); 
+		 RegistrarRenderizado(madera_fosil_ambar); 
 
 		// corales
 		RegistrarRenderizado(coral_azul);

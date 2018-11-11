@@ -80,6 +80,8 @@ item.alga.name=Alga
 item.alga_seca.name=Alga seca
 item.espada_de_platino.name=Espada de Platino
 item.engranaje_de_diamante.name=Engranaje de Diamante
+item.pompa_de_imunidad.name=Pompa de Imunidad
+item.anillo_angelico.name=Anillo Angelico
 
 tile.ladrillomarino.name=Ladrillo Marino
 tile.bloque_de_ruby.name=Bloque de Ruby

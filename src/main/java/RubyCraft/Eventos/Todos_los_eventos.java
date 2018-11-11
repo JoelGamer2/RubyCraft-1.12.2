@@ -9,7 +9,6 @@ import RubyCraft.Iniciar.RItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.EntityEquipmentSlot;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.text.TextComponentTranslation;
@@ -23,7 +22,7 @@ import net.minecraftforge.fml.common.gameevent.TickEvent.WorldTickEvent;
 public class Todos_los_eventos {
 
 	public static boolean Iniciadosesion = true;
-	public static DamageSource MuetePorInsolacion = new DamageSource("Insolacion").setMagicDamage().setDamageIsAbsolute();
+	public static DamageSource MuetePorInsolacion = new DamageSource("Insolacion").setMagicDamage().setDamageIsAbsolute().setDamageBypassesArmor();
 	public static int tick = 0;
 	public static int cooldown = 200;
 	public static boolean Mensaje = false;
@@ -35,6 +34,7 @@ public class Todos_los_eventos {
 	public void onPlayerDeath(LivingDeathEvent event){
 		
 		
+		/**Pone mensaje de Muerte en el chat con coordenadas y Dimension donde has muerto**/
 		if(event.getEntity() instanceof EntityPlayer){
 			if(RubyCraftConfig.ValorEventodeMuerte==true) {
 			event.getEntity().sendMessage(new TextComponentTranslation(TextFormatting.BLUE + event.getEntity().getName() + TextFormatting.GOLD + " Has Muerto en:" + TextFormatting.GREEN + " X:" + TextFormatting.RED + (int)event.getEntity().posX + TextFormatting.GREEN + " ,Y:" + TextFormatting.RED + (int)event.getEntity().posY + TextFormatting.GREEN + " ,Z:" + TextFormatting.RED + (int)event.getEntity().posZ + TextFormatting.GOLD +" Has muerto en la dimension:" + TextFormatting.BLUE + event.getEntity().dimension));
@@ -46,42 +46,44 @@ public class Todos_los_eventos {
 	
 	@SubscribeEvent
 	public void OnPlayerTickEvent(PlayerTickEvent player) {
-		
+		/**Comrpueba los nombres de los jugadores y si son jugadores de chaoticraft Hace funciones especiales para el**/
 		if(player.player.getName().equalsIgnoreCase("JoelGamer2") || player.player.getName().equalsIgnoreCase("Patxis") || player.player.getName().equalsIgnoreCase("Markus_Parker") | player.player.getName().equalsIgnoreCase("Maverick8812") || player.player.getName().equalsIgnoreCase("totalgamer23") || player.player.getName().equalsIgnoreCase("Juanathan_M") || player.player.getName().equalsIgnoreCase("Zedraliu")) {
 			
-		  if(!player.player.capabilities.isCreativeMode && !player.player.inventory.hasItemStack(new ItemStack(RItems.zafiro, 1))) {
+			/**Esta funcion solo te deja volar si tienes un Item especifico en el Inventario**/
+		  if(!player.player.capabilities.isCreativeMode && !player.player.inventory.hasItemStack(new ItemStack(RItems.anillo_angelico, 1)) && player.player.world.getDifficulty() == EnumDifficulty.HARD) {
 			  player.player.capabilities.allowFlying = false;
 			    player.player.capabilities.isFlying = false;
-		}else if(player.player.capabilities.isCreativeMode && !player.player.inventory.hasItemStack(new ItemStack(RItems.zafiro, 1))) {
+		}else if(player.player.capabilities.isCreativeMode && !player.player.inventory.hasItemStack(new ItemStack(RItems.anillo_angelico, 1)) && player.player.world.getDifficulty() == EnumDifficulty.HARD) {
 			      player.player.capabilities.allowFlying = true;
 		}
 		  
-		  
-		if(player.player.world.getWorldTime() <= 12800 && player.player.world.getDifficulty() == EnumDifficulty.HARD && !player.player.inventory.hasItemStack(new ItemStack(RItems.ruby,1))) {	
+		  /**Hace daño a los Jugadores que estan abajo de la capa 90 y sea de dia y el Mundo este en dificultad Dificl se puede evitar si tieenes un Item en especifico en el Inventario**/
+		if(player.player.world.getWorldTime() <= 12800 && player.player.world.getDifficulty() == EnumDifficulty.HARD && !player.player.inventory.hasItemStack(new ItemStack(RItems.pompa_de_imunidad,1))) {	
 			if(player.player.posY < 90) {
 			
 			player.player.attackEntityFrom(MuetePorInsolacion, 1.0F);
 			
-		
-			}
+		   }
 		}
-		
 	}
 		
-		//Poner Musica dimension
+		//Poner Musica dimension de ruby en prueba
 		
 		//player.player.playSound(RubyCraftSoundhandler.casco_de_tortuga, 1.0F, 1.0F);
 		if(RubyCraft.es_un_cliente_y_no_un_server == true) {
-		if(player.player.dimension == Dimensiones.iddimensionruby && Minecraft.getMinecraft().currentScreen == null) {
-			if(Iniciadosesion) {
-			player.player.playSound(RubyCraftSoundhandler.ruby, Float.MAX_VALUE, 1.0F);
-			Iniciadosesion = false;
+		     if(player.player.dimension == Dimensiones.iddimensionruby && Minecraft.getMinecraft().currentScreen == null) {
+			   if(Iniciadosesion) {
+			       player.player.playSound(RubyCraftSoundhandler.ruby, Float.MAX_VALUE, 1.0F);
+			         Iniciadosesion = false;
 			}
 		}
-		if(!(player.player.dimension == Dimensiones.iddimensionruby)) {
-			Iniciadosesion = true;
+		            if(!(player.player.dimension == Dimensiones.iddimensionruby)) {
+			           Iniciadosesion = true;
 		}
 	 }		
+		
+		
+		/**Quita vida al jugador si no tieene puesto el equipo de Uranio Puesto**/
 		
 		    //Testear si no tiene la armadura puesta
 		    ItemStack casco = player.player.getItemStackFromSlot(EntityEquipmentSlot.HEAD);
@@ -101,8 +103,7 @@ public class Todos_los_eventos {
 	        		}
 	              }
 		
-		//Dar Jugador veneno si no tiene puesta la armadura de uranio para cojer uranio
-		
+
 		
 	}
 	
