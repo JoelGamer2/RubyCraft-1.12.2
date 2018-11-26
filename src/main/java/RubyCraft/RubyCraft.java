@@ -125,13 +125,13 @@ public class RubyCraft {
 		Dimensiones.registrarDimensiones();
 		IniciarBiomas.registarBiomas();
 		
-		if(ModActualizado) {
+	
 			Armaduras.registrar();
 			RItems.Registrar();
 			Herramientas.registrar();
 			Bloques.Registrar(); 
 			Registrar_generaciones.Iniciar();
-		}
+		
 	}
 	
 	@EventHandler
@@ -145,7 +145,7 @@ public class RubyCraft {
 		
 		RubyCraft.proxy.init();
     RubyCraftSoundhandler.Iniciar();
-		if(VersionTrol == false && RubyCraft.ModActualizado){
+		if(VersionTrol == false){
 		Crafteos.IniciarTodo();
 
 		}
