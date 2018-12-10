@@ -4,6 +4,7 @@ import java.util.Random;
 
 import com.google.common.base.Predicate;
 
+import RubyCraft.Dimensiones.Dimensiones;
 import RubyCraft.Iniciar.Bloques;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.block.state.pattern.BlockMatcher;
@@ -37,7 +38,7 @@ public class OreGenDimensiones implements IWorldGenerator {
 			runGenerator(Bloques.mena_de_zafiro_end.getDefaultState(), 6, 6, 1, 101, BlockMatcher.forBlock(Blocks.END_STONE), world, random, chunkX, chunkZ);
 
 		  break;
-		//Everything else
+	
 		default:
 		  break;
 		}

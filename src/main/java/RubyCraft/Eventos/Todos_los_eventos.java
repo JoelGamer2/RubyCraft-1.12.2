@@ -57,9 +57,9 @@ public class Todos_los_eventos {
 			      player.player.capabilities.allowFlying = true;
 		}
 		  
-		  /**Hace daño a los Jugadores que estan abajo de la capa 90 y sea de dia y el Mundo este en dificultad Dificl se puede evitar si tieenes un Item en especifico en el Inventario**/
+		  /**Hace daño a los Jugadores que estan abajo de la capa 120 y sea de dia y el Mundo este en dificultad Dificl se puede evitar si tieenes un Item en especifico en el Inventario**/
 		if(player.player.world.getWorldTime() <= 12800 && player.player.world.getDifficulty() == EnumDifficulty.HARD && !player.player.inventory.hasItemStack(new ItemStack(RItems.pompa_de_imunidad,1))) {	
-			if(player.player.posY < 90) {
+			if(player.player.posY < 120) {
 			
 			player.player.attackEntityFrom(MuetePorInsolacion, 1.0F);
 			

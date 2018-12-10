@@ -39,7 +39,6 @@ public class OreGenOverworld implements IWorldGenerator
 			runGenerator(MenaZafiro, world, rand, chunkX, chunkZ, 5, 1, 20);
 			
 			break;
-			
 		
 		}
 	}
