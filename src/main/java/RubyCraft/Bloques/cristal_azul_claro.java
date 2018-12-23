@@ -3,9 +3,7 @@ package RubyCraft.Bloques;
 import java.util.Random;
 
 import RubyCraft.Referencia;
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockBreakable;
-import net.minecraft.block.BlockGlass;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;

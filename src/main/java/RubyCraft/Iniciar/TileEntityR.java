@@ -2,7 +2,6 @@ package RubyCraft.Iniciar;
 
 import RubyCraft.Referencia;
 import RubyCraft.TileEntity.TileEntityMinero;
-import net.minecraftforge.fml.common.registry.ForgeRegistries;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class TileEntityR {

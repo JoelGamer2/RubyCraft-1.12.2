@@ -1,7 +1,6 @@
 package RubyCraft.Maquinas;
 
 import RubyCraft.Referencia;
-import RubyCraft.Iniciar.Bloques;
 import RubyCraft.TileEntity.TileEntityMinero;
 import net.minecraft.block.Block;
 import net.minecraft.block.ITileEntityProvider;

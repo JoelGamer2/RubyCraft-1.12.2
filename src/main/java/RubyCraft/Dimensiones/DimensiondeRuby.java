@@ -1,15 +1,10 @@
 package RubyCraft.Dimensiones;
 
 import RubyCraft.Biomas.IniciarBiomas;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.DimensionType;
 import net.minecraft.world.WorldProvider;
-import net.minecraft.world.biome.BiomeProvider;
 import net.minecraft.world.biome.BiomeProviderSingle;
 import net.minecraft.world.gen.IChunkGenerator;
-import net.minecraftforge.client.IRenderHandler;
 
 public class DimensiondeRuby extends WorldProvider {
 

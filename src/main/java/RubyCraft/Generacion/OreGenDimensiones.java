@@ -4,7 +4,6 @@ import java.util.Random;
 
 import com.google.common.base.Predicate;
 
-import RubyCraft.Dimensiones.Dimensiones;
 import RubyCraft.Iniciar.Bloques;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.block.state.pattern.BlockMatcher;

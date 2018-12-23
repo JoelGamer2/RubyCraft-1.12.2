@@ -1,7 +1,6 @@
 package RubyCraft.Bloques;
 
 import RubyCraft.Referencia;
-import RubyCraft.Config.RubyCraftConfig;
 import RubyCraft.Dimensiones.Dimensiones;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;

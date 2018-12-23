@@ -84,7 +84,6 @@ import RubyCraft.Maquinas.mesa_de_conjuraciones;
 import RubyCraft.Maquinas.mesa_de_zafiro;
 import RubyCraft.Maquinas.minero;
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockGlass;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -466,7 +465,7 @@ public class Bloques {
 		RegistrarRenderizado(coral_rojo_muerto);
 		RegistrarRenderizado(coral_rosa);
 		RegistrarRenderizado(coral_rosa_muerto);
-
+	
 		// bloque de pruebas
 		if (Control_de_Version.Version_de_desarrollador) {
 			RegistrarRenderizado(prueba);
@@ -485,8 +484,7 @@ public class Bloques {
 	}
 
 	private static void RegistrarRenderizado(Block block) {
-		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), 0,
-				new ModelResourceLocation(Referencia.MOD_ID + ":" + block.getUnlocalizedName().substring(5)));
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), 0, new ModelResourceLocation(Referencia.MOD_ID + ":" + block.getUnlocalizedName().substring(5)));
 	}
-
+	
 }

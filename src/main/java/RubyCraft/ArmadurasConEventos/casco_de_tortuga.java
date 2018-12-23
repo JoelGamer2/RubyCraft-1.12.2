@@ -3,7 +3,6 @@ package RubyCraft.ArmadurasConEventos;
 import java.util.List;
 
 import RubyCraft.Referencia;
-import RubyCraft.Handles.RubyCraftSoundhandler;
 import RubyCraft.Iniciar.Armaduras;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.EntityPlayer;
@@ -13,7 +12,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.datafix.fixes.PotionWater;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 

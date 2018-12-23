@@ -8,7 +8,6 @@ import RubyCraft.Iniciar.Bloques;
 import RubyCraft.Iniciar.Herramientas;
 import RubyCraft.Iniciar.RItems;
 import net.minecraft.block.Block;
-import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

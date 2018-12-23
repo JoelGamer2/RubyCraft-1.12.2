@@ -1,8 +1,5 @@
 package RubyCraft;
 
-import java.io.IOException;
-import java.net.MalformedURLException;
-
 import org.apache.logging.log4j.LogManager;
 
 import Eventos.Eventos_Calendario;
@@ -11,7 +8,6 @@ import RubyCraft.Biomas.IniciarBiomas;
 import RubyCraft.Config.RubyCraftConfig;
 import RubyCraft.Dimensiones.Dimensiones;
 import RubyCraft.Eventos.Evento;
-import RubyCraft.Generacion.OreGenDimensiones;
 import RubyCraft.Generacion.Registrar_generaciones;
 import RubyCraft.Handles.RubyCraftSoundhandler;
 import RubyCraft.Iniciar.Armaduras;
@@ -25,7 +21,6 @@ import RubyCraft.Registrar.ModificarCosasMineCraftVanilla;
 import RubyCraft.Server.Cambiar_cosas_para_server;
 import RubyCraft.VersionTrol.BuscarVersionTrol;
 import RubyCraft.proxy.CommonProxy;
-import io.netty.handler.timeout.TimeoutException;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -34,7 +29,6 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 
 
@@ -144,7 +138,7 @@ public class RubyCraft {
 		}
 		
 		RubyCraft.proxy.init();
-    RubyCraftSoundhandler.Iniciar();
+        RubyCraftSoundhandler.Iniciar();
 		if(VersionTrol == false){
 		Crafteos.IniciarTodo();
 

@@ -1,21 +1,15 @@
 package RubyCraft.Biomas.Biomass;
 
-import java.awt.Color;
-
-import org.apache.http.client.CredentialsProvider;
-
 import net.minecraft.entity.monster.EntityCaveSpider;
 import net.minecraft.entity.monster.EntityCreeper;
 import net.minecraft.entity.monster.EntityEnderman;
 import net.minecraft.entity.monster.EntityWitch;
 import net.minecraft.entity.monster.EntityZombie;
 import net.minecraft.entity.passive.EntityCow;
-import net.minecraft.entity.passive.EntityLlama;
 import net.minecraft.entity.passive.EntityParrot;
 import net.minecraft.entity.passive.EntitySheep;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.biome.Biome;
-import net.minecraft.world.biome.Biome.SpawnListEntry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 

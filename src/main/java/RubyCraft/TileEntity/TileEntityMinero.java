@@ -1,15 +1,10 @@
 package RubyCraft.TileEntity;
 
-import RubyCraft.RubyCraft;
 import RubyCraft.Iniciar.Bloques;
 import net.minecraft.block.Block;
-import net.minecraft.init.Blocks;
 import net.minecraft.inventory.InventoryHelper;
 import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraft.tileentity.TileEntityChest;
-import net.minecraft.tileentity.TileEntityHopper;
 import net.minecraft.util.ITickable;
 import net.minecraft.util.math.BlockPos;
 

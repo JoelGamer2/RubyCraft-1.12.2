@@ -1,7 +1,6 @@
 package RubyCraft.Items;
 
 import RubyCraft.Referencia;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemFood;
 
 public class alga_seca extends ItemFood {

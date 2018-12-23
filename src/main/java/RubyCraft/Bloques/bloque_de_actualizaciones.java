@@ -6,7 +6,6 @@ import RubyCraft.Control_de_Version;
 import RubyCraft.Referencia;
 import RubyCraft.Actualizaciones.Buscar_Actualizaciones;
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockCactus;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.Minecraft;
