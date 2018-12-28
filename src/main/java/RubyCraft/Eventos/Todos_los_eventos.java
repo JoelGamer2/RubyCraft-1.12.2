@@ -10,6 +10,9 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemStack;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
+import net.minecraft.potion.PotionHelper;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.util.text.TextFormatting;
@@ -54,8 +57,10 @@ public class Todos_los_eventos {
 		      }
 		   }		
 		}		
+		  if(!player.player.world.isDaytime() && !(player.player.posY < 120) && !player.player.inventory.hasItemStack(new ItemStack(RItems.pompa_de_imunidad,1)) && player.player.world.getDifficulty() == EnumDifficulty.HARD) {
+			  player.player.addPotionEffect(new PotionEffect(Potion.getPotionById(17), 50, 0));
+		  }
 		//Poner Musica dimension de ruby en prueba		
-		//player.player.playSound(RubyCraftSoundhandler.casco_de_tortuga, 1.0F, 1.0F);
 		if(RubyCraft.es_un_cliente_y_no_un_server == true) {
 		     if(player.player.dimension == Dimensiones.iddimensionruby && Minecraft.getMinecraft().currentScreen == null) {
 			   if(Iniciadosesion) {

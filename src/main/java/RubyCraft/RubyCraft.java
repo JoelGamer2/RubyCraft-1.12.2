@@ -82,50 +82,25 @@ public class RubyCraft {
 		Buscar_Actualizaciones.MirarActualizaciones();
 		}else if(Control_de_Version.Version_de_desarrollador){
 			Buscar_Actualizaciones.MirarActualizacionesI();
-		}
-		
-		
-			
+		}	
 		Eventos_Calendario.Iniciar_Test_de_Calendario();
-			
 		BuscarVersionTrol.MirarVersionTrol();
-				
 		Evento.Iniciar();
-		
-       
-		
 		Armaduras.Iniciar();
-		
-		
 		RItems.Iniciar();
-		
-
-		
 		Herramientas.Iniciar();
-		
-		
 		Bloques.Iniciar();
-		
-		
 		//Escaleras.Iniciar();
 	//	Escaleras.Registrar();
-		
 		Iniciar_Eventos.Iniciar();
-		
-		
 		ModificarCosasMineCraftVanilla.preinit();
-		
-		
 		Dimensiones.registrarDimensiones();
 		IniciarBiomas.registarBiomas();
-		
-	
 			Armaduras.registrar();
 			RItems.Registrar();
 			Herramientas.registrar();
 			Bloques.Registrar(); 
 			Registrar_generaciones.Iniciar();
-		
 	}
 	
 	@EventHandler
