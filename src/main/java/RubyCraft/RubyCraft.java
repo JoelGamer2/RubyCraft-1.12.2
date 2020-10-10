@@ -1,5 +1,7 @@
 package RubyCraft;
 
+import java.util.Iterator;
+
 import org.apache.logging.log4j.LogManager;
 
 import Eventos.Eventos_Calendario;
@@ -22,6 +24,11 @@ import RubyCraft.Server.Cambiar_cosas_para_server;
 import RubyCraft.VersionTrol.BuscarVersionTrol;
 import RubyCraft.proxy.CommonProxy;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.crafting.IRecipe;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -29,7 +36,10 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.ForgeRegistries;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.registries.IForgeRegistryModifiable;
 
 
 @Mod(modid = Referencia.MOD_ID, name = Referencia.NAME, version = Referencia.VERSION, acceptedMinecraftVersions = Referencia.ACCEPTED_VERSIONS)
@@ -55,7 +65,6 @@ public class RubyCraft {
 	
 	@EventHandler
 	public void preinit(FMLPreInitializationEvent event) throws Exception{
-		
 		
 		if(event.getSide()==Side.CLIENT) {
 			es_un_cliente_y_no_un_server = true;
@@ -96,15 +105,16 @@ public class RubyCraft {
 		ModificarCosasMineCraftVanilla.preinit();
 		Dimensiones.registrarDimensiones();
 		IniciarBiomas.registarBiomas();
-			Armaduras.registrar();
-			RItems.Registrar();
-			Herramientas.registrar();
-			Bloques.Registrar(); 
-			Registrar_generaciones.Iniciar();
+		Armaduras.registrar();
+		RItems.Registrar();
+		Herramientas.registrar();
+		Bloques.Registrar(); 
+		Registrar_generaciones.Iniciar();
 	}
 	
 	@EventHandler
 	public void init(FMLInitializationEvent event){
+		   
 
 		TileEntityR.RegistrarTileEntitys();
 		
@@ -128,6 +138,7 @@ public class RubyCraft {
 	
 	@EventHandler
 	public void postinit(FMLPostInitializationEvent event) throws Exception{
+		
        if(event.getSide()==Side.CLIENT) {
     	  
     	 RubyCraft.logger.info("DETECTADO:CLIENTE");
