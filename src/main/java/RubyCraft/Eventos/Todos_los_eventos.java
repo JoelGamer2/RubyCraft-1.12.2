@@ -7,7 +7,6 @@ import RubyCraft.Handles.RubyCraftSoundhandler;
 import RubyCraft.Iniciar.Armaduras;
 import RubyCraft.Iniciar.RItems;
 import net.minecraft.client.Minecraft;
-import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemStack;
@@ -21,10 +20,10 @@ import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent.PlayerTickEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent.WorldTickEvent;
-import scala.util.Random;
 
 public class Todos_los_eventos {
 	public static boolean Iniciadosesion = true;
+	public static boolean modo_sky_hc = false;
 	public static DamageSource MuetePorInsolacion = new DamageSource("Insolacion").setMagicDamage().setDamageIsAbsolute().setDamageBypassesArmor();
 	public static int tick = 0;
 	public static int cooldown = 200;
@@ -43,7 +42,7 @@ public class Todos_los_eventos {
 	@SubscribeEvent
 	public void OnPlayerTickEvent(PlayerTickEvent event) {	
 		/**Comrpueba los nombres de los jugadores y si son jugadores de chaoticraft Hace funciones especiales para el**/
-		  if(event.player.getName().equalsIgnoreCase("JoelGamer2") || event.player.getName().equalsIgnoreCase("Patxis") || event.player.getName().equalsIgnoreCase("Markus_Parker") | event.player.getName().equalsIgnoreCase("Maverick8812") || event.player.getName().equalsIgnoreCase("totalgamer23") || event.player.getName().equalsIgnoreCase("Juanathan_M") || event.player.getName().equalsIgnoreCase("Zedraliu")) {	
+		  if(modo_sky_hc && event.player.getName().equalsIgnoreCase("JoelGamer2") || event.player.getName().equalsIgnoreCase("Patxis") || event.player.getName().equalsIgnoreCase("Markus_Parker") | event.player.getName().equalsIgnoreCase("Maverick8812") || event.player.getName().equalsIgnoreCase("totalgamer23") || event.player.getName().equalsIgnoreCase("Juanathan_M") || event.player.getName().equalsIgnoreCase("Zedraliu")) {	
 			/**Esta funcion solo te deja volar si tienes un Item especifico en el Inventario**/
 		  if(!event.player.capabilities.isCreativeMode && !event.player.inventory.hasItemStack(new ItemStack(RItems.anillo_angelico, 1)) && event.player.world.getDifficulty() == EnumDifficulty.HARD) {
 			  event.player.capabilities.allowFlying = false;
@@ -52,13 +51,13 @@ public class Todos_los_eventos {
 			event.player.capabilities.allowFlying = true;	     
 		}  
 		  /**Hace daño a los Jugadores que estan abajo de la capa 120 y sea de dia y el Mundo este en dificultad Dificl se puede evitar si tieenes un Item en especifico en el Inventario**/
-		if(event.player.world.isDaytime() && event.player.world.getDifficulty() == EnumDifficulty.HARD && !event.player.inventory.hasItemStack(new ItemStack(RItems.pompa_de_imunidad,1))) {	
+		if(modo_sky_hc && event.player.world.isDaytime() && event.player.world.getDifficulty() == EnumDifficulty.HARD && !event.player.inventory.hasItemStack(new ItemStack(RItems.pompa_de_imunidad,1))) {	
 			if(event.player.posY < 120) {
 				event.player.attackEntityFrom(MuetePorInsolacion, 1.0F);
 		      }
 		   }
 		
-		 if(!event.player.world.isDaytime() && !(event.player.posY < 120) && !event.player.inventory.hasItemStack(new ItemStack(RItems.pompa_de_imunidad,1)) && event.player.world.getDifficulty() == EnumDifficulty.HARD) {
+		 if(modo_sky_hc && !event.player.world.isDaytime() && !(event.player.posY < 120) && !event.player.inventory.hasItemStack(new ItemStack(RItems.pompa_de_imunidad,1)) && event.player.world.getDifficulty() == EnumDifficulty.HARD) {
 			  event.player.addPotionEffect(new PotionEffect(Potion.getPotionById(17), 50, 0));
 		  }
 		
